@@ -8,25 +8,17 @@ form {
  
 }
 
-input {
-    width: 80%;
-    height: 30px;
-    border: transparent;
+div {
+    margin-bottom: 10px;
 }
 
-.border-bottom {
-    border-bottom: 1px solid grey;
-    width: 80%;
-    
+.member {
+    margin-left: 50px;
 }
 
-.flex {
-    /* display: flex;
-    align-items: flex-end;
-    */
-    margin-right: 3px;
-
-} 
+.login {
+    margin-left: 90px;
+}
 
 .signup-button {
     margin-top: 30px;
