@@ -73,7 +73,7 @@ export default function SignUp() {
 
   if (isLoggedIn) {
     // navigate to the home page
-    return <Navigate to="/" replace />;
+    return <Navigate to="/home" replace />;
   }
   return (
     <div>
