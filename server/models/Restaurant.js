@@ -36,7 +36,12 @@ const restaurantSchema = new Schema (
         require: true,
     },
     items: [itemSchema],
-    reviews: [reviewSchema],
+    reviews: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Review"
+        }
+    ],
 },
     {
         toJSON: {
