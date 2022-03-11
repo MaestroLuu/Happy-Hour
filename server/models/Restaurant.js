@@ -13,7 +13,7 @@ const restaurantSchema = new Schema (
         type: String,
         required: "You need an address.",
     },
-    zipcode: {
+    zipCode: {
         type: Number,
         required: "You need a valid zipcode.",
         minlength: 5,
