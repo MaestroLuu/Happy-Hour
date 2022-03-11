@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 
 const itemSchema = new Schema({
-  name: {
+  itemName: {
     type: String,
     required: "Please name the item.",
   },

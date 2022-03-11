@@ -11,7 +11,7 @@ const restaurantSchema = new Schema (
     },
     address: {
         type: String,
-        required: "You need and address.",
+        required: "You need an address.",
     },
     zipcode: {
         type: Number,
