@@ -1,0 +1,40 @@
+.signup-center {
+    text-align: center;
+}
+
+
+form {
+    margin-left: 60px;
+ 
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    border: transparent;
+}
+
+.border-bottom {
+    border-bottom: 1px solid grey;
+    width: 80%;
+    
+}
+
+.flex {
+    /* display: flex;
+    align-items: flex-end;
+    */
+    margin-right: 3px;
+
+} 
+
+.signup-button {
+    margin-top: 30px;
+    margin-bottom: 50px;
+} 
+
+button {
+    width: 80%;
+    height: 35px;
+}
+

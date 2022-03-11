@@ -1,22 +1,18 @@
 import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../util/auth";
+import KeyOutlinedIcon from '@mui/icons-material/KeyOutlined';
+import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import "./SignUp.css";
+
 
 // This signup form is intentionally minimalist to reduce effort required to
 // customize it to your app's needs. See the excellent best practices guide for
 // sign informs on web.dev https://web.dev/sign-in-form-best-practices/
 
 // TODO: customize styles or import styles with favorite css approach
-const styles = {
-  formControl: {
-    display: "flex",
-    padding: "0.25em",
-  },
-  label: {
-    flex: "0 1 6em",
-    paddingRight: "0.25em",
-  },
-};
+
 
 const initialFormState = {
   username: "",
@@ -51,57 +47,63 @@ export default function SignUp() {
   }
   return (
     <div>
-      <h1>Sign Up</h1>
-      <hr />
+      <h1 className="signup-center">Sign Up</h1>
+    
       <form onSubmit={handleSubmit}>
-        <div style={styles.formControl}>
-          <label htmlFor="username" style={styles.label}>
-            Username
-          </label>
+
+        <div className="border-bottom">
+        <p>Email</p>
+          <MailOutlineOutlinedIcon className="flex"/>
           <input
             autoFocus
             disabled={loading}
-            id="username"
-            type="text"
-            placeholder="Enter username"
-            name="username"
-            value={formState.username.value}
-            onChange={handleInputChange}
-          />
-        </div>
-        <div style={styles.formControl}>
-          <label htmlFor="email" style={styles.label}>
-            Email
-          </label>
-          <input
-            disabled={loading}
             id="email"
-            type="email"
+            type="text"
+            placeholder="Type your email"
             name="email"
-            placeholder="Enter email"
             value={formState.email.value}
             onChange={handleInputChange}
           />
         </div>
-        <div style={styles.formControl}>
-          <label htmlFor="new-password" style={styles.label}>
-            Password
-          </label>
+
+        <div className="border-bottom">
+          <p>Username</p>
+          
+          <PersonOutlineOutlinedIcon className="flex"/>
+          <input
+            disabled={loading}
+            id="username"
+            type="username"
+            name="username"
+            placeholder="Type your username"
+            value={formState.username.value}
+            onChange={handleInputChange}
+          />
+        </div>
+
+        <div className="border-bottom">
+          <p>Password</p>
+          <KeyOutlinedIcon className="flex"/>
           <input
             disabled={loading}
             id="new-password"
             type="password"
             name="password"
-            placeholder="Enter password"
+            placeholder="Type your password"
             value={formState.password.value}
             onChange={handleInputChange}
           />
         </div>
-        <div style={styles.formControl}>
+
+        <div className="signup-button">
           <button disabled={loading} type="submit">
-            {loading ? "Loading..." : "Submit"}
+            {loading ? "Loading..." : "SIGN UP"}
           </button>
         </div>
+      
+        <p>Already a member?</p>
+        <p>LOGIN</p>
+
       </form>
     </div>
   );
