@@ -1,0 +1,52 @@
+[
+  {
+    "reviewAuthor": "Marco",
+    "reviewText": "I really love the food here, it's cheap",
+    "stars": 5
+  },
+  {
+    "reviewAuthor": "testuser2",
+    "reviewText": "I liked the food, but it's not the best, however it's cheap",
+    "stars": 4
+  },
+  {
+    "reviewAuthor": "testuser3",
+    "reviewText": "The other reviews lie, this food is trash and expensive",
+    "stars": 1
+  },
+  {
+    "reviewAuthor": "testuser4",
+    "reviewText": "Decent food, bit too expensive for my taste",
+    "stars": 2
+  },
+  {
+    "reviewAuthor": "testuser5",
+    "reviewText": "It's ok, could be better, price maybe a little cheaper",
+    "stars": 3
+  },
+  {
+    "reviewAuthor": "testuser6",
+    "reviewText": "This app is amazing, I found a cheaper restaurant",
+    "stars": 4
+  },
+  {
+    "reviewAuthor": "testuser7",
+    "reviewText": "Best food ever and it's so cheap!",
+    "stars": 5
+  },
+  {
+    "reviewAuthor": "testuser8",
+    "reviewText": "I saw a rat on the ground.",
+    "stars": 1
+  },
+  {
+    "reviewAuthor": "testuser9",
+    "reviewText": "My mother makes better food than this, and cheaper",
+    "stars": 2
+  },
+  {
+    "reviewAuthor": "testuser10",
+    "reviewText": "Decent",
+    "stars": 3
+  }
+]
