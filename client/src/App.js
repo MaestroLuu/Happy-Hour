@@ -10,9 +10,6 @@ import { client } from "./util/apolloClient";
 import { AuthProvider } from "./util/auth";
 import Restaurant from "./pages/Restaurant";
 
-const App = 12
-function App() { ... }
-
 function App() {
   return (
     <ApolloProvider client={client}>
