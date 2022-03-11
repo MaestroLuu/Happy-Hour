@@ -17,6 +17,11 @@ const reviewSchema = new Schema({
     default: Date.now,
     get: (timestamp) => dateFormat(timestamp),
   },
+  stars: {
+    type: Number,
+    minlength: 1,
+    maxlength: 5,
+  },
 });
 
 const Review = model("Review", reviewSchema);
