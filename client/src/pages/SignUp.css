@@ -1,0 +1,32 @@
+.signup-center {
+    text-align: center;
+}
+
+
+form {
+    margin-left: 60px;
+ 
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+.member {
+    margin-left: 50px;
+}
+
+.login {
+    margin-left: 90px;
+}
+
+.signup-button {
+    margin-top: 30px;
+    margin-bottom: 50px;
+} 
+
+button {
+    width: 80%;
+    height: 35px;
+}
+
