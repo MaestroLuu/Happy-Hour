@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../util/auth";
-import { IconButton } from "@material-ui/core";
-import HomeIcon from '@mui/icons-material/Home';
+// import { IconButton } from "@material-ui/core";
+// import HomeIcon from '@mui/icons-material/Home';
 import "./Navbar.css";
 
 export default function Navbar() {
