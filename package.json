@@ -13,7 +13,8 @@
     "react": "cd client && npm start",
     "server": "cd server && npm run watch",
     "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "eslint": "eslint src"
   },
   "keywords": [],
   "author": "",
