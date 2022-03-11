@@ -5,13 +5,18 @@ const typeDefs = gql`
   scalar Date
 
   type Query {
-    "Find the logged in user."
     me: User
+    restaurant(restaurantId: ID): [Restaurant]
   }
 
   type Mutation {
     createUser(email: String!, password: String!, username: String!): Auth
     login(email: String!, password: String!): Auth
+    addFavoriteRestaurant(restaurantId: ID!): User
+    removeFavorRestaurant(restaurant: ID!): User
+    addReview(reviewId: ID!, reviewText: String!): Restaurant
+    deleteReview(reviewId: ID!): Restaurant
+    updateReview(reviewId: ID!, reviewText: String!): Restaurant
   }
 
   type Auth {
@@ -23,7 +28,35 @@ const typeDefs = gql`
     _id: ID!
     username: String!
     email: String!
-    lastLogin: Date!
+    password: String!
+    favoriteRestaurants: [Restaurant]
+  }
+
+  type Restaurant {
+    _id: ID!
+    restaurantName: String!
+    address: String!
+    zipCode: Int!
+    drinkSpecial: Boolean!
+    foodSpecial: Boolean!
+    foodType: String!
+    happyHours: String!
+    items: [Item]!
+    reviews: [Review]
+  }
+
+  type Item {
+    _id: ID!
+    itemName: String!
+    price: Float!
+    description: String
+  }
+
+  type Review {
+    reviewAuthor: String!
+    reviewText: String!
+    createdAt: String
+    stars: Int
   }
 `;
 
