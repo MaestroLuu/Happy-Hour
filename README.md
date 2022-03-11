@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# MERN-GQL-START
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Boilerplate app for full-stack MERN app with Create React App client tool chain. Includes React, JWT authentication, Mongoose/MongoDB, Apollo Server/Client, and ExpressJS.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+- Add a `.env` file to `server` directory to run locally. Use `server/.env.example` as a template.
 
-### `npm start`
+- `npm start` script: Production startup. Only runs backend server.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `npm run develop` script: Uses `concurrently` to run the back-end with `nodemon` and launches the `create-react-app` development server for front-end development. `concurrently` runs these within the same terminal. Logging is tagged with `[server]` or `[client]`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `npm run client` script: Launches the `create-react-app` development server for the client only. Will not start back-end.
 
-### `npm test`
+- `npm run server` script: Starts the back-end server with `nodemon` for easy development without launching the client.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- The `npm install` script: Installs all dependencies for root as wells as `client` and `server`.
 
-### `npm run build`
+- The `npm run build` script: Runs `create-react-app` build script to create client bundles and assets.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deploying to Heroku
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Requires a MongoDB server. MongoDB Atlas is a fairly easy choice for this requirement. Create an Atlas account and setup a database.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Add the following values to the Heroku config for the app:
 
-### `npm run eject`
+  - `SECRET` - used for signing and verifying tokens
+  - `TOKEN_EXP` - duration before token expires in milliseconds or a string
+    describing a time span. ([zeit/ms](https://github.com/vercel/ms))
+  - `MONGODB_URI` - used for connecting to MongoDB service
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Push your code to GitHub
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Connect your Heroku app with GitHub or push code directly to Heroku. (See [Deploying Node.js Apps on Heroku](https://devcenter.heroku.com/articles/deploying-nodejs))
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Apollo Server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project uses `apollo-server-express v 3.x` which means GraphQL Playground (deprecated) is not included. Instead, Apollo Server 3 uses [Apollo Studio](https://www.apollographql.com/docs/studio/) as a development tool for building your api. If you would like to use GraphQL Playground, refer to [this guide](https://www.apollographql.com/docs/apollo-server/migration/#graphql-playground) to enable the tool.
 
-## Learn More
+## Create React App
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The client for this project is built with the `create-react-app` tool chain. The README file generated by `create-react-app` has been preserved. See [client/README.md](./client/README.md) for details about the tools.
