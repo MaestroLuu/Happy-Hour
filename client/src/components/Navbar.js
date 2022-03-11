@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
         <NavLink to="/" className="navbar-link">
-          Home
+          Splash
         </NavLink>
       {isLoggedIn ? (
         <>
@@ -30,6 +30,12 @@ export default function Navbar() {
           </NavLink>
           <NavLink to="/restaurants" className="navbar-link">
             Restaurants
+          </NavLink> 
+          <NavLink to="/user" className="navbar-link">
+            User Profile
+          </NavLink> 
+          <NavLink to="/home" className="navbar-link">
+            Home
           </NavLink> 
         </>
       )}

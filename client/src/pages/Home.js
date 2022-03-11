@@ -8,10 +8,7 @@ export default function Home() {
       <h1>Welcome {isLoggedIn ? user.username : "Guest"}!</h1>
       <hr />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo cumque
-        explicabo ipsum, facilis repellendus omnis amet in accusantium quisquam
-        nam qui consectetur sunt distinctio nemo molestiae ratione. Iure,
-        aliquam debitis.
+      All restaurants are displayed here.
       </p>
     </div>
   );
