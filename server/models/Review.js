@@ -19,6 +19,7 @@ const reviewSchema = new Schema({
   },
   stars: {
     type: Number,
+    minlength: 1,
     maxlength: 5,
   },
 });
