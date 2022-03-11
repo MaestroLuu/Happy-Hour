@@ -1,7 +1,6 @@
 {
   "name": "happy-hour",
   "version": "1.0.0",
-  "homepage": "https://maestroluu.github.io/happy-hour",
   "description": "",
   "main": "server/server.js",
   "engines": {
@@ -9,8 +8,6 @@
     "npm": "7.x"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "node server/server.js",
     "develop": "concurrently -c magenta,cyan \"npm:server\" \"npm:react\"",
     "react": "cd client && npm start",
@@ -22,15 +19,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^6.4.0"
+    "concurrently": "^6.4.0",
+    "eslint": "^8.10.0"
   },
   "dependencies": {
-    "@emotion/react": "^11.8.2",
-    "@emotion/styled": "^11.8.1",
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "@mui/icons-material": "^5.5.0",
-    "@mui/material": "^5.5.0",
-    "gh-pages": "^3.2.3"
   }
 }

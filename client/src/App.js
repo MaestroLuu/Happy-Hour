@@ -8,6 +8,7 @@ import ProtectedPageExample from "./pages/ProtectedPageExample";
 import SignUp from "./pages/SignUp";
 import { client } from "./util/apolloClient";
 import { AuthProvider } from "./util/auth";
+import Restaurant from "./pages/Restaurant";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/restaurants" element={<Restaurant />} />
             {/* Use <RequiredAuth> for pages that should only be accessible to a
             user that has logged in.*/}
             <Route
