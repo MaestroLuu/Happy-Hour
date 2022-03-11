@@ -1,5 +1,4 @@
 const { Schema, model } = require("mongoose");
-const reviewSchema = require("./Review");
 const itemSchema = require("./Item");
 
 const restaurantSchema = new Schema (
@@ -36,7 +35,12 @@ const restaurantSchema = new Schema (
         require: true,
     },
     items: [itemSchema],
-    reviews: [reviewSchema],
+    reviews: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Review"
+        }
+    ],
 },
     {
         toJSON: {

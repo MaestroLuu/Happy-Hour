@@ -21,7 +21,12 @@ const userSchema = new Schema(
       required: true,
       minlength: 5,
     },
-    favoriteRestaurants: [restaurantSchema],
+    favoriteRestaurants: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Restaurant",
+      },
+    ],
   },
   {
     toJSON: {
