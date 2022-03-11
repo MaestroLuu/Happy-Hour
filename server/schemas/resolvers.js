@@ -2,7 +2,7 @@ const {
   AuthenticationError,
   UserInputError,
 } = require("apollo-server-express");
-const { User } = require("../models");
+const { User, Restaurant,  } = require("../models");
 const { signToken } = require("../util/auth");
 const { dateScalar } = require("./customScalars");
 
@@ -17,6 +17,12 @@ const resolvers = {
       }
       return User.findOne({ email: ctx.user.email });
     },
+    restaurant: async (parent, args, ctx) => {
+      if (ctx.restaurantId) {
+        return Restaurant.findOne({_id: ctx.restaurantId})
+      }
+      return Restaurant.find({});
+    }
   },
   Mutation: {
     createUser: async (parent, args) => {
@@ -47,6 +53,7 @@ const resolvers = {
       await user.save();
       return { token, user };
     },
+
   },
 };
 
