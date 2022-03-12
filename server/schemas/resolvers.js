@@ -60,7 +60,7 @@ const resolvers = {
           {_id: context.user._id},
           { $addToSet: {favoriteRestaurants: restaurantId}},
         )
-        .populate('favoriteRestaurants')
+        .populate('favoriteRestaurants')        
       }
       throw new AuthenticationError("You need to be logged in to favorite a restaurant!");
     },
@@ -68,11 +68,8 @@ const resolvers = {
       if (context.user) {
         return await User.findByIdAndUpdate(
           { _id: context.user._id },
-          { $pull: { favoriteRestaurants: { restaurantId } } },
-          {
-            new: true,
-          }
-        );
+          { $pull: { favoriteRestaurants: restaurantId } })
+          .populate('favoriteRestaurants');  
       }
       throw new AuthenticationError("You need to be logged in to unfavorite your restaurants!");
     },
