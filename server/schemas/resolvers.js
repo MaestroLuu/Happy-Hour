@@ -73,15 +73,19 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in to unfavorite your restaurants!");
     },
-    addReview: async (parent, {restaurantId, reviewId, reviewText}, context) => {
+    addReview: async (parent, {restaurantId, reviewText}, context) => {
       if (context.user) {
         return await Restaurant.findOneAndUpdate(
           {_id: restaurantId},
-          { $addToSet: {reviews: {reviewId, reviewText}}},
+          { 
+            $addToSet: {
+              reviews: {reviewText, reviewAuthor: context.user.username},
+            },
+          }
         )
         .populate('reviews')
       }
-      throw new AuthenticationError("You need to be logged in to favorite a restaurant!");
+      throw new AuthenticationError("You need to be logged in to add a review!");
 
     },
     deleteReview: async (parent, {reviewId}, context) => {

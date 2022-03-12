@@ -15,7 +15,7 @@ const typeDefs = gql`
     login(email: String!, password: String!): Auth
     addFavoriteRestaurant(restaurantId: ID!): User
     removeFavoriteRestaurant(restaurantId: ID!): User
-    addReview(reviewId: ID!, reviewText: String!): Restaurant
+    addReview(restaurantId: ID!, reviewText: String!): Restaurant
     deleteReview(reviewId: ID!): Restaurant
     updateReview(reviewId: ID!, reviewText: String!): Restaurant
   }
