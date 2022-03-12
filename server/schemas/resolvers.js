@@ -9,17 +9,19 @@ const { dateScalar } = require("./customScalars");
 const resolvers = {
   Date: dateScalar,
   Query: {
-    me: async (parent, args, ctx) => {
-      if (!ctx.user) {
+    me: async (parent, args, context) => {
+      if (!context.user) {
         throw new AuthenticationError("Must be logged in.");
       }
-      return User.findOne({ email: ctx.user.email });
+      return User.findOne({ email: context.user.email });
     },
-    restaurant: async (parent, args, ctx) => {
-      if (ctx.restaurantId) {
-        return Restaurant.findOne({_id: ctx.restaurantId})
-      }
-      return Restaurant.find({});
+    restaurant: async (parent, args) => {
+      console.log(args)
+      if (!args) {
+        return Restaurant.find({});
+      } 
+      return Restaurant.findById(args.id);
+      console.log(Restaurant.findById(args.id))
     }
   },
   Mutation: {
@@ -51,18 +53,18 @@ const resolvers = {
       await user.save();
       return { token, user };
     },
-    addFavoriteRestaurant: async (parent, {restaurantId}, ctx) => {  
-      if (ctx.user) {
-        return await User.findbyIdAndUpdate(
-          {_id: ctx.user._id},
+    addFavoriteRestaurant: async (parent, {restaurantId}, context) => {  
+      if (context.user) {
+        return await User.findByIdAndUpdate(
+          {_id: context.user._id},
           { $push: {favoriteRestaurants: {restaurantId}}},
           {new: true}
         );
       }
       throw new AuthenticationError("You need to be logged in to favorite a restaurant!");
     },
-    removeFavoriteRestaurant: async (parent, {restaurantId}, ctx) => {
-      if (ctx.user) {
+    removeFavoriteRestaurant: async (parent, {restaurantId}, context) => {
+      if (context.user) {
         return await User.findByIdAndUpdate(
           { _id: context.user._id },
           { $pull: { favoriteRestaurants: { restaurantId } } },
@@ -73,15 +75,15 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in to unfavorite your restaurants!");
     },
-    addReview: async (parent, {reviewText}, ctx) => {
-      if (ctx.restaurant) {
+    addReview: async (parent, {reviewText}, context) => {
+      if (context.restaurant) {
         const newReview = await Review.create({
           reviewText,
-          reviewAuthor: ctx.user.username,
+          reviewAuthor: context.user.username,
         });
 
         await Restaurant.findbyIdAndUpdate(
-          {_id: ctx.restaurant._id},
+          {_id: context.restaurant._id},
           { $addToSet: {reviews: review._id}},
           {new: true}
         );
@@ -89,8 +91,8 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in to add a review!");
     },
-    deleteReview: async (parent, {reviewId}, ctx) => {
-      if (ctx.restaurant) {
+    deleteReview: async (parent, {reviewId}, context) => {
+      if (context.restaurant) {
         return await Restaurant.findByIdAndUpdate(
           { _id: context.restaurant._id },
           { $pull: { reviews: { reviewId } } },
@@ -101,10 +103,10 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in to delete your review!");
     },
-    updateReview: async (parent, {reviewId, reviewText}, ctx) => {
-      if (ctx.restaurant) {
+    updateReview: async (parent, {reviewId, reviewText}, context) => {
+      if (context.restaurant) {
         return await Restaurant.findbyIdAndUpdate(
-          {_id: ctx.restaurant._id},
+          {_id: context.restaurant._id},
           { $push: {reviews: {reviewId, reviewText}}},
           {new: true}
         );

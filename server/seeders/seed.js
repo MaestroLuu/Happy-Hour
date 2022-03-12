@@ -19,8 +19,7 @@ db.once("open", async () => {
 
         for (const rev of reviews) {
             // randomly add each Reviews to a Restaurant
-            const tempRestaurant =
-            restaurants[Math.floor(Math.random() * restaurants.length)];
+            const tempRestaurant = restaurants[Math.floor(Math.random() * restaurants.length)];
             tempRestaurant.reviews.push(rev._id);
         }
         

@@ -6,14 +6,14 @@ const typeDefs = gql`
 
   type Query {
     me: User
-    restaurant(restaurantId: ID): [Restaurant]
+    restaurant(id: ID): Restaurant
   }
 
   type Mutation {
     createUser(email: String!, password: String!, username: String!): Auth
     login(email: String!, password: String!): Auth
     addFavoriteRestaurant(restaurantId: ID!): User
-    removeFavorRestaurant(restaurant: ID!): User
+    removeFavoriteRestaurant(restaurant: ID!): User
     addReview(reviewId: ID!, reviewText: String!): Restaurant
     deleteReview(reviewId: ID!): Restaurant
     updateReview(reviewId: ID!, reviewText: String!): Restaurant
