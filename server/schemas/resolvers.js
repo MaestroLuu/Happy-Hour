@@ -15,13 +15,14 @@ const resolvers = {
       }
       return User.findOne({ email: context.user.email });
     },
+    restaurants: async (parent, args) => {
+      return Restaurant.find({});
+    },
     restaurant: async (parent, args) => {
-      console.log(args)
-      if (!args) {
-        return Restaurant.find({});
-      } 
-      return Restaurant.findById(args.id);
-      console.log(Restaurant.findById(args.id))
+    if (!args) {
+      throw new AuthenticationError("Please provide an ID");
+    } 
+    return Restaurant.findById(args.id)
     }
   },
   Mutation: {
