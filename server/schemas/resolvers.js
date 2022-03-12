@@ -2,7 +2,7 @@ const {
   AuthenticationError,
   UserInputError,
 } = require("apollo-server-express");
-const { User, Restaurant,  } = require("../models");
+const { User, Restaurant, Review } = require("../models");
 const { signToken } = require("../util/auth");
 const { dateScalar } = require("./customScalars");
 
@@ -10,8 +10,6 @@ const resolvers = {
   Date: dateScalar,
   Query: {
     me: async (parent, args, ctx) => {
-      // if ctx.user is undefined, then no token or an invalid token was
-      // provided by the client.
       if (!ctx.user) {
         throw new AuthenticationError("Must be logged in.");
       }
@@ -53,7 +51,66 @@ const resolvers = {
       await user.save();
       return { token, user };
     },
+    addFavoriteRestaurant: async (parent, {restaurantId}, ctx) => {  
+      if (ctx.user) {
+        return await User.findbyIdAndUpdate(
+          {_id: ctx.user._id},
+          { $push: {favoriteRestaurants: {restaurantId}}},
+          {new: true}
+        );
+      }
+      throw new AuthenticationError("You need to be logged in to favorite a restaurant!");
+    },
+    removeFavoriteRestaurant: async (parent, {restaurantId}, ctx) => {
+      if (ctx.user) {
+        return await User.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $pull: { favoriteRestaurants: { restaurantId } } },
+          {
+            new: true,
+          }
+        );
+      }
+      throw new AuthenticationError("You need to be logged in to unfavorite your restaurants!");
+    },
+    addReview: async (parent, {reviewText}, ctx) => {
+      if (ctx.restaurant) {
+        const newReview = await Review.create({
+          reviewText,
+          reviewAuthor: ctx.user.username,
+        });
 
+        await Restaurant.findbyIdAndUpdate(
+          {_id: ctx.restaurant._id},
+          { $addToSet: {reviews: review._id}},
+          {new: true}
+        );
+
+      }
+      throw new AuthenticationError("You need to be logged in to add a review!");
+    },
+    deleteReview: async (parent, {reviewId}, ctx) => {
+      if (ctx.restaurant) {
+        return await Restaurant.findByIdAndUpdate(
+          { _id: context.restaurant._id },
+          { $pull: { reviews: { reviewId } } },
+          {
+            new: true,
+          }
+        );
+      }
+      throw new AuthenticationError("You need to be logged in to delete your review!");
+    },
+    updateReview: async (parent, {reviewId, reviewText}, ctx) => {
+      if (ctx.restaurant) {
+        return await Restaurant.findbyIdAndUpdate(
+          {_id: ctx.restaurant._id},
+          { $push: {reviews: {reviewId, reviewText}}},
+          {new: true}
+        );
+      }
+      throw new AuthenticationError("You need to be logged in to update a review!");
+    }
   },
 };
 
