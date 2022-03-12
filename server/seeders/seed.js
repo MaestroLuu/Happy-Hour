@@ -7,15 +7,16 @@ const userSeeds = require("./userSeeds.json");
 
 db.once("open", async () => {
   // clean database
-    try {
-        await User.deleteMany({});
-        await Restaurant.deleteMany({});
-        await Review.deleteMany({});
+  try {
+    await User.deleteMany({});
+    await Restaurant.deleteMany({});
+    await Review.deleteMany({});
 
-        // bulk create each model
-        await User.insertMany(userSeeds);
-        const reviews = await Review.insertMany(reviewSeeds);
-        const restaurants = await Restaurant.insertMany(restaurantSeeds);
+    // bulk create each model
+    await User.insertMany(userSeeds);
+    const reviews = await Review.insertMany(reviewSeeds);
+    const restaurants = await Restaurant.insertMany(restaurantSeeds);
+
 
         for (const rev of reviews) {
             // randomly add each Reviews to a Restaurant
@@ -27,9 +28,11 @@ db.once("open", async () => {
             await rest.save();
         }
 
-        console.log("all done!");
-        process.exit(0);
-    }   catch (err) {
-        throw err;  
-    }
+
+
+    console.log("all done!");
+    process.exit(0);
+  } catch (err) {
+    throw err;
+  }
 });
