@@ -55,12 +55,14 @@ const resolvers = {
       return { token, user };
     },
     addFavoriteRestaurant: async (parent, {restaurantId}, context) => {  
+      console.log(restaurantId);
+      console.log(context.user._id);
       if (context.user) {
-        return await User.findByIdAndUpdate(
+        return await User.findOneAndUpdate(
           {_id: context.user._id},
-          { $push: {favoriteRestaurants: {restaurantId}}},
-          {new: true}
-        );
+          { $addToSet: {favoriteRestaurants: restaurantId}},
+        )
+        .populate('favoriteRestaurants')
       }
       throw new AuthenticationError("You need to be logged in to favorite a restaurant!");
     },

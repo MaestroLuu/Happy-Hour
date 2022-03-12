@@ -4,7 +4,6 @@ const reviewSchema = new Schema({
   reviewAuthor: {
     type: String,
     required: true,
-    unique: true,
   },
   reviewText: {
     type: String,

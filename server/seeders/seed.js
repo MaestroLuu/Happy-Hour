@@ -24,11 +24,12 @@ db.once("open", async () => {
             tempRestaurant.reviews.push(rev._id);
             console.log("line25", tempRestaurant.reviews.push(rev._id))
             await tempRestaurant.save();
+            // console.log("ln 27", tempRestaurant.save())
         }
         
-        for (const rest of restaurants) {
-            await rest.save();
-        }
+        // for (const rest of restaurants) {
+        //     await rest.save();
+        // }
 
         console.log("all done!");
         process.exit(0);
