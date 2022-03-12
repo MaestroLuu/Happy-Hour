@@ -14,7 +14,8 @@
     "server": "cd server && npm run watch",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build",
-    "eslint": "eslint src"
+    "eslint": "eslint src",
+    "seed": "cd server && npm run seed"
   },
   "keywords": [],
   "author": "",

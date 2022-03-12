@@ -1,0 +1,44 @@
+[
+  {
+    "restaurantName": "David's Mishmash",
+    "address": "1234 Test Drive",
+    "zipCode": 92134,
+    "drinkSpecial": true,
+    "foodSpecial": true,
+    "foodType": "American",
+    "happyHours": "9 AM to 3 PM",
+    "items": [
+      {
+        "itemName": "Large Drink",
+        "price": 0.5,
+        "descripition": "Cheaper than McDonalds"
+      },
+      {
+        "itemName": "Stir Fry",
+        "price": 3.99,
+        "descripition": "The best you've ever had"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Luka's Drinks",
+    "address": "1234 Test Drive",
+    "zipCode": 92134,
+    "drinkSpecial": true,
+    "foodSpecial": false,
+    "foodType": "European",
+    "happyHours": "6 PM to 10 PM",
+    "items": [
+      {
+        "itemName": "Water",
+        "price": 0.5,
+        "descripition": "Cheaper than your water bill"
+      },
+      {
+        "itemName": "Soda",
+        "price": 1.00,
+        "descripition": "Cheaper than the store"
+      }
+    ]
+  }  
+]
