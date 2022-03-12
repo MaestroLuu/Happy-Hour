@@ -16,13 +16,13 @@ const resolvers = {
       return User.findOne({ email: context.user.email });
     },
     restaurants: async (parent, args) => {
-      return Restaurant.find({});
+      return Restaurant.find({}).populate('reviews');
     },
     restaurant: async (parent, args) => {
     if (!args) {
       throw new AuthenticationError("Please provide an ID");
     } 
-    return Restaurant.findById(args.id)
+    return Restaurant.findById(args.id).populate('reviews')
     }
   },
   Mutation: {
@@ -55,8 +55,6 @@ const resolvers = {
       return { token, user };
     },
     addFavoriteRestaurant: async (parent, {restaurantId}, context) => {  
-      console.log(restaurantId);
-      console.log(context.user._id);
       if (context.user) {
         return await User.findOneAndUpdate(
           {_id: context.user._id},
@@ -78,21 +76,16 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in to unfavorite your restaurants!");
     },
-    addReview: async (parent, {reviewText}, context) => {
-      if (context.restaurant) {
-        const newReview = await Review.create({
-          reviewText,
-          reviewAuthor: context.user.username,
-        });
-
-        await Restaurant.findbyIdAndUpdate(
-          {_id: context.restaurant._id},
-          { $addToSet: {reviews: review._id}},
-          {new: true}
-        );
-
+    addReview: async (parent, {restaurantId, reviewId, reviewText}, context) => {
+      if (context.user) {
+        return await Restaurant.findOneAndUpdate(
+          {_id: restaurantId},
+          { $addToSet: {reviews: {reviewId, reviewText}}},
+        )
+        .populate('reviews')
       }
-      throw new AuthenticationError("You need to be logged in to add a review!");
+      throw new AuthenticationError("You need to be logged in to favorite a restaurant!");
+
     },
     deleteReview: async (parent, {reviewId}, context) => {
       if (context.restaurant) {
