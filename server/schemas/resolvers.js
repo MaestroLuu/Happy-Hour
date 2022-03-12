@@ -9,17 +9,20 @@ const { dateScalar } = require("./customScalars");
 const resolvers = {
   Date: dateScalar,
   Query: {
-    me: async (parent, args, ctx) => {
-      if (!ctx.user) {
+    me: async (parent, args, context) => {
+      if (!context.user) {
         throw new AuthenticationError("Must be logged in.");
       }
-      return User.findOne({ email: ctx.user.email });
+      return User.findOne({ email: context.user.email });
     },
-    restaurant: async (parent, args, ctx) => {
-      if (ctx.restaurantId) {
-        return Restaurant.findOne({_id: ctx.restaurantId})
-      }
-      return Restaurant.find({});
+    restaurants: async (parent, args) => {
+      return Restaurant.find({}).populate('reviews');
+    },
+    restaurant: async (parent, args) => {
+    if (!args) {
+      throw new AuthenticationError("Please provide an ID");
+    } 
+    return Restaurant.findById(args.id).populate('reviews')
     }
   },
   Mutation: {
@@ -51,18 +54,18 @@ const resolvers = {
       await user.save();
       return { token, user };
     },
-    addFavoriteRestaurant: async (parent, {restaurantId}, ctx) => {  
-      if (ctx.user) {
-        return await User.findbyIdAndUpdate(
-          {_id: ctx.user._id},
-          { $push: {favoriteRestaurants: {restaurantId}}},
-          {new: true}
-        );
+    addFavoriteRestaurant: async (parent, {restaurantId}, context) => {  
+      if (context.user) {
+        return await User.findOneAndUpdate(
+          {_id: context.user._id},
+          { $addToSet: {favoriteRestaurants: restaurantId}},
+        )
+        .populate('favoriteRestaurants')
       }
       throw new AuthenticationError("You need to be logged in to favorite a restaurant!");
     },
-    removeFavoriteRestaurant: async (parent, {restaurantId}, ctx) => {
-      if (ctx.user) {
+    removeFavoriteRestaurant: async (parent, {restaurantId}, context) => {
+      if (context.user) {
         return await User.findByIdAndUpdate(
           { _id: context.user._id },
           { $pull: { favoriteRestaurants: { restaurantId } } },
@@ -73,24 +76,19 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in to unfavorite your restaurants!");
     },
-    addReview: async (parent, {reviewText}, ctx) => {
-      if (ctx.restaurant) {
-        const newReview = await Review.create({
-          reviewText,
-          reviewAuthor: ctx.user.username,
-        });
-
-        await Restaurant.findbyIdAndUpdate(
-          {_id: ctx.restaurant._id},
-          { $addToSet: {reviews: review._id}},
-          {new: true}
-        );
-
+    addReview: async (parent, {restaurantId, reviewId, reviewText}, context) => {
+      if (context.user) {
+        return await Restaurant.findOneAndUpdate(
+          {_id: restaurantId},
+          { $addToSet: {reviews: {reviewId, reviewText}}},
+        )
+        .populate('reviews')
       }
-      throw new AuthenticationError("You need to be logged in to add a review!");
+      throw new AuthenticationError("You need to be logged in to favorite a restaurant!");
+
     },
-    deleteReview: async (parent, {reviewId}, ctx) => {
-      if (ctx.restaurant) {
+    deleteReview: async (parent, {reviewId}, context) => {
+      if (context.restaurant) {
         return await Restaurant.findByIdAndUpdate(
           { _id: context.restaurant._id },
           { $pull: { reviews: { reviewId } } },
@@ -101,10 +99,10 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in to delete your review!");
     },
-    updateReview: async (parent, {reviewId, reviewText}, ctx) => {
-      if (ctx.restaurant) {
+    updateReview: async (parent, {reviewId, reviewText}, context) => {
+      if (context.restaurant) {
         return await Restaurant.findbyIdAndUpdate(
-          {_id: ctx.restaurant._id},
+          {_id: context.restaurant._id},
           { $push: {reviews: {reviewId, reviewText}}},
           {new: true}
         );

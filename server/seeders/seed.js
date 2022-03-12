@@ -19,14 +19,17 @@ db.once("open", async () => {
 
         for (const rev of reviews) {
             // randomly add each Reviews to a Restaurant
-            const tempRestaurant =
-            restaurants[Math.floor(Math.random() * restaurants.length)];
+            const tempRestaurant = restaurants[Math.floor(Math.random() * restaurants.length)];
+            console.log("line23", tempRestaurant)
             tempRestaurant.reviews.push(rev._id);
+            console.log("line25", tempRestaurant.reviews.push(rev._id))
+            await tempRestaurant.save();
+            // console.log("ln 27", tempRestaurant.save())
         }
         
-        for (const rest of restaurants) {
-            await rest.save();
-        }
+        // for (const rest of restaurants) {
+        //     await rest.save();
+        // }
 
         console.log("all done!");
         process.exit(0);
