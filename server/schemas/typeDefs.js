@@ -16,8 +16,8 @@ const typeDefs = gql`
     addFavoriteRestaurant(restaurantId: ID!): User
     removeFavoriteRestaurant(restaurantId: ID!): User
     addReview(restaurantId: ID!, reviewText: String!): Restaurant
-    deleteReview(reviewId: ID!): Restaurant
-    updateReview(reviewId: ID!, reviewText: String!): Restaurant
+    deleteReview(restaurantId: ID!, reviewId: ID!): Restaurant
+    updateReview(restaurantId: ID!, reviewId: ID!, reviewText: String!): Restaurant
   }
 
   type Auth {
@@ -54,6 +54,7 @@ const typeDefs = gql`
   }
 
   type Review {
+    _id: ID!
     reviewAuthor: String!
     reviewText: String!
     createdAt: String
