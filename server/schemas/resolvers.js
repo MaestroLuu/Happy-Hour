@@ -89,15 +89,19 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in to add a review!");
     },
-    deleteReview: async (parent, {reviewId}, context) => {
-      if (context.restaurant) {
-        return await Restaurant.findByIdAndUpdate(
-          { _id: context.restaurant._id },
-          { $pull: { reviews: { reviewId } } },
-          {
-            new: true,
-          }
-        );
+    deleteReview: async (parent, {restaurantId, reviewId}, context) => {
+      if (context.user) {
+        const data = await Review.findOneAndDelete({
+          _id: reviewId, 
+          reviewAuthor: context.user.username
+        });
+        
+        const deletedReview = await Restaurant.findOneAndUpdate(
+          {_id: restaurantId},
+          { $pull: { reviews: data._id} },
+        ).populate('reviews');
+        
+        return deletedReview;
       }
       throw new AuthenticationError("You need to be logged in to delete your review!");
     },
