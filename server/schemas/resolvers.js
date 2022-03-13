@@ -75,16 +75,23 @@ const resolvers = {
     },
     addReview: async (parent, {restaurantId, reviewText}, context) => {
       if (context.user) {
-        return await Restaurant.findOneAndUpdate(
-          {_id: restaurantId},
-          { 
-            $addToSet: {
-              reviews: {reviewText, reviewAuthor: context.user.username},
+        await Review.create( {reviewText, reviewAuthor: context.user.username} )
+        .then((newReview) => {
+          console.log(newReview)
+          Restaurant.findOneAndUpdate(
+            {_id: restaurantId},
+            { 
+              $addToSet: {
+                reviews: newReview._id,
+              },
             },
-          }
-        )
-        .populate('reviews')
-      }
+            {
+              new: true
+            }
+          )
+          .populate('reviews')
+      })
+    }
       throw new AuthenticationError("You need to be logged in to add a review!");
 
     },

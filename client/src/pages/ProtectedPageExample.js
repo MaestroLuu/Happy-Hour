@@ -1,13 +1,13 @@
 import { useQuery } from "@apollo/client";
 import { useAuth } from "../util/auth";
-import { QUERY_ME } from "../util/queries";
+import { ME } from "../util/queries";
 
 const renderDate = (date) =>
   `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
 
 export default function ProtectedPageExample() {
   const { user } = useAuth();
-  const { data, loading } = useQuery(QUERY_ME, {
+  const { data, loading } = useQuery(ME, {
     // skip cache for demonstration
     fetchPolicy: "network-only",
   });
