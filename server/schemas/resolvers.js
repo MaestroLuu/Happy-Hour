@@ -59,8 +59,7 @@ const resolvers = {
         return await User.findOneAndUpdate(
           {_id: context.user._id},
           { $addToSet: {favoriteRestaurants: restaurantId}},
-        )
-        .populate('favoriteRestaurants')        
+        ).populate('favoriteRestaurants')        
       }
       throw new AuthenticationError("You need to be logged in to favorite a restaurant!");
     },
@@ -75,25 +74,20 @@ const resolvers = {
     },
     addReview: async (parent, {restaurantId, reviewText}, context) => {
       if (context.user) {
-        await Review.create( {reviewText, reviewAuthor: context.user.username} )
-        .then((newReview) => {
-          console.log(newReview)
-          Restaurant.findOneAndUpdate(
-            {_id: restaurantId},
-            { 
-              $addToSet: {
-                reviews: newReview._id,
-              },
-            },
-            {
-              new: true
-            }
-          )
-          .populate('reviews')
-      })
-    }
+        const data = await Review.create({
+          reviewText, 
+          reviewAuthor: context.user.username
+        });
+        
+        const newReview = await Restaurant.findOneAndUpdate(
+          {_id: restaurantId},
+          { $addToSet: { reviews: data._id} },
+          { new: true}
+        ).populate('reviews');
+        
+        return newReview;
+      }
       throw new AuthenticationError("You need to be logged in to add a review!");
-
     },
     deleteReview: async (parent, {reviewId}, context) => {
       if (context.restaurant) {
