@@ -13,7 +13,7 @@ const resolvers = {
       if (!context.user) {
         throw new AuthenticationError("Must be logged in.");
       }
-      return User.findOne({ email: context.user.email });
+      return User.findOne({ email: context.user.email }).populate("favoriteRestaurants");
     },
     restaurants: async (parent, args) => {
       return Restaurant.find({}).populate('reviews');
