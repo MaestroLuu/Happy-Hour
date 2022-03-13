@@ -8,7 +8,7 @@ import Restaurant from './Restaurant.jpeg';
 export default function Cards() {
   return (
     <div>
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, mx: "auto"}}>
       <CardMedia
         component="img"
         height="200"
