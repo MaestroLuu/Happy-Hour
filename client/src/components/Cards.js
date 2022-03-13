@@ -11,7 +11,7 @@ export default function Cards() {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        height="150"
+        height="200"
         image={Restaurant}
         alt="restaurant"
       />
