@@ -11,7 +11,7 @@ export default function Landing() {
   return (
     <div>
       <h1 style={{textAlign: "center", fontSize: "45px"}}>Happy Hour</h1>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345, mx: "auto" }}>
         <CardMedia
           component="img"
           height="250"

@@ -16,12 +16,11 @@ import IconButton from "@mui/material/IconButton";
 import VpnKeyIcon from "@mui/icons-material/VpnKey";
 
 import Input from "@mui/material/Input";
-
+import Box from "@mui/material/Box";
 
 // This signup form is intentionally minimalist to reduce effort required to
 // customize it to your app's needs. See the excellent best practices guide for
 // sign informs on web.dev https://web.dev/sign-in-form-best-practices/
-
 
 const initialFormState = {
   email: "",
@@ -71,81 +70,89 @@ export default function Login() {
   if (isLoggedIn) {
     // navigate to page user was redirected from or the home page.
     const from = location.state?.from?.pathname || "/home";
-    return <Navigate to={from} replace />
+    return <Navigate to={from} replace />;
   }
 
   return (
-    <div>
-      <h1 className="title">Login</h1>
-      <form onSubmit={handleSubmit}>
-        {/*////////////////////////////////////////////////////////////////////////*/}
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        p: 1,
+        m: 1,
+        bgcolor: "background.paper",
+        borderRadius: 1,
+      }}
+    >
+      <div>
+        <h1 className="title">Login</h1>
+        <form onSubmit={handleSubmit}>
+          {/*////////////////////////////////////////////////////////////////////////*/}
+          <div>
+            <FormControl variant="standard">
+              <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
+              <Input
+                disabled={loading}
+                id="input-with-icon-adornment"
+                placeholder="Type your email"
+                value={formState.email.value}
+                onChange={handleInputChange}
+                startAdornment={
+                  <InputAdornment position="start">
+                    <MailIcon />
+                  </InputAdornment>
+                }
+              />
+            </FormControl>
+          </div>
 
-       <div>
-          <FormControl variant="standard">
-            <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
-            <Input
-              disabled={loading}
-              id="input-with-icon-adornment"
-              placeholder="Type your email"
-              value={formState.email.value}
-              onChange={handleInputChange}
-              startAdornment={
-                <InputAdornment position="start">
-                  <MailIcon />
-                </InputAdornment>
-              }
-            />
-          </FormControl>
-        </div>
+          {/*////////////////////////////////////////////////////////////////////////*/}
 
-                {/*////////////////////////////////////////////////////////////////////////*/}
+          <div>
+            <FormControl variant="standard">
+              <InputLabel htmlFor="standard-adornment-password">
+                Password
+              </InputLabel>
+              <Input
+                id="standard-adornment-password"
+                placeholder="Type your password"
+                type={values.showPassword ? "text" : "password"}
+                value={formState.password.value}
+                onChange={handleInputChange}
+                startAdornment={
+                  <InputAdornment position="start">
+                    <VpnKeyIcon />
+                  </InputAdornment>
+                }
+                endAdornment={
+                  <InputAdornment position="end">
+                    <IconButton
+                      aria-label="toggle password visibility"
+                      onClick={handleClickShowPassword}
+                      onMouseDown={handleMouseDownPassword}
+                    >
+                      {values.showPassword ? <VisibilityOff /> : <Visibility />}
+                    </IconButton>
+                  </InputAdornment>
+                }
+              />
+            </FormControl>
+          </div>
+          {/*////////////////////////////////////////////////////////////////////////*/}
 
-        
-                <div>
-          <FormControl  variant="standard">
-            <InputLabel htmlFor="standard-adornment-password">
-              Password
-            </InputLabel>
-            <Input
-              id="standard-adornment-password"
-              placeholder="Type your password"
-              type={values.showPassword ? "text" : "password"}
-              value={formState.password.value}
-              onChange={handleInputChange}
-              startAdornment={
-                <InputAdornment position="start">
-                  <VpnKeyIcon />
-                </InputAdornment>
-              }
-              endAdornment={
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={handleClickShowPassword}
-                    onMouseDown={handleMouseDownPassword}
-                  >
-                    {values.showPassword ? <VisibilityOff /> : <Visibility />}
-                  </IconButton>
-                </InputAdornment>
-              }
-            />
-          </FormControl>
-        </div>
-                {/*////////////////////////////////////////////////////////////////////////*/}
-
-        <div>
-          <button className="login-button" disabled={loading} type="submit">
-            {loading ? "Loading..." : "LOGIN"}
-          </button>
-        </div>
-        <div>
-          <p className="member">Or Sign Up Using</p>
-          <NavLink to="/signup" className="login">
-            Sign Up
-          </NavLink>
-        </div>
-
-      </form>
-    </div>
+          <div>
+            <button className="login-button" disabled={loading} type="submit">
+              {loading ? "Loading..." : "LOGIN"}
+            </button>
+          </div>
+          <div>
+            <p className="member">Or Sign Up Using</p>
+            <NavLink to="/signup" className="login">
+              Sign Up
+            </NavLink>
+          </div>
+        </form>
+      </div>
+    </Box>
   );
 }
