@@ -16,6 +16,7 @@ export default function Footer() {
   return (
       <div>
 
+
     <BottomNavigation sx={{position: 'fixed', bottom: 0, left: 0, right: 0, width: 500, mx: "auto"}} elevation={3} value={value} onChange={handleChange}>
       <BottomNavigationAction
         label="Search"
@@ -32,7 +33,6 @@ export default function Footer() {
         value="menu"
         icon={<MenuIcon />}
       />
-      <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon />} />
     </BottomNavigation>
     </div>
   );
