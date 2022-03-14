@@ -16,7 +16,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import { NavLink } from "react-router-dom";
-
+import Box from '@mui/material/Box';
 // This signup form is intentionally minimalist to reduce effort required to
 // customize it to your app's needs. See the excellent best practices guide for
 // sign informs on web.dev https://web.dev/sign-in-form-best-practices/
@@ -76,6 +76,16 @@ export default function SignUp() {
     return <Navigate to="/home" replace />;
   }
   return (
+    <Box
+    sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      p: 1,
+      m: 1,
+      bgcolor: 'background.paper',
+      borderRadius: 1,
+    }}>
+  
     <div>
       <h1 className="signup-center">Sign Up</h1>
       <form onSubmit={handleSubmit}>
@@ -169,5 +179,6 @@ export default function SignUp() {
         </div>
       </form>
     </div>
+    </Box>
   );
 }
