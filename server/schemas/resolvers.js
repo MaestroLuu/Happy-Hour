@@ -105,22 +105,14 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in to delete your review!");
     },
-    updateReview: async (parent, {reviewId, reviewText, restaurantId}, context) => {
+    updateReview: async (parent, {restaurantId, reviewId, reviewText}, context) => {
       if (context.user) {
-        const newData = Review.findByIdAndUpdate({
-          reviewId,
-          reviewText
-        },
-        {
-          new: true
-        });
-        console.log(newData);
-        const newUpdateReview = await Restaurant.findByIdAndUpdate(
-          {_id: restaurantId},
-          {$addToSet: {reviews: newData} },
-        ).populate('reviews');
-        
-        return newUpdateReview;
+        await Review.findByIdAndUpdate(
+          {_id: reviewId},
+          {reviewText},
+          {new: true});
+
+        return await Restaurant.findById(restaurantId).populate('reviews');
       }
       throw new AuthenticationError("You need to be logged in to update a review!");
     }
