@@ -8,8 +8,6 @@ export const ME = gql`
         restaurantName
         address
         happyHours
-        foodSpecial
-        drinkSpecial
       }
     }
   }
@@ -22,8 +20,6 @@ export const QUERY_SINGLE_RESTAURANT = gql`
       restaurantName
       address
       zipCode
-      drinkSpecial
-      foodSpecial
       foodType
       happyHours
       items {
@@ -50,8 +46,6 @@ export const QUERY_ALL_RESTAURANTS = gql`
       restaurantName
       address
       zipCode
-      drinkSpecial
-      foodSpecial
       foodType
       happyHours
     }
