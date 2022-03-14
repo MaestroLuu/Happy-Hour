@@ -1,9 +1,11 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect(process.env.MONGODB_URI || 'mongodb://localhost/happyhour', {
+  .connect(process.env.MONGODB_URI || 'mongodb://localhost/HappyHour', {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
   })
   .catch((err) => {
     console.log(err);
