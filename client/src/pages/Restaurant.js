@@ -33,7 +33,7 @@ const Restaurant = () => {
       <h1 style={{textAlign: "center", marginTop: "50px"}}> Happy Hour Specials</h1>
 
       <div>
-      <Specials />
+      <Specials items={restaurant.items || [] }/>
       </div>     
 
       <h1 style={styles.text}>Reviews</h1>
