@@ -20,7 +20,6 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Landing />} />
-            <Route path="/happy-hour" element={<Landing />} />
             <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
