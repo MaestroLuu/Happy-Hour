@@ -28,13 +28,13 @@ export default function Navbar() {
           <NavLink to="/signup" className="navbar-link">
             Signup
           </NavLink>
-          <NavLink to="/restaurants" className="navbar-link">
+          <NavLink to="/restaurants/:restaurantId" className="navbar-link">
             Restaurants
           </NavLink> 
           <NavLink to="/user" className="navbar-link">
             User Profile
           </NavLink> 
-          <NavLink to="/home" className="navbar-link">
+          <NavLink to="/restaurants/:zipcode" className="navbar-link">
             Home
           </NavLink> 
         </>

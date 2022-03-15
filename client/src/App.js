@@ -20,10 +20,10 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Landing />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/restaurants" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
-            <Route path="/restaurants" element={<Restaurant />} />
+            <Route path="/restaurants/:restaurantId" element={<Restaurant />} />
             <Route path="/user" element={<UserProfile />} />
             {/* Use <RequiredAuth> for pages that should only be accessible to a
             user that has logged in.*/}
