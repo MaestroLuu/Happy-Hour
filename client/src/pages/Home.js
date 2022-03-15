@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 
 // import { useAuth } from "../util/auth";
 
-const Home = () => {
+const Home = (props) => {
   
 
   // const { isLoggedIn, user } = useAuth();
@@ -23,7 +23,9 @@ const Home = () => {
         <Filter />
       </Box>
       
-      <Cards />
+      <Cards 
+      zipcode={props.zipcode}
+      />
 
       <Footer />
     </div>

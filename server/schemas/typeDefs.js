@@ -8,6 +8,7 @@ const typeDefs = gql`
     me: User
     restaurant(id: ID!): Restaurant
     restaurants: [Restaurant]
+    restaurantsByZipcode(zipCode: Int!): [Restaurant] 
   }
 
   type Mutation {

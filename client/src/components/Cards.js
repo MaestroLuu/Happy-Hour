@@ -5,12 +5,12 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import RestaurantImg from "./Restaurant.jpeg";
 import {useQuery } from "@apollo/client";
-import {QUERY_ALL_RESTAURANTS} from "../util/queries";
+import {QUERY_BY_ZIPCODE} from "../util/queries";
 
-
-const Cards = () => {
-  const {data} = useQuery(QUERY_ALL_RESTAURANTS);
+const Cards = ({zipcode}) => {
+  const {error, data} = useQuery(QUERY_BY_ZIPCODE, {variables: { zipcode }});
   const restaurants = data?.restaurants || [];
+  console.log(error);
   console.log(data);
   
   return (

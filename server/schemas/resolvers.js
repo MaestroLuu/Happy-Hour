@@ -18,6 +18,9 @@ const resolvers = {
     restaurants: async (parent, args) => {
       return Restaurant.find({}).populate('reviews');
     },
+    restaurantsByZipcode: async (parent, args) => {
+      return Restaurant.find({zipCode: args.zipCode}).populate('reviews');
+    },
     restaurant: async (parent, args) => {
     if (!args) {
       throw new AuthenticationError("Please provide an ID");
