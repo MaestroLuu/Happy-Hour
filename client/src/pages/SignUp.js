@@ -136,9 +136,6 @@ export default function SignUp() {
           </FormControl>
         </div>
 
-        {/*////////////////////////////////////////////////////////////////////////*/}
-
-
         <div>
           <FormControl  variant="standard">
               <InputLabel htmlFor="new-password" style={styles.label}>
@@ -175,11 +172,16 @@ export default function SignUp() {
         {/*////////////////////////////////////////////////////////////////////////*/}
 
 
-        <div style={styles.formControl}>
+        <div>
           <button disabled={loading} type="submit">
-            {loading ? "Loading..." : "Submit"}
+            {loading ? "Loading..." : "SIGN UP"}
           </button>
         </div>
+
+        {/*////////////////////////////////////////////////////////////////////////*/}
+
+
+
       </form>
     </div>
   );
