@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../util/auth";
+import React from "react";
 
 import FormControl from "@mui/material/FormControl";
 import Input from "@mui/material/Input";
@@ -8,6 +9,10 @@ import InputLabel from "@mui/material/InputLabel";
 import InputAdornment from "@mui/material/InputAdornment";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
+import VpnKeyIcon from "@mui/icons-material/VpnKey";
+import IconButton from "@mui/material/IconButton";
+import Visibility from "@mui/icons-material/Visibility";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
 
 // This signup form is intentionally minimalist to reduce effort required to
 // customize it to your app's needs. See the excellent best practices guide for
@@ -32,6 +37,31 @@ const initialFormState = {
 };
 
 export default function SignUp() {
+
+
+  const [values, setValues] = React.useState({
+    amount: "",
+    password: "",
+    weight: "",
+    weightRange: "",
+    showPassword: false,
+  });
+
+  const handleClickShowPassword = () => {
+    setValues({
+      ...values,
+      showPassword: !values.showPassword,
+    });
+  };
+
+  const handleMouseDownPassword = (event) => {
+    event.preventDefault();
+  };
+
+
+
+
+
   const { isLoggedIn, signup, loading, error } = useAuth();
   const [formState, setFormState] = useState(initialFormState);
 
@@ -106,21 +136,43 @@ export default function SignUp() {
           </FormControl>
         </div>
 
-        <div style={styles.formControl}>
-          <label htmlFor="new-password" style={styles.label}>
-            Password
-          </label>
-          <input
-            disabled={loading}
-            id="new-password"
-            type="password"
-            name="password"
-            placeholder="Enter password"
-            value={formState.password.value}
-            onChange={handleInputChange}
-          />
+        {/*////////////////////////////////////////////////////////////////////////*/}
+
+
+        <div>
+          <FormControl  variant="standard">
+              <InputLabel htmlFor="new-password" style={styles.label}>
+                Password
+              </InputLabel>
+              <Input
+                disabled={loading}
+                id="new-password"
+                type="password"
+                name="password"
+                placeholder="Enter password"
+                value={formState.password.value}
+                onChange={handleInputChange}
+                startAdornment={
+                  <InputAdornment position="start">
+                    <VpnKeyIcon />
+                  </InputAdornment>
+                }
+                endAdornment={
+                  <InputAdornment position="end">
+                    <IconButton
+                      aria-label="toggle password visibility"
+                      onClick={handleClickShowPassword}
+                      onMouseDown={handleMouseDownPassword}
+                    >
+                      {values.showPassword ? <VisibilityOff /> : <Visibility />}
+                    </IconButton>
+                  </InputAdornment>
+                }
+              />
+          </FormControl>
         </div>
 
+        {/*////////////////////////////////////////////////////////////////////////*/}
 
 
         <div style={styles.formControl}>
