@@ -7,7 +7,7 @@ import "./Navbar.css";
 export default function Navbar() {
   const { isLoggedIn, logout } = useAuth();
   return (
-    <nav className="navbar">
+    <nav className="navbar" sx={{mx: "auto"}}> 
         <NavLink to="/happy-hour" className="navbar-link">
           Splash
         </NavLink>

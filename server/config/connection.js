@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect(process.env.MONGODB_URI || 'mongodb://localhost/HappyHour')
+  .connect(process.env.MONGODB_URI || 'mongodb://localhost/happyhour')
   .catch((err) => {
     console.log(err);
     console.log(
