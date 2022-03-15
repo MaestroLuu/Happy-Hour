@@ -6,6 +6,7 @@ import React from "react";
 import FormControl from "@mui/material/FormControl";
 import Input from "@mui/material/Input";
 import InputLabel from "@mui/material/InputLabel";
+import Button from "@mui/material/Button";
 import InputAdornment from "@mui/material/InputAdornment";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
@@ -173,9 +174,9 @@ export default function SignUp() {
 
 
         <div>
-          <button disabled={loading} type="submit">
+          <Button disabled={loading} type="submit" variant="outlined" >
             {loading ? "Loading..." : "SIGN UP"}
-          </button>
+          </Button>
         </div>
 
         {/*////////////////////////////////////////////////////////////////////////*/}
