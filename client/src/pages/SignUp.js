@@ -15,22 +15,6 @@ import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 
-// This signup form is intentionally minimalist to reduce effort required to
-// customize it to your app's needs. See the excellent best practices guide for
-// sign informs on web.dev https://web.dev/sign-in-form-best-practices/
-
-// TODO: customize styles or import styles with favorite css approach
-const styles = {
-  formControl: {
-    display: "flex",
-    padding: "0.25em",
-  },
-  label: {
-    flex: "0 1 6em",
-    paddingRight: "0.25em",
-  },
-};
-
 const initialFormState = {
   username: "",
   email: "",
@@ -62,7 +46,6 @@ export default function SignUp() {
 
   useEffect(() => {
     if (error) {
-      // TODO: replace window alert with custom alert.
       alert(error);
     }
   }, [error]);
@@ -78,13 +61,11 @@ export default function SignUp() {
   };
 
   if (isLoggedIn) {
-    // navigate to the home page
     return <Navigate to="/" replace />;
   }
   return (
     <div>
       <h1>Sign Up</h1>
-
       <form onSubmit={handleSubmit}>
         <div>
           <FormControl variant="standard">
@@ -109,7 +90,7 @@ export default function SignUp() {
           </FormControl>
         </div>
 
-        <div style={styles.formControl}>
+        <div>
           <FormControl variant="standard">
             <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
             <Input
@@ -131,7 +112,7 @@ export default function SignUp() {
 
         <div>
           <FormControl variant="standard">
-            <InputLabel htmlFor="new-password" style={styles.label}>
+            <InputLabel htmlFor="new-password">
               Password
             </InputLabel>
             <Input
@@ -167,6 +148,7 @@ export default function SignUp() {
             {loading ? "Loading..." : "SIGN UP"}
           </Button>
         </div>
+
       </form>
     </div>
   );
