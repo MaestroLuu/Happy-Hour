@@ -1,52 +1,57 @@
 [
   {
-    "reviewAuthor": "Marco",
-    "reviewText": "I really love the food here, it's cheap",
+    "reviewAuthor": "Giovanni B.",
+    "reviewText": "It's like eating McDonald's, but worse. I thought I was on a prank tv show at first, until they gave me the bill.",
     "stars": 5
   },
   {
-    "reviewAuthor": "testuser2",
-    "reviewText": "I liked the food, but it's not the best, however it's cheap",
+    "reviewAuthor": "Ava S.",
+    "reviewText": "“This was such a nice dinner. My grandmother used to make it all the time back in the old days when they were short on money.”",
     "stars": 4
   },
   {
-    "reviewAuthor": "testuser3",
-    "reviewText": "The other reviews lie, this food is trash and expensive",
-    "stars": 1
+    "reviewAuthor": "Chris M.",
+    "reviewText": "Surpringly really good cakes, for something made from a box.",
+    "stars": 4
   },
   {
-    "reviewAuthor": "testuser4",
-    "reviewText": "Decent food, bit too expensive for my taste",
+    "reviewAuthor": "Fauzia S.",
+    "reviewText": "It's nice to go to places like these so that you can appreciate what you have at home.",
     "stars": 2
   },
   {
-    "reviewAuthor": "testuser5",
-    "reviewText": "It's ok, could be better, price maybe a little cheaper",
+    "reviewAuthor": "Lily T.",
+    "reviewText": "I'm glad to have tried it because now I'll know not to eat it again.",
     "stars": 3
   },
   {
-    "reviewAuthor": "testuser6",
-    "reviewText": "This app is amazing, I found a cheaper restaurant",
+    "reviewAuthor": "John D.",
+    "reviewText": "Just when I thought that I had gotten used to disappointment, this place somehow proved me wrong.",
     "stars": 4
   },
   {
-    "reviewAuthor": "testuser7",
-    "reviewText": "Best food ever and it's so cheap!",
+    "reviewAuthor": "Max S.",
+    "reviewText": "I've had a nightmare about food like this before. Didn't realized that they actually existed.",
     "stars": 5
   },
   {
-    "reviewAuthor": "testuser8",
-    "reviewText": "I saw a rat on the ground.",
+    "reviewAuthor": "Tyler O.",
+    "reviewText": "I've always wanted to know what overpriced baby food tasted like and now I know.",
     "stars": 1
   },
   {
-    "reviewAuthor": "testuser9",
-    "reviewText": "My mother makes better food than this, and cheaper",
+    "reviewAuthor": "Oscar S.",
+    "reviewText": "Just why?",
     "stars": 2
   },
   {
-    "reviewAuthor": "testuser10",
-    "reviewText": "Decent",
+    "reviewAuthor": "Jason O.",
+    "reviewText": "The best buzzkill you can get.",
     "stars": 3
+  },
+  {
+    "reviewAuthor": "Isiah O.",
+    "reviewText": "If you ever wanted inspiration for going on a diet, here it is.",
+    "stars": 4
   }
 ]

@@ -1,10 +1,8 @@
 [
   {
-    "restaurantName": "David's Mishmash",
-    "address": "1234 Test Drive",
-    "zipCode": 92134,
-    "drinkSpecial": true,
-    "foodSpecial": true,
+    "restaurantName": "David's Diner",
+    "address": "2021 Luu Lane",
+    "zipCode": 92111,
     "foodType": "American",
     "happyHours": "9 AM to 3 PM",
     "items": [
@@ -21,12 +19,29 @@
     ]
   },
   {
-    "restaurantName": "Luka's Drinks",
-    "address": "1234 Test Drive",
-    "zipCode": 92134,
-    "drinkSpecial": true,
-    "foodSpecial": false,
+    "restaurantName": "Luka Lounge",
+    "address": "2022 Licheli Rd",
+    "zipCode": 92117,
     "foodType": "European",
+    "happyHours": "6 PM to 10 PM",
+    "items": [
+      {
+        "itemName": "Water",
+        "price": 0.5,
+        "descripition": "Cheaper than your water bill"
+      },
+      {
+        "itemName": "Soda",
+        "price": 1.00,
+        "descripition": "Cheaper than the store"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Marco's Mediterranean Market",
+    "address": "2020 Flores Ave",
+    "zipCode": 92117,
+    "foodType": "Mexican",
     "happyHours": "6 PM to 10 PM",
     "items": [
       {

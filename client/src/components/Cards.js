@@ -28,14 +28,13 @@ const Cards = () => {
               {restaurant.restaurantName}
             </Typography>
             <Typography variant="body2" color="text.primary">
-              {/* {restaurant.foodSpecial}  */}
-              {/* {restaurant.drinkSpecial} */}
+              {restaurant.foodType}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Address Blvd, San Diego, CA 92104
+              {restaurant.address} {restaurant.zipCode}
             </Typography>
             <Typography variant="body2" color="text.primary">
-              Happy Hours: 5PM - 7PM
+              {restaurant.happyHours}
             </Typography>
           </CardContent>
         </Card>

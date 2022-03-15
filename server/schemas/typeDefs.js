@@ -38,8 +38,6 @@ const typeDefs = gql`
     restaurantName: String!
     address: String!
     zipCode: Int!
-    drinkSpecial: Boolean!
-    foodSpecial: Boolean!
     foodType: String!
     happyHours: String!
     items: [Item]!
