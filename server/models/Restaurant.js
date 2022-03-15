@@ -18,14 +18,6 @@ const restaurantSchema = new Schema (
         minlength: 5,
         maxlength: 5,
     },
-    drinkSpecial: {
-        type: Boolean,
-        required: true,
-    },
-    foodSpecial: {
-        type: Boolean,
-        required: true,
-    },
     foodType: {
         type: String,
         require: true,
