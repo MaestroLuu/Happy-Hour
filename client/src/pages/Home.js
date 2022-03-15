@@ -1,22 +1,30 @@
 import React from "react";
+
 import Cards from "../components/Cards";
-import TextField from "@mui/material/TextField";
+
+import TextField from '@mui/material/TextField';
+import Box from '@mui/material/Box';
+
 import Footer from "../components/Footer";
 
-const Home = (props) => {
+// import { useAuth } from "../util/auth";
+
+const Home = () => {
+  // const { isLoggedIn, user } = useAuth();
   return (
     <div>
-      <TextField
-        sx={{ maxWidth: 300, marginTop: "50px", mx: "auto" }}
-        style={{ display: "flex", justifyContent: "center" }}
-        id="outlined-search"
-        label="Search By Zipcode"
-        type="search"
+      {/* TODO: display logged in user's username */}
+      {/* <h1>Welcome {isLoggedIn ? user.username : "Guest"}!</h1> */}
+      <TextField sx={{ maxWidth: 300, marginTop: "50px", mx: "auto"}} style={{display: "flex", justifyContent: "center"}} id="outlined-search" label="Search By Zipcode" type="search" />
+      <Box sx={{mx: "auto"}}>
+      </Box>
+      
+      <Cards 
       />
-      <Cards zipcode={props.zipcode} />
+
       <Footer />
     </div>
   );
-};
+}
 
 export default Home;
