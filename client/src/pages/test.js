@@ -172,6 +172,20 @@ export default function SignUp() {
           </button>
         </div>
         <div>
+
+
+        <Button
+          sx={{ maxWidth: 100, marginLeft: "120px", my: "10px" }}
+          variant="outlined"
+          size="large"
+        >
+          Submit
+        </Button>
+
+
+
+
+
           <p className="member">Already a member?</p>
           <NavLink to="/login" className="login">
             Login

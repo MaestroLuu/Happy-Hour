@@ -38,8 +38,6 @@ const initialFormState = {
 };
 
 export default function SignUp() {
-
-
   const [values, setValues] = React.useState({
     amount: "",
     password: "",
@@ -58,10 +56,6 @@ export default function SignUp() {
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
   };
-
-
-
-
 
   const { isLoggedIn, signup, loading, error } = useAuth();
   const [formState, setFormState] = useState(initialFormState);
@@ -90,7 +84,7 @@ export default function SignUp() {
   return (
     <div>
       <h1>Sign Up</h1>
-      <hr />
+
       <form onSubmit={handleSubmit}>
         <div>
           <FormControl variant="standard">
@@ -117,9 +111,7 @@ export default function SignUp() {
 
         <div style={styles.formControl}>
           <FormControl variant="standard">
-            <InputLabel htmlFor="input-with-icon-adornment">
-              Email
-            </InputLabel>
+            <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
             <Input
               disabled={loading}
               id="email"
@@ -138,51 +130,43 @@ export default function SignUp() {
         </div>
 
         <div>
-          <FormControl  variant="standard">
-              <InputLabel htmlFor="new-password" style={styles.label}>
-                Password
-              </InputLabel>
-              <Input
-                disabled={loading}
-                id="new-password"
-                type="password"
-                name="password"
-                placeholder="Enter password"
-                value={formState.password.value}
-                onChange={handleInputChange}
-                startAdornment={
-                  <InputAdornment position="start">
-                    <VpnKeyIcon />
-                  </InputAdornment>
-                }
-                endAdornment={
-                  <InputAdornment position="end">
-                    <IconButton
-                      aria-label="toggle password visibility"
-                      onClick={handleClickShowPassword}
-                      onMouseDown={handleMouseDownPassword}
-                    >
-                      {values.showPassword ? <VisibilityOff /> : <Visibility />}
-                    </IconButton>
-                  </InputAdornment>
-                }
-              />
+          <FormControl variant="standard">
+            <InputLabel htmlFor="new-password" style={styles.label}>
+              Password
+            </InputLabel>
+            <Input
+              disabled={loading}
+              id="new-password"
+              type="password"
+              name="password"
+              placeholder="Enter password"
+              value={formState.password.value}
+              onChange={handleInputChange}
+              startAdornment={
+                <InputAdornment position="start">
+                  <VpnKeyIcon />
+                </InputAdornment>
+              }
+              endAdornment={
+                <InputAdornment position="end">
+                  <IconButton
+                    aria-label="toggle password visibility"
+                    onClick={handleClickShowPassword}
+                    onMouseDown={handleMouseDownPassword}
+                  >
+                    {values.showPassword ? <VisibilityOff /> : <Visibility />}
+                  </IconButton>
+                </InputAdornment>
+              }
+            />
           </FormControl>
         </div>
 
-        {/*////////////////////////////////////////////////////////////////////////*/}
-
-
         <div>
-          <Button disabled={loading} type="submit" variant="outlined" >
+          <Button disabled={loading} type="submit" variant="outlined">
             {loading ? "Loading..." : "SIGN UP"}
           </Button>
         </div>
-
-        {/*////////////////////////////////////////////////////////////////////////*/}
-
-
-
       </form>
     </div>
   );
