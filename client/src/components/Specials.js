@@ -7,13 +7,10 @@ import {useQuery } from "@apollo/client";
 import {useParams} from 'react-router-dom';
 
 export default function Specials() {
-
-  const { restaurantId } = useParams("622fed32d1fd586b8296ad0c");
-
-
+  
+  const { restaurantId } = useParams();
   const { data } = useQuery(QUERY_SINGLE_RESTAURANT, {
     variables: { restaurantId: restaurantId }
-    
   });
   console.log(data);
 
@@ -25,20 +22,11 @@ export default function Specials() {
       
         <Card key={restaurant._id} sx={{ maxWidth: 345, mx: "auto" }}>
           <CardContent style={{ textAlign: "center" }}>
-            <Typography
-              style={{ marginTop: "30px" }}
-              gutterBottom
-              variant="h5"
-              component="div"
-            >
-             {restaurant.item}
-            </Typography>
+            
             <Typography gutterBottom variant="h5" component="div">
               IPA
             </Typography>
-            <Typography gutterBottom variant="h5" component="div">
-              Margarita
-            </Typography>
+
           </CardContent>
         </Card>
      
