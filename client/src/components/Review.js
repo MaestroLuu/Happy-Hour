@@ -7,9 +7,12 @@ export default function Reviews({ reviews }) {
   return (
     <div>
       {reviews.map((review) => (
-        <Card sx={{ maxWidth: 345, mx: "auto" }}>
+        <Card sx={{ maxWidth: 345, my: "10px", mx: "auto" }}>
           <CardContent style={{ textAlign: "center" }}>
-            <Typography key={review._id}>{review.reviewText}</Typography>
+            <Typography key={review._id}>"{review.reviewText}"</Typography>
+            <br />
+            <Typography>Reviewed by: {review.reviewAuthor}</Typography>
+            <Typography>{review.createdAt}</Typography>
           </CardContent>
         </Card>
       ))}
