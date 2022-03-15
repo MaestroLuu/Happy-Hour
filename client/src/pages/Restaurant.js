@@ -1,8 +1,6 @@
 import React from "react";
-import Drinks from "../components/Drinks";
-import Food from "../components/Food";
+import Specials from "../components/Specials";
 import Footer from "../components/Footer";
-import Review from "../components/Review";
 
 const styles = {
   text: {
@@ -19,17 +17,12 @@ export default function Restaurant() {
       <h1 style={styles.text}>Restaurant Name</h1>
       <h2 style={styles.text}>Happy Hour: 5PM - 7PM </h2>
       <p style={styles.text}>123 Restaurant Drive, San Diego, CA 92104</p>
-      <h1 style={{textAlign: "center", marginTop: "50px"}}> Drink Specials</h1>
+      <h1 style={{textAlign: "center", marginTop: "50px"}}> Happy Hour Specials</h1>
       <div>
-      <Drinks />
-      </div>
-
-      <h1 style={{textAlign: "center", marginTop: "50px"}}>Food Specials</h1>
-      <Food />
+      <Specials />
+      </div>     
 
       <h1 style={styles.text}>Reviews</h1>
-      <Review />
-
 
       <Footer />
     </div>
