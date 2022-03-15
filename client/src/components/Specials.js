@@ -22,20 +22,11 @@ export default function Specials() {
       
         <Card key={restaurant._id} sx={{ maxWidth: 345, mx: "auto" }}>
           <CardContent style={{ textAlign: "center" }}>
-            <Typography
-              style={{ marginTop: "30px" }}
-              gutterBottom
-              variant="h5"
-              component="div"
-            >
-             {restaurant.item}
-            </Typography>
+            
             <Typography gutterBottom variant="h5" component="div">
               IPA
             </Typography>
-            <Typography gutterBottom variant="h5" component="div">
-              Margarita
-            </Typography>
+
           </CardContent>
         </Card>
      

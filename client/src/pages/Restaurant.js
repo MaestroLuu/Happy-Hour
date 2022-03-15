@@ -31,10 +31,6 @@ const Restaurant = () => {
       <h2 style={styles.text}>Happy Hour: {restaurant.happyHours}</h2>
       <p style={styles.text}>{restaurant.address} {restaurant.zipCode}</p>
       <h1 style={{textAlign: "center", marginTop: "50px"}}> Happy Hour Specials</h1>
-      
-      {/* {data.restaurant.items.map((item) => (
-        <p style={styles.text}>{data.restaurant.item.itemName}</p>
-      ))} */}
 
       <div>
       <Specials />
