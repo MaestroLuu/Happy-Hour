@@ -39,6 +39,18 @@ export const QUERY_SINGLE_RESTAURANT = gql`
   }
 `;
 
+export const QUERY_BY_ZIPCODE = gql`
+  query RestaurantsByZipcode($zipCode: Int!) {
+    restaurantsByZipcode(zipCode: $zipCode) {
+      restaurantName
+      address
+      zipCode
+      foodType
+      happyHours
+    }
+  }
+`;
+
 export const QUERY_ALL_RESTAURANTS = gql`
   query Restaurants {
     restaurants {

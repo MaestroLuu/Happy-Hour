@@ -7,7 +7,20 @@ import Beers from "../components/beers2.jpg";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
+import { useState } from "react";
+import Home from "./Home";
+
 export default function Landing() {
+  const [zipcode, setZipcode] = useState("");
+  const handleChange = (e) => {
+    const zvalue = e.target.value;
+    setZipcode(zvalue);
+  }
+  const queryZipcode = (event) => {
+    event.preventDefault();
+    return <Home zipcode={zipcode}/>
+  }
+
   return (
     <div>
       <Card sx={{ maxWidth: 345, mx: "auto", marginBottom: "50px" }}>
@@ -26,11 +39,14 @@ export default function Landing() {
           id="outlined-search"
           label="Search By Zipcode"
           type="search"
+          value={zipcode}
+          onChange={handleChange}
         />
         <Button
           sx={{ maxWidth: 100, marginLeft: "120px", my: "10px" }}
           variant="outlined"
           size="large"
+          onClick={queryZipcode}
         >
           Submit
         </Button>
