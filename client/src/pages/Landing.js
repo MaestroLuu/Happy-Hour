@@ -15,16 +15,16 @@ export default function Landing() {
   const handleChange = (e) => {
     const zvalue = e.target.value;
     setZipcode(zvalue);
-  }
+  };
   const queryZipcode = (event) => {
     event.preventDefault();
-    return <Home zipcode={zipcode}/>
-  }
+    return <Home zipcode={zipcode} />;
+  };
 
   return (
     <div>
       <Card sx={{ maxWidth: 345, mx: "auto", marginBottom: "50px" }}>
-      <h1 style={{ textAlign: "center", fontSize: "45px" }}>Happy Hour</h1>
+        <h1 style={{ textAlign: "center", fontSize: "45px" }}>Happy Hour</h1>
         <CardMedia component="img" height="250" image={Beers} alt="beers" />
         <h3
           style={{ textAlign: "center", marginTop: "30px", fontSize: "25px" }}
@@ -33,23 +33,25 @@ export default function Landing() {
           information type in your <br />
           zipcode below.
         </h3>
-        <TextField
-          sx={{ maxWidth: 300, marginTop: "30px", mx: "auto" }}
-          style={{ display: "flex", justifyContent: "center" }}
-          id="outlined-search"
-          label="Search By Zipcode"
-          type="search"
-          value={zipcode}
-          onChange={handleChange}
-        />
-        <Button
-          sx={{ maxWidth: 100, marginLeft: "120px", my: "10px" }}
-          variant="outlined"
-          size="large"
-          onClick={queryZipcode}
-        >
-          Submit
-        </Button>
+        <form onSubmit={queryZipcode}>
+          <TextField
+            sx={{ maxWidth: 300, marginTop: "30px", mx: "auto" }}
+            style={{ display: "flex", justifyContent: "center" }}
+            id="outlined-search"
+            label="Search By Zipcode"
+            type="search"
+            value={zipcode}
+            onChange={handleChange}
+          />
+          <Button
+            sx={{ maxWidth: 100, marginLeft: "120px", my: "10px" }}
+            variant="outlined"
+            size="large"
+            type="submit"
+          >
+            Submit
+          </Button>
+        </form>
       </Card>
       <br />
       <Footer sx={{ mx: "auto" }} />
