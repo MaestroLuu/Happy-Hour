@@ -7,6 +7,7 @@ import RestaurantImg from "./Restaurant.jpeg";
 import {useQuery } from "@apollo/client";
 import {QUERY_BY_ZIPCODE} from "../util/queries";
 import { useSearchParams } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const Cards = () => {
   const [searchParams] = useSearchParams();
@@ -21,13 +22,16 @@ const Cards = () => {
     <div>
       {loading && <p>loading restaurants...</p>}
       {restaurants.map((restaurant) => (
-        <Card key={restaurant._id} sx={{ maxWidth: 345, mx: "auto" }}>
+        <Card key={restaurant._id} sx={{ maxWidth: 345, my: "30px", mx: "auto" }}>
+          <NavLink to="/">
           <CardMedia
+
             component="img"
             height="200"
             image={RestaurantImg}
             alt="restaurant"
           />
+          </NavLink>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {restaurant.restaurantName}
@@ -43,6 +47,7 @@ const Cards = () => {
             </Typography>
           </CardContent>
         </Card>
+        
       ))}
     </div>
   );

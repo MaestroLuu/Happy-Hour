@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../util/auth";
 import React from "react";
+import Footer from "../components/Footer";
 
 import FormControl from "@mui/material/FormControl";
 import Input from "@mui/material/Input";
@@ -150,6 +151,8 @@ export default function SignUp() {
         </div>
 
       </form>
+      <Footer />
+
     </div>
   );
 }

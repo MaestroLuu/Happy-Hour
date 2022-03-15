@@ -37,12 +37,13 @@ export default function Footer() {
           right: 0,
           width: 400,
           mx: "auto",
+          marginTop: "60px"
         }}
         elevation={3}
         value={value}
         onChange={handleChange}
       >
-        <NavLink to="/home">
+        <NavLink to="/restaurants">
           <BottomNavigationAction
             label="Search"
             value="search"
@@ -77,7 +78,7 @@ export default function Footer() {
           onClose={handleClose}
           TransitionComponent={Fade}
         >
-          <NavLink to="/home">
+          <NavLink to="/restaurants">
             <MenuItem onClick={handleClose}>Home</MenuItem>
           </NavLink>
           <NavLink to="/login">

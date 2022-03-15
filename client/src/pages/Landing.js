@@ -1,15 +1,11 @@
 import React from "react";
 import Footer from "../components/Footer";
-
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Beers from "../components/beers2.jpg";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-
 import { useState } from "react";
-import Home from "./Home";
-
 import { useNavigate } from 'react-router';
 
 export default function Landing() {

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation, Navigate } from "react-router-dom";
 import { useAuth } from "../util/auth";
 import React from "react";
+import Footer from "../components/Footer";
 
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
@@ -66,7 +67,7 @@ export default function Login() {
 
   return (
     <div>
-      <h1>Login</h1>
+      <h1 style={{textAlign: "center"}}>Login</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <FormControl variant="standard">
@@ -125,6 +126,7 @@ export default function Login() {
           </Button>
         </div>
       </form>
+      <Footer />
     </div>
   );
 }
