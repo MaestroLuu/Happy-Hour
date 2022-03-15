@@ -12,13 +12,7 @@ import VpnKeyIcon from "@mui/icons-material/VpnKey";
 import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-
-
-// This signup form is intentionally minimalist to reduce effort required to
-// customize it to your app's needs. See the excellent best practices guide for
-// sign informs on web.dev https://web.dev/sign-in-form-best-practices/
-
-// TODO: customize styles or import styles with favorite css approach
+import Button from "@mui/material/Button";
 
 const initialFormState = {
   email: "",
@@ -45,14 +39,12 @@ export default function Login() {
     event.preventDefault();
   };
 
-
   const { isLoggedIn, login, loading, error } = useAuth();
   const [formState, setFormState] = useState(initialFormState);
   const location = useLocation();
 
   useEffect(() => {
     if (error) {
-      // TODO: replace window alert with custom alert
       alert(error);
     }
   }, [error]);
@@ -68,25 +60,17 @@ export default function Login() {
   };
 
   if (isLoggedIn) {
-    // navigate to page user was redirected from or the home page.
     const from = location.state?.from?.pathname || "/";
-    return <Navigate to={from} replace />
+    return <Navigate to={from} replace />;
   }
 
   return (
     <div>
       <h1>Login</h1>
-      <hr />
       <form onSubmit={handleSubmit}>
-
-          {/*////////////////////////////////////////////////////////////////////////*/}
-
-
         <div>
           <FormControl variant="standard">
-            <InputLabel htmlFor="email">
-              Email
-            </InputLabel>
+            <InputLabel htmlFor="email">Email</InputLabel>
             <Input
               disabled={loading}
               id="email"
@@ -104,14 +88,9 @@ export default function Login() {
           </FormControl>
         </div>
 
-          {/*////////////////////////////////////////////////////////////////////////*/}
-
-
         <div>
           <FormControl variant="standard">
-            <InputLabel htmlFor="new-password">
-              Password
-            </InputLabel>
+            <InputLabel htmlFor="new-password">Password</InputLabel>
             <Input
               disabled={loading}
               id="new-password"
@@ -140,13 +119,10 @@ export default function Login() {
           </FormControl>
         </div>
 
-          {/*////////////////////////////////////////////////////////////////////////*/}
-
-
         <div>
-          <button disabled={loading} type="submit">
-            {loading ? "Loading..." : "Submit"}
-          </button>
+          <Button disabled={loading} type="submit" variant="outlined">
+            {loading ? "Loading..." : "LOGIN"}
+          </Button>
         </div>
       </form>
     </div>
