@@ -16,17 +16,25 @@ const styles = {
 
 const Restaurant = () => {
   const { restaurantId } = useParams();
-  const {data} = useQuery(QUERY_SINGLE_RESTAURANT, {variables: {restaurantId: restaurantId}})
+  console.log(restaurantId);
+  
+  const {data} = useQuery(QUERY_SINGLE_RESTAURANT, {
+    variables: {restaurantId: restaurantId}
+  });
+
+  const restaurant = data?.restaurant || {};
+
+  console.log(data);
   return (
     <div>
-      <h1 style={styles.text}>{data.restaurant.restaurantName}</h1>
-      <h2 style={styles.text}>Happy Hour: {data.restaurant.happyHours}</h2>
-      <p style={styles.text}>{data.restaurant.address} {data.restaurant.zipCode}</p>
+      <h1 style={styles.text}>{restaurant.restaurantName}</h1>
+      <h2 style={styles.text}>Happy Hour: {restaurant.happyHours}</h2>
+      <p style={styles.text}>{restaurant.address} {restaurant.zipCode}</p>
       <h1 style={{textAlign: "center", marginTop: "50px"}}> Happy Hour Specials</h1>
       
-      {data.restaurant.items.map((item) => (
+      {/* {data.restaurant.items.map((item) => (
         <p style={styles.text}>{data.restaurant.item.itemName}</p>
-      ))}
+      ))} */}
 
       <div>
       <Specials />
