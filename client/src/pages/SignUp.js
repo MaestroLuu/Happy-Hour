@@ -1,29 +1,19 @@
 import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../util/auth";
-import { NavLink } from "react-router-dom";
-import * as React from "react";
+import React from "react";
 
-import MailIcon from "@mui/icons-material/Mail";
-import "./SignUp.css";
-
-import Visibility from "@mui/icons-material/Visibility";
-import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import IconButton from "@mui/material/IconButton";
-import VpnKeyIcon from "@mui/icons-material/VpnKey";
-
+import FormControl from "@mui/material/FormControl";
 import Input from "@mui/material/Input";
 import InputLabel from "@mui/material/InputLabel";
+import Button from "@mui/material/Button";
 import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import Box from '@mui/material/Box';
-
-// This signup form is intentionally minimalist to reduce effort required to
-// customize it to your app's needs. See the excellent best practices guide for
-// sign informs on web.dev https://web.dev/sign-in-form-best-practices/
-
-// TODO: customize styles or import styles with favorite css approach
+import MailIcon from "@mui/icons-material/Mail";
+import VpnKeyIcon from "@mui/icons-material/VpnKey";
+import IconButton from "@mui/material/IconButton";
+import Visibility from "@mui/icons-material/Visibility";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
 
 const initialFormState = {
   username: "",
@@ -51,14 +41,11 @@ export default function SignUp() {
     event.preventDefault();
   };
 
-  /////////////////////////////////////////////////
-
   const { isLoggedIn, signup, loading, error } = useAuth();
   const [formState, setFormState] = useState(initialFormState);
 
   useEffect(() => {
     if (error) {
-      // TODO: replace window alert with custom alert.
       alert(error);
     }
   }, [error]);
@@ -74,54 +61,24 @@ export default function SignUp() {
   };
 
   if (isLoggedIn) {
-    // navigate to the home page
-    return <Navigate to="/home" replace />;
+    return <Navigate to="/" replace />;
   }
   return (
-    <Box
-    sx={{
-      display: 'flex',
-      justifyContent: 'center',
-      p: 1,
-      m: 1,
-      bgcolor: 'background.paper',
-      borderRadius: 1,
-    }}>
-  
     <div>
-      <h1 className="signup-center">Sign Up</h1>
+      <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
-        {/*////////////////////////////////////////////////////////////////////////*/}
-
-        <div>
-          <FormControl variant="standard">
-            <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
-            <Input
-              disabled={loading}
-              id="input-with-icon-adornment"
-              placeholder="Type your email"
-              value={formState.email.value}
-              onChange={handleInputChange}
-              startAdornment={
-                <InputAdornment position="start">
-                  <MailIcon />
-                </InputAdornment>
-              }
-            />
-          </FormControl>
-        </div>
-
-        {/*////////////////////////////////////////////////////////////////////////*/}
-
         <div>
           <FormControl variant="standard">
             <InputLabel htmlFor="input-with-icon-adornment">
               Username
             </InputLabel>
             <Input
+              autoFocus
               disabled={loading}
-              id="input-with-icon-adornment"
+              id="username"
+              type="text"
               placeholder="Type your username"
+              name="username"
               value={formState.username.value}
               onChange={handleInputChange}
               startAdornment={
@@ -133,17 +90,37 @@ export default function SignUp() {
           </FormControl>
         </div>
 
-        {/*////////////////////////////////////////////////////////////////////////*/}
+        <div>
+          <FormControl variant="standard">
+            <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
+            <Input
+              disabled={loading}
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter email"
+              value={formState.email.value}
+              onChange={handleInputChange}
+              startAdornment={
+                <InputAdornment position="start">
+                  <MailIcon />
+                </InputAdornment>
+              }
+            />
+          </FormControl>
+        </div>
 
         <div>
-          <FormControl  variant="standard">
-            <InputLabel htmlFor="standard-adornment-password">
+          <FormControl variant="standard">
+            <InputLabel htmlFor="new-password">
               Password
             </InputLabel>
             <Input
-              id="standard-adornment-password"
-              placeholder="Type your password"
-              type={values.showPassword ? "text" : "password"}
+              disabled={loading}
+              id="new-password"
+              type="password"
+              name="password"
+              placeholder="Enter password"
               value={formState.password.value}
               onChange={handleInputChange}
               startAdornment={
@@ -166,21 +143,13 @@ export default function SignUp() {
           </FormControl>
         </div>
 
-        {/*////////////////////////////////////////////////////////////////////////*/}
-
-        <div className="signup-button">
-          <button disabled={loading} type="submit">
-            {loading ? "Loading..." : "SIGN UP"}
-          </button>
-        </div>
         <div>
-          <p className="member">Already a member?</p>
-          <NavLink to="/login" className="login">
-            Login
-          </NavLink>
+          <Button disabled={loading} type="submit" variant="outlined">
+            {loading ? "Loading..." : "SIGN UP"}
+          </Button>
         </div>
+
       </form>
     </div>
-    </Box>
   );
 }
