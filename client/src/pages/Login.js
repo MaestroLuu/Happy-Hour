@@ -2,21 +2,17 @@ import { useEffect, useState } from "react";
 import { useLocation, Navigate } from "react-router-dom";
 import { useAuth } from "../util/auth";
 
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import Input from "@mui/material/Input";
+import InputAdornment from "@mui/material/InputAdornment";
+import MailIcon from "@mui/icons-material/Mail";
+
 // This signup form is intentionally minimalist to reduce effort required to
 // customize it to your app's needs. See the excellent best practices guide for
 // sign informs on web.dev https://web.dev/sign-in-form-best-practices/
 
 // TODO: customize styles or import styles with favorite css approach
-const styles = {
-  formControl: {
-    display: "flex",
-    padding: "0.25em",
-  },
-  label: {
-    flex: "0 1 6em",
-    paddingRight: "0.25em",
-  },
-};
 
 const initialFormState = {
   email: "",
@@ -56,22 +52,37 @@ export default function Login() {
       <h1>Login</h1>
       <hr />
       <form onSubmit={handleSubmit}>
-        <div style={styles.formControl}>
-          <label htmlFor="email" style={styles.label}>
-            Email
-          </label>
-          <input
-            disabled={loading}
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Enter email"
-            value={formState.email.value}
-            onChange={handleInputChange}
-          />
+
+          {/*////////////////////////////////////////////////////////////////////////*/}
+
+
+        <div>
+          <FormControl variant="standard">
+            <InputLabel htmlFor="email">
+              Email
+            </InputLabel>
+            <Input
+              disabled={loading}
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter email"
+              value={formState.email.value}
+              onChange={handleInputChange}
+              startAdornment={
+                <InputAdornment position="start">
+                  <MailIcon />
+                </InputAdornment>
+              }
+            />
+          </FormControl>
         </div>
-        <div style={styles.formControl}>
-          <label htmlFor="new-password" style={styles.label}>
+
+          {/*////////////////////////////////////////////////////////////////////////*/}
+
+
+        <div>
+          <label htmlFor="new-password">
             Password
           </label>
           <input
@@ -84,7 +95,7 @@ export default function Login() {
             onChange={handleInputChange}
           />
         </div>
-        <div style={styles.formControl}>
+        <div>
           <button disabled={loading} type="submit">
             {loading ? "Loading..." : "Submit"}
           </button>

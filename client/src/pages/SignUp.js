@@ -20,16 +20,6 @@ import VisibilityOff from "@mui/icons-material/VisibilityOff";
 // sign informs on web.dev https://web.dev/sign-in-form-best-practices/
 
 // TODO: customize styles or import styles with favorite css approach
-const styles = {
-  formControl: {
-    display: "flex",
-    padding: "0.25em",
-  },
-  label: {
-    flex: "0 1 6em",
-    paddingRight: "0.25em",
-  },
-};
 
 const initialFormState = {
   username: "",
@@ -86,6 +76,8 @@ export default function SignUp() {
       <h1>Sign Up</h1>
 
       <form onSubmit={handleSubmit}>
+
+        
         <div>
           <FormControl variant="standard">
             <InputLabel htmlFor="input-with-icon-adornment">
@@ -109,7 +101,7 @@ export default function SignUp() {
           </FormControl>
         </div>
 
-        <div style={styles.formControl}>
+        <div>
           <FormControl variant="standard">
             <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
             <Input
@@ -131,7 +123,7 @@ export default function SignUp() {
 
         <div>
           <FormControl variant="standard">
-            <InputLabel htmlFor="new-password" style={styles.label}>
+            <InputLabel htmlFor="new-password">
               Password
             </InputLabel>
             <Input
