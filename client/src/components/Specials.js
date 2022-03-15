@@ -7,13 +7,10 @@ import {useQuery } from "@apollo/client";
 import {useParams} from 'react-router-dom';
 
 export default function Specials() {
-
-  const { restaurantId } = useParams("622fed32d1fd586b8296ad0c");
-
-
+  
+  const { restaurantId } = useParams();
   const { data } = useQuery(QUERY_SINGLE_RESTAURANT, {
     variables: { restaurantId: restaurantId }
-    
   });
   console.log(data);
 
