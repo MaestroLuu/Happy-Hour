@@ -10,15 +10,21 @@ import Button from "@mui/material/Button";
 import { useState } from "react";
 import Home from "./Home";
 
+import { useNavigate } from 'react-router';
+
 export default function Landing() {
   const [zipcode, setZipcode] = useState("");
+  const navigate = useNavigate();
+
+
   const handleChange = (e) => {
     const zvalue = e.target.value;
     setZipcode(zvalue);
   };
-  const queryZipcode = (event) => {
+
+  const handleSubmit = (event) => {
     event.preventDefault();
-    return <Home zipcode={zipcode} />;
+    navigate(`/restaurants?zipcode=${zipcode.trim()}`);
   };
 
   return (
@@ -33,7 +39,7 @@ export default function Landing() {
           information type in your <br />
           zipcode below.
         </h3>
-        <form onSubmit={queryZipcode}>
+        <form onSubmit={handleSubmit}>
           <TextField
             sx={{ maxWidth: 300, marginTop: "30px", mx: "auto" }}
             style={{ display: "flex", justifyContent: "center" }}

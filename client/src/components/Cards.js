@@ -6,15 +6,20 @@ import Typography from "@mui/material/Typography";
 import RestaurantImg from "./Restaurant.jpeg";
 import {useQuery } from "@apollo/client";
 import {QUERY_BY_ZIPCODE} from "../util/queries";
+import { useSearchParams } from 'react-router-dom';
 
-const Cards = ({zipcode}) => {
-  const {error, data} = useQuery(QUERY_BY_ZIPCODE, {variables: { zipcode }});
-  const restaurants = data?.restaurants || [];
+const Cards = () => {
+  const [searchParams] = useSearchParams();
+  const zipCode = parseInt(searchParams.get('zipcode'));
+
+  const {error, loading, data} = useQuery(QUERY_BY_ZIPCODE, {variables: { zipCode }});
+  const restaurants = data?.restaurantsByZipcode || [];
   console.log(error);
   console.log(data);
   
   return (
     <div>
+      {loading && <p>loading restaurants...</p>}
       {restaurants.map((restaurant) => (
         <Card key={restaurant._id} sx={{ maxWidth: 345, mx: "auto" }}>
           <CardMedia
