@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { useQuery } from "@apollo/client";
 import { useParams } from 'react-router-dom';
 import {QUERY_SINGLE_RESTAURANT} from "../util/queries";
+import Review from "../components/Review";
 
 const styles = {
   text: {
@@ -37,6 +38,7 @@ const Restaurant = () => {
       </div>     
 
       <h1 style={styles.text}>Reviews</h1>
+      <Review reviews={restaurant.reviews || [] }/>
 
       <Footer />
     </div>
