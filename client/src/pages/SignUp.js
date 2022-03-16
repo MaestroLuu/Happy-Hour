@@ -16,6 +16,9 @@ import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 
+import Box from '@mui/material/Box';
+import Card from "@mui/material/Card";
+
 const initialFormState = {
   username: "",
   email: "",
@@ -65,94 +68,81 @@ export default function SignUp() {
     return <Navigate to="/" replace />;
   }
   return (
+      <Box sx={{ display:"flex", justifyContent: 'center' }}>
     <div>
-      <h1>Sign Up</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <FormControl variant="standard">
-            <InputLabel htmlFor="input-with-icon-adornment">
-              Username
-            </InputLabel>
-            <Input
-              autoFocus
-              disabled={loading}
-              id="username"
-              type="text"
-              placeholder="Type your username"
-              name="username"
-              value={formState.username.value}
-              onChange={handleInputChange}
-              startAdornment={
-                <InputAdornment position="start">
-                  <AccountCircle />
-                </InputAdornment>
-              }
-            />
-          </FormControl>
+        <h1>Sign Up</h1>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <FormControl variant="standard">
+              <InputLabel htmlFor="input-with-icon-adornment">
+                Username
+              </InputLabel>
+              <Input
+                autoFocus
+                disabled={loading}
+                id="username"
+                type="text"
+                placeholder="Type your username"
+                name="username"
+                value={formState.username.value}
+                onChange={handleInputChange}
+                startAdornment={
+                  <InputAdornment position="start">
+                    <AccountCircle />
+                  </InputAdornment>
+                }
+              />
+            </FormControl>
+          </div>
+
+          <div>
+            <FormControl variant="standard">
+              <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
+              <Input
+                disabled={loading}
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter email"
+                value={formState.email.value}
+                onChange={handleInputChange}
+                startAdornment={
+                  <InputAdornment position="start">
+                    <MailIcon />
+                  </InputAdornment>
+                }
+              />
+            </FormControl>
+          </div>
+
+          <div>
+            <FormControl variant="standard">
+              <InputLabel htmlFor="new-password">Password</InputLabel>
+              <Input
+                disabled={loading}
+                id="new-password"
+                type="password"
+                name="password"
+                placeholder="Enter password"
+                value={formState.password.value}
+                onChange={handleInputChange}
+                startAdornment={
+                  <InputAdornment position="start">
+                    <VpnKeyIcon />
+                  </InputAdornment>
+                }
+              />
+            </FormControl>
+          </div>
+
+          <div>
+            <Button disabled={loading} type="submit" variant="outlined">
+              {loading ? "Loading..." : "SIGN UP"}
+            </Button>
+          </div>
+        </form>
+        <Footer />
         </div>
-
-        <div>
-          <FormControl variant="standard">
-            <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
-            <Input
-              disabled={loading}
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Enter email"
-              value={formState.email.value}
-              onChange={handleInputChange}
-              startAdornment={
-                <InputAdornment position="start">
-                  <MailIcon />
-                </InputAdornment>
-              }
-            />
-          </FormControl>
-        </div>
-
-        <div>
-          <FormControl variant="standard">
-            <InputLabel htmlFor="new-password">
-              Password
-            </InputLabel>
-            <Input
-              disabled={loading}
-              id="new-password"
-              type="password"
-              name="password"
-              placeholder="Enter password"
-              value={formState.password.value}
-              onChange={handleInputChange}
-              startAdornment={
-                <InputAdornment position="start">
-                  <VpnKeyIcon />
-                </InputAdornment>
-              }
-              endAdornment={
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={handleClickShowPassword}
-                    onMouseDown={handleMouseDownPassword}
-                  >
-                    {values.showPassword ? <VisibilityOff /> : <Visibility />}
-                  </IconButton>
-                </InputAdornment>
-              }
-            />
-          </FormControl>
-        </div>
-
-        <div>
-          <Button disabled={loading} type="submit" variant="outlined">
-            {loading ? "Loading..." : "SIGN UP"}
-          </Button>
-        </div>
-
-      </form>
-      <Footer />
-
-    </div>
+      </Box>
   );
 }
