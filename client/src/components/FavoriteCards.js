@@ -5,25 +5,22 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import RestaurantImg from "./Restaurant.jpeg";
 import { useMutation, useQuery } from "@apollo/client";
-import { QUERY_BY_ZIPCODE } from "../util/queries";
-import { useSearchParams } from "react-router-dom";
+import { ME } from "../util/queries";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
-import { ADD_FAVORITE_RESTAURANT } from "../util/mutations";
+import { REMOVE_FAVORITE_RESTAURANT } from "../util/mutations";
 
-const Cards = () => {
-  const [searchParams] = useSearchParams();
-  const zipCode = parseInt(searchParams.get("zipcode"));
+const FavoriteCards = () => {
+  const { loading, data } = useQuery(ME);
+  const restaurants = data?.me.favoriteRestaurants || [];
 
-  const { error, loading, data } = useQuery(QUERY_BY_ZIPCODE, {
-    variables: { zipCode },
+  const [removeFavorite] = useMutation(REMOVE_FAVORITE_RESTAURANT, {
+    // refetchQueries so once removeFavorite gets called the favorite restaurants will update from ME query
+    refetchQueries: [ME],
   });
-  const restaurants = data?.restaurantsByZipcode || [];
 
-  const [addFavorite, addFavoriteState] = useMutation(ADD_FAVORITE_RESTAURANT);
-
-  const handleFavorite = (restaurantId) => {
-    addFavorite({ variables: { restaurantId } });
+  const handleRemove = (restaurantId) => {
+    removeFavorite({ variables: { restaurantId } });
   };
 
   return (
@@ -55,9 +52,7 @@ const Cards = () => {
             <Typography variant="body2" color="text.primary">
               {restaurant.happyHours}
             </Typography>
-            <Button onClick={() => handleFavorite(restaurant._id)}>
-              Favorite
-            </Button>
+            <Button onClick={() => handleRemove(restaurant._id)}>Unlike</Button>
           </CardContent>
         </Card>
       ))}
@@ -65,4 +60,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default FavoriteCards;

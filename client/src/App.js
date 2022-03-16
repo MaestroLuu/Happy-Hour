@@ -27,16 +27,6 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/restaurants/:restaurantId" element={<Restaurant />} />
             <Route path="/user" element={<UserProfile />} />
-            {/* Use <RequiredAuth> for pages that should only be accessible to a
-            user that has logged in.*/}
-            <Route
-              path="/protected"
-              element={
-                <RequireAuth>
-                  <ProtectedPageExample />
-                </RequireAuth>
-              }
-            />
           </Routes>
         </AuthProvider>
       </Router>
