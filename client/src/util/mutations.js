@@ -40,21 +40,16 @@ mutation addFavoriteRestaurant($restaurantId: ID!) {
 }
 `;
 
-// // USER PROFILE
-// export const REMOVE_FAVORITE_RESTAURANT = gql`
-// mutation removeFavoriteRestaurant($restaurantId: ID!) {
-//   removeFavoriteRestaurant(restaurantId: $restaurantId) {
-//     favoriteRestaurants {
-//       _id
-//       restaurantName
-//       address
-//       happyHours
-//       foodSpecial
-//       drinkSpecial
-//     }
-//   }
-// }
-// `;
+// USER PROFILE
+export const REMOVE_FAVORITE_RESTAURANT = gql`
+mutation removeFavoriteRestaurant($restaurantId: ID!) {
+  removeFavoriteRestaurant(restaurantId: $restaurantId) {
+    favoriteRestaurants {
+      _id
+    }
+  }
+}
+`;
 
 // // RESTAURANT PAGE
 // export const ADD_REVIEW = gql`
