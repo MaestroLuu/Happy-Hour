@@ -17,7 +17,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <AuthProvider>
-          <NavLink to="/">
+          <NavLink style={{textDecoration: "none", color: "black"}} to="/">
          <h1 style={{textAlign: "center"}}>Happy Hour</h1>
          </NavLink>
           <Routes>

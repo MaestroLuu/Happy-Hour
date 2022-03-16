@@ -46,6 +46,7 @@ export default function Footer() {
       >
         <NavLink to="/restaurants">
           <BottomNavigationAction
+          sx={{marginRight: "20px"}}
             label="Search"
             value="search"
             icon={<SearchIcon />}
@@ -53,6 +54,7 @@ export default function Footer() {
         </NavLink>
         <NavLink to="/user">
           <BottomNavigationAction
+          sx={{marginLeft: "20px"}}
             label="Favorites"
             value="favorites"
             icon={<FavoriteIcon />}
