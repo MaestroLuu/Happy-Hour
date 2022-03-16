@@ -12,6 +12,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import VpnKeyIcon from "@mui/icons-material/VpnKey";
+
 import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
@@ -68,12 +69,12 @@ export default function SignUp() {
     return <Navigate to="/" replace />;
   }
   return (
-      <Box sx={{ display:"flex", justifyContent: 'center' }}>
     <div>
-        <h1>Sign Up</h1>
+        <h1 style={{textAlign: "center"}}>Sign Up</h1>
+      <Box sx={{ display:"flex", justifyContent: 'center' }}>
         <form onSubmit={handleSubmit}>
           <div>
-            <FormControl variant="standard">
+            <FormControl sx={{marginBottom:"10px", width:"250px"}} variant="standard">
               <InputLabel htmlFor="input-with-icon-adornment">
                 Username
               </InputLabel>
@@ -96,7 +97,7 @@ export default function SignUp() {
           </div>
 
           <div>
-            <FormControl variant="standard">
+            <FormControl sx={{marginBottom:"10px", width:"250px"}} variant="standard">
               <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
               <Input
                 disabled={loading}
@@ -116,7 +117,7 @@ export default function SignUp() {
           </div>
 
           <div>
-            <FormControl variant="standard">
+            <FormControl sx={{marginBottom:"20px", width:"250px"}} variant="standard">
               <InputLabel htmlFor="new-password">Password</InputLabel>
               <Input
                 disabled={loading}
@@ -136,13 +137,13 @@ export default function SignUp() {
           </div>
 
           <div>
-            <Button disabled={loading} type="submit" variant="outlined">
+            <Button sx={{marginBottom:"10px", width:"250px"}} disabled={loading} type="submit" variant="outlined">
               {loading ? "Loading..." : "SIGN UP"}
             </Button>
           </div>
         </form>
+      </Box>
         <Footer />
         </div>
-      </Box>
   );
 }
