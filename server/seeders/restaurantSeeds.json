@@ -2,19 +2,19 @@
   {
     "restaurantName": "David's Diner",
     "address": "2021 Luu Lane",
-    "zipCode": 92111,
+    "zipCode": 92117,
     "foodType": "American",
     "happyHours": "9 AM to 3 PM",
     "items": [
       {
-        "itemName": "Large Drink",
-        "price": 0.5,
-        "descripition": "Cheaper than McDonalds"
+        "itemName": "Draft Pints",
+        "price": 4.50,
+        "description": "Cheaper than McDonalds"
       },
       {
         "itemName": "Stir Fry",
         "price": 3.99,
-        "descripition": "The best you've ever had"
+        "description": "The best you've ever had"
       }
     ]
   },
@@ -26,14 +26,14 @@
     "happyHours": "6 PM to 10 PM",
     "items": [
       {
-        "itemName": "Water",
-        "price": 0.5,
-        "descripition": "Cheaper than your water bill"
+        "itemName": "Luka Logic",
+        "price": 0.50,
+        "description": "Not as rational as you would hope"
       },
       {
         "itemName": "Soda",
         "price": 1.00,
-        "descripition": "Cheaper than the store"
+        "description": "Cheaper than the store"
       }
     ]
   },
@@ -46,13 +46,98 @@
     "items": [
       {
         "itemName": "Water",
-        "price": 0.5,
-        "descripition": "Cheaper than your water bill"
+        "price": 1.50,
+        "description": "Cheaper than your water bill"
       },
       {
-        "itemName": "Soda",
-        "price": 1.00,
-        "descripition": "Cheaper than the store"
+        "itemName": "California Burrito",
+        "price": 7.00,
+        "description": "Cheaper in both quality and price"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Punch Bowl Social San Diego",
+    "address": "1485 E St",
+    "zipCode": 92101,
+    "foodType": "American",
+    "happyHours": "Mon-Thurs 4 PM to 6 PM",
+    "items": [
+      {
+        "itemName": "SRIRACHA PEANUT FRIES",
+        "price": 7.00,
+        "description": "Hoisin Sauce, Sriracha, Garlic Mayo, Pickled Red Onions, Pickled Chiles, Cilantro, Crushed Peanuts"
+      },
+      {
+        "itemName": "QUESO DIP",
+        "price": 6.00,
+        "description": "Roasted Chiles, Tomatoes, Toasted Cumin, Monterey Jack, Cilantro, Corn Tortilla Chips - Add on: Guacamole or Green Chorizo (+$2)"
+      },
+      {
+        "itemName": "CHIPS & GUAC",
+        "price": 6.00,
+        "description": "Avocado, Garlic, Onion, Jalapeños, Cotija, Corn Tortilla Chips"
+      },
+      {
+        "itemName": "CAULIFLOWER NACHOS",
+        "price": 10.00,
+        "description": "Corn Tortilla Chips, Queso Oaxaca, Sliced Jalapeno, Roasted Cauliflower, Pickled Onions, Jalapeño Crema - Add on: Roasted Chicken or Carnitas (+$4)"
+      },
+      {
+        "itemName": "PULLED PORK SANDWICH",
+        "price": 9.00,
+        "description": "Carolina Gold, Iceberg Slaw, Dill Pickles, Brioche Bun, Fries"
+      },
+      {
+        "itemName": "KNOCK JR.*",
+        "price": 11.00,
+        "description": "Beef Patty, American Cheese, Comeback Sauce, Pickled Onion, Shredded Lettuce, Sesame Seed Bun, Fries"
+      },
+      {
+        "itemName": "PULLED PORK SANDWICH",
+        "price": 9.00,
+        "description": "Carolina Gold, Iceberg Slaw, Dill Pickles, Brioche Bun, Fries"
+      },
+      {
+        "itemName": "COCOA DUSTED CARNITAS TACO",
+        "price": 2.00,
+        "description": "Cocoa Dusted Pork Carnitas, Salsa Adobo, Crema, Queso Cotija, Radish, Onion, Cilantro, Lime, Soft Corn Tortillas"
+      },
+      {
+        "itemName": "FEATURED PUNCH",
+        "price": 5.00
+      },
+      {
+        "itemName": "WHISKEY SOUR",
+        "price": 5.00,
+        "description": "Bourbon, Fresh Lemon Juice, Simple Syrup"
+      },
+      {
+        "itemName": "CLASSIC DAIQUIRI",
+        "price": 5.00,
+        "description": "White Rum, Fresh Lime Juice, Simple Syrup"
+      },
+      {
+        "itemName": "TOM COLLINS",
+        "price": 5.00,
+        "description": "London Dry Gin, Fresh Lemon Juice, Simple Syrup, Sparkling Water"
+      },
+      {
+        "itemName": "MARGARITA",
+        "price": 5.00,
+        "description": "Silver Tequila, Fresh Lime Juice Simple Syrup, Orange Liqueur"
+      },
+      {
+        "itemName": "DRAFT BEER",
+        "price": 5.00
+      },
+      {
+        "itemName": "HOUSE SPIRITS",
+        "price": 5.00
+      },
+      {
+        "itemName": "SELECT WINE",
+        "price": 5.00
       }
     ]
   }  
