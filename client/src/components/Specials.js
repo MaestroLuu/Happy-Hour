@@ -7,17 +7,19 @@ import { Box } from "@mui/system";
 export default function Specials({ items }) {
   return (
     <div>
-      <Card sx={{ maxWidth: 345, mx: "auto" }}>
-        <CardContent style={{ textAlign: "center" }}>
-          {items.map((item) => (
+      {items.map((item) => (
+        <Card sx={{ maxWidth: 345, mx: "auto", marginBottom: "10px" }}>
+          <CardContent style={{ textAlign: "center" }}>
             <Box sx={{ my: "10px" }}>
-              <Typography key={item._id}>{item.itemName}</Typography>
-              <Typography>${item.price}</Typography>
+              <Typography key={item._id} variant="h5">
+                {item.itemName}
+              </Typography>
+              <Typography variant="h6">${item.price}</Typography>
               <Typography>{item.description}</Typography>
             </Box>
-          ))}
-        </CardContent>
-      </Card>
+          </CardContent>
+        </Card>
+      ))}
     </div>
   );
 }
