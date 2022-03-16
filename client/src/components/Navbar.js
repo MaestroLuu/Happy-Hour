@@ -7,10 +7,10 @@ import "./Navbar.css";
 export default function Navbar() {
   const { isLoggedIn, logout } = useAuth();
   return (
-    <nav className="navbar" sx={{mx: "auto"}}> 
-        <NavLink to="/" className="navbar-link">
-          Splash
-        </NavLink>
+    <nav className="navbar" sx={{ mx: "auto" }}>
+      <NavLink to="/" className="navbar-link">
+        Splash
+      </NavLink>
       {isLoggedIn ? (
         <>
           <NavLink to="/protected" className="navbar-link">
@@ -30,13 +30,13 @@ export default function Navbar() {
           </NavLink>
           <NavLink to="/restaurants/:restaurantId" className="navbar-link">
             Restaurants
-          </NavLink> 
+          </NavLink>
           <NavLink to="/user" className="navbar-link">
             User Profile
-          </NavLink> 
+          </NavLink>
           <NavLink to="/restaurants/:zipcode" className="navbar-link">
             Home
-          </NavLink> 
+          </NavLink>
         </>
       )}
     </nav>

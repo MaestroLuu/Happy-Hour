@@ -13,7 +13,7 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import VpnKeyIcon from "@mui/icons-material/VpnKey";
 
-import Box from '@mui/material/Box';
+import Box from "@mui/material/Box";
 
 const initialFormState = {
   username: "",
@@ -22,7 +22,6 @@ const initialFormState = {
 };
 
 export default function SignUp() {
-
   const { isLoggedIn, signup, loading, error } = useAuth();
   const [formState, setFormState] = useState(initialFormState);
 
@@ -47,11 +46,14 @@ export default function SignUp() {
   }
   return (
     <div>
-        <h1 style={{textAlign: "center"}}>Sign Up</h1>
-      <Box sx={{ display:"flex", justifyContent: 'center' }}>
+      <h1 style={{ textAlign: "center" }}>Sign Up</h1>
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
         <form onSubmit={handleSubmit}>
           <div>
-            <FormControl sx={{marginBottom:"10px", width:"250px"}} variant="standard">
+            <FormControl
+              sx={{ marginBottom: "10px", width: "250px" }}
+              variant="standard"
+            >
               <InputLabel htmlFor="input-with-icon-adornment">
                 Username
               </InputLabel>
@@ -74,7 +76,10 @@ export default function SignUp() {
           </div>
 
           <div>
-            <FormControl sx={{marginBottom:"10px", width:"250px"}} variant="standard">
+            <FormControl
+              sx={{ marginBottom: "10px", width: "250px" }}
+              variant="standard"
+            >
               <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
               <Input
                 disabled={loading}
@@ -94,7 +99,10 @@ export default function SignUp() {
           </div>
 
           <div>
-            <FormControl sx={{marginBottom:"20px", width:"250px"}} variant="standard">
+            <FormControl
+              sx={{ marginBottom: "20px", width: "250px" }}
+              variant="standard"
+            >
               <InputLabel htmlFor="new-password">Password</InputLabel>
               <Input
                 disabled={loading}
@@ -114,13 +122,18 @@ export default function SignUp() {
           </div>
 
           <div>
-            <Button sx={{marginBottom:"10px", width:"250px"}} disabled={loading} type="submit" variant="outlined">
+            <Button
+              sx={{ marginBottom: "10px", width: "250px" }}
+              disabled={loading}
+              type="submit"
+              variant="outlined"
+            >
               {loading ? "Loading..." : "SIGN UP"}
             </Button>
           </div>
         </form>
       </Box>
-        <Footer />
-        </div>
+      <Footer />
+    </div>
   );
 }

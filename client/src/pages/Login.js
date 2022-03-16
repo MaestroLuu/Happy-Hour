@@ -19,7 +19,6 @@ const initialFormState = {
 };
 
 export default function Login() {
-
   const { isLoggedIn, login, loading, error } = useAuth();
   const [formState, setFormState] = useState(initialFormState);
   const location = useLocation();
@@ -47,55 +46,66 @@ export default function Login() {
 
   return (
     <div>
-      <h1 style={{textAlign: "center"}}>Login</h1>
-      <Box sx={{ display:"flex", justifyContent: 'center' }}>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <FormControl sx={{marginBottom:"10px", width:"250px"}} variant="standard">
-            <InputLabel htmlFor="email">Email</InputLabel>
-            <Input
-              disabled={loading}
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Enter email"
-              value={formState.email.value}
-              onChange={handleInputChange}
-              startAdornment={
-                <InputAdornment position="start">
-                  <MailIcon />
-                </InputAdornment>
-              }
-            />
-          </FormControl>
-        </div>
+      <h1 style={{ textAlign: "center" }}>Login</h1>
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <FormControl
+              sx={{ marginBottom: "10px", width: "250px" }}
+              variant="standard"
+            >
+              <InputLabel htmlFor="email">Email</InputLabel>
+              <Input
+                disabled={loading}
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter email"
+                value={formState.email.value}
+                onChange={handleInputChange}
+                startAdornment={
+                  <InputAdornment position="start">
+                    <MailIcon />
+                  </InputAdornment>
+                }
+              />
+            </FormControl>
+          </div>
 
-        <div>
-          <FormControl sx={{marginBottom:"10px", width:"250px"}} variant="standard">
-            <InputLabel htmlFor="new-password">Password</InputLabel>
-            <Input
-              disabled={loading}
-              id="new-password"
-              type="password"
-              name="password"
-              placeholder="Enter password"
-              value={formState.password.value}
-              onChange={handleInputChange}
-              startAdornment={
-                <InputAdornment position="start">
-                  <VpnKeyIcon />
-                </InputAdornment>
-              }
-            />
-          </FormControl>
-        </div>
+          <div>
+            <FormControl
+              sx={{ marginBottom: "10px", width: "250px" }}
+              variant="standard"
+            >
+              <InputLabel htmlFor="new-password">Password</InputLabel>
+              <Input
+                disabled={loading}
+                id="new-password"
+                type="password"
+                name="password"
+                placeholder="Enter password"
+                value={formState.password.value}
+                onChange={handleInputChange}
+                startAdornment={
+                  <InputAdornment position="start">
+                    <VpnKeyIcon />
+                  </InputAdornment>
+                }
+              />
+            </FormControl>
+          </div>
 
-        <div>
-          <Button sx={{marginBottom:"10px", width:"250px"}} disabled={loading} type="submit" variant="outlined">
-            {loading ? "Loading..." : "LOGIN"}
-          </Button>
-        </div>
-      </form>
+          <div>
+            <Button
+              sx={{ marginBottom: "10px", width: "250px" }}
+              disabled={loading}
+              type="submit"
+              variant="outlined"
+            >
+              {loading ? "Loading..." : "LOGIN"}
+            </Button>
+          </div>
+        </form>
       </Box>
       <Footer />
     </div>
