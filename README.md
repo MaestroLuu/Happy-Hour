@@ -4,15 +4,15 @@
 
 This application allows users to search for "Happy Hour" locations in their area, where they can get drinks or food for a cheap price and also review/rate those "Happy Hour" locations. This app searches by the zipcode you provide and gives you a list of the restaurants with "Happy Hours" that match your criteria.
 
-## [Try it yourself!](https://github.com/MaestroLuu/Happy-Hour)
+## [Try it yourself!](https://desolate-earth-02940.herokuapp.com/)
 
 Click on "Try it yourself" to get the link to the repository!
 
 ## Demo
+<img src="./assets/images/demoSignup.gif" alt="sign up demo" height="800" width="400">
+<img src="./assets/images/demoLogin.gif" alt="login demo" height="800" width="400">
+<img src="./assets/images/demoFavorite.gif" alt="home demo" height="800" width="400">
 
-![signupgif]()<br>
-![logingif]()<br>
-![homegif]()<br>
 
 ## Installation
 
