@@ -14,6 +14,7 @@ import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import Button from "@mui/material/Button";
+import { Box } from "@mui/material";
 
 const initialFormState = {
   email: "",
@@ -21,24 +22,6 @@ const initialFormState = {
 };
 
 export default function Login() {
-  const [values, setValues] = React.useState({
-    amount: "",
-    password: "",
-    weight: "",
-    weightRange: "",
-    showPassword: false,
-  });
-
-  const handleClickShowPassword = () => {
-    setValues({
-      ...values,
-      showPassword: !values.showPassword,
-    });
-  };
-
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
 
   const { isLoggedIn, login, loading, error } = useAuth();
   const [formState, setFormState] = useState(initialFormState);
@@ -68,9 +51,10 @@ export default function Login() {
   return (
     <div>
       <h1 style={{textAlign: "center"}}>Login</h1>
+      <Box sx={{ display:"flex", justifyContent: 'center' }}>
       <form onSubmit={handleSubmit}>
         <div>
-          <FormControl variant="standard">
+          <FormControl sx={{marginBottom:"10px", width:"250px"}} variant="standard">
             <InputLabel htmlFor="email">Email</InputLabel>
             <Input
               disabled={loading}
@@ -90,7 +74,7 @@ export default function Login() {
         </div>
 
         <div>
-          <FormControl variant="standard">
+          <FormControl sx={{marginBottom:"10px", width:"250px"}} variant="standard">
             <InputLabel htmlFor="new-password">Password</InputLabel>
             <Input
               disabled={loading}
@@ -105,27 +89,17 @@ export default function Login() {
                   <VpnKeyIcon />
                 </InputAdornment>
               }
-              endAdornment={
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={handleClickShowPassword}
-                    onMouseDown={handleMouseDownPassword}
-                  >
-                    {values.showPassword ? <VisibilityOff /> : <Visibility />}
-                  </IconButton>
-                </InputAdornment>
-              }
             />
           </FormControl>
         </div>
 
         <div>
-          <Button disabled={loading} type="submit" variant="outlined">
+          <Button sx={{marginBottom:"10px", width:"250px"}} disabled={loading} type="submit" variant="outlined">
             {loading ? "Loading..." : "LOGIN"}
           </Button>
         </div>
       </form>
+      </Box>
       <Footer />
     </div>
   );
