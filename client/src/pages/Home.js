@@ -29,11 +29,10 @@ const Home = () => {
       {/* TODO: display logged in user's username */}
       {/* <h1>Welcome {isLoggedIn ? user.username : "Guest"}!</h1> */}
      
-      <Box sx={{ mx: "auto" }}></Box>
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
       <form onSubmit={handleSubmit}>
         <TextField
-          sx={{ maxWidth: 300, marginTop: "30px", mx: "auto" }}
-          style={{ display: "flex", justifyContent: "center" }}
+          sx={{ maxWidth: 300}}
           id="outlined-search"
           label="Search By Zipcode"
           type="search"
@@ -41,7 +40,7 @@ const Home = () => {
           onChange={handleChange}
         />
         <Button
-          sx={{ maxWidth: 100, marginLeft: "120px", my: "10px" }}
+          sx={{ maxWidth: 100, marginLeft: "20px", my: "10px" }}
           variant="outlined"
           size="large"
           type="submit"
@@ -49,6 +48,7 @@ const Home = () => {
           Submit
         </Button>
       </form>
+      </Box>
       <Cards />
       <Footer />
     </div>
