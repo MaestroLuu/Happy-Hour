@@ -29,7 +29,6 @@ export default function Footer() {
   };
   const { isLoggedIn, logout } = useAuth();
   return (
-    
     <div>
       <BottomNavigation
         sx={{
@@ -39,7 +38,7 @@ export default function Footer() {
           right: 0,
           width: 400,
           mx: "auto",
-          marginTop: "60px"
+          marginTop: "60px",
         }}
         elevation={3}
         value={value}
@@ -80,21 +79,32 @@ export default function Footer() {
           onClose={handleClose}
           TransitionComponent={Fade}
         >
-          <NavLink to="/restaurants">
-            <MenuItem onClick={handleClose}>Home</MenuItem>
-          </NavLink>
-          <NavLink to="/login">
-            <MenuItem onClick={handleClose}>Login</MenuItem>
-          </NavLink>
-          <NavLink to="/login">
-            <MenuItem onClick={logout}>Logout</MenuItem>
-          </NavLink>
-          <NavLink to="/signup">
-            <MenuItem onClick={handleClose}>Sign Up</MenuItem>
-          </NavLink>
-          <NavLink to="/user">
-            <MenuItem onClick={handleClose}>Favorites</MenuItem>
-          </NavLink>
+          {isLoggedIn ? (
+            <div>
+              <NavLink to="/user">
+                <MenuItem onClick={handleClose}>Favorites</MenuItem>
+              </NavLink>
+              <NavLink to="/restaurants">
+                <MenuItem onClick={handleClose}>Home</MenuItem>
+              </NavLink>
+              <NavLink to="/login">
+                <MenuItem onClick={logout}>Logout</MenuItem>
+              </NavLink>
+            </div>
+          ) : (
+            <div>
+              <NavLink to="/restaurants">
+                <MenuItem onClick={handleClose}>Home</MenuItem>
+              </NavLink>
+              <NavLink to="/login">
+                <MenuItem onClick={handleClose}>Login</MenuItem>
+              </NavLink>
+
+              <NavLink to="/signup">
+                <MenuItem onClick={handleClose}>Sign Up</MenuItem>
+              </NavLink>
+            </div>
+          )}
         </Menu>
       </BottomNavigation>
     </div>
