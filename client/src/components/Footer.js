@@ -8,6 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Fade from "@mui/material/Fade";
+import { useAuth } from "../util/auth";
 
 import { NavLink } from "react-router-dom";
 
@@ -26,8 +27,9 @@ export default function Footer() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
+  const { isLoggedIn, logout } = useAuth();
   return (
+    
     <div>
       <BottomNavigation
         sx={{
@@ -83,6 +85,9 @@ export default function Footer() {
           </NavLink>
           <NavLink to="/login">
             <MenuItem onClick={handleClose}>Login</MenuItem>
+          </NavLink>
+          <NavLink to="/login">
+            <MenuItem onClick={logout}>Logout</MenuItem>
           </NavLink>
           <NavLink to="/signup">
             <MenuItem onClick={handleClose}>Sign Up</MenuItem>
