@@ -28,26 +28,26 @@ const Home = () => {
     <div>
       {/* TODO: display logged in user's username */}
       {/* <h1>Welcome {isLoggedIn ? user.username : "Guest"}!</h1> */}
-     
+
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-      <form onSubmit={handleSubmit}>
-        <TextField
-          sx={{ maxWidth: 300}}
-          id="outlined-search"
-          label="Search By Zipcode"
-          type="search"
-          value={zipcode}
-          onChange={handleChange}
-        />
-        <Button
-          sx={{ maxWidth: 100, marginLeft: "20px", my: "10px" }}
-          variant="outlined"
-          size="large"
-          type="submit"
-        >
-          Submit
-        </Button>
-      </form>
+        <form onSubmit={handleSubmit}>
+          <TextField
+            sx={{ maxWidth: 300 }}
+            id="outlined-search"
+            label="Search By Zipcode"
+            type="search"
+            value={zipcode}
+            onChange={handleChange}
+          />
+          <Button
+            sx={{ maxWidth: 100, marginLeft: "20px", my: "10px" }}
+            variant="outlined"
+            size="large"
+            type="submit"
+          >
+            Submit
+          </Button>
+        </form>
       </Box>
       <Cards />
       <Footer />
