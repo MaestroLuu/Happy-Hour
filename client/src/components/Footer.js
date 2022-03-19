@@ -4,6 +4,9 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Box } from "@mui/material";
+import RestoreIcon from '@mui/icons-material/Restore';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -30,23 +33,25 @@ export default function Footer() {
   const { isLoggedIn, logout } = useAuth();
   return (
     <div>
+      {/* new footer? */}
+    <Box sx={{ 
+      width: "50%", 
+      mx: "auto",
+      bottom: 0,
+      left: 0,
+      right: 0,
+      position: "fixed", 
+      color: "transparent"
+      }}
+      elevation={3}
+      >
       <BottomNavigation
-        sx={{
-          position: "fixed",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          width: 400,
-          mx: "auto",
-          marginTop: "60px",
-        }}
-        elevation={3}
+        showLabels
         value={value}
         onChange={handleChange}
       >
         <NavLink to="/restaurants">
           <BottomNavigationAction
-          sx={{marginRight: "20px"}}
             label="Search"
             value="search"
             icon={<SearchIcon />}
@@ -54,14 +59,13 @@ export default function Footer() {
         </NavLink>
         <NavLink to="/user">
           <BottomNavigationAction
-          sx={{marginLeft: "20px"}}
             label="Favorites"
             value="favorites"
             icon={<FavoriteIcon />}
           />
         </NavLink>
 
-        <BottomNavigationAction
+        {/* <BottomNavigationAction
           label="Menu"
           value="menu"
           id="fade-button"
@@ -107,8 +111,9 @@ export default function Footer() {
               </NavLink>
             </div>
           )}
-        </Menu>
+        </Menu> */}
       </BottomNavigation>
+      </Box>
     </div>
   );
 }
