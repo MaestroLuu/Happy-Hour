@@ -12,7 +12,6 @@ export default function Landing() {
   const [zipcode, setZipcode] = useState("");
   const navigate = useNavigate();
 
-
   const handleChange = (e) => {
     const zvalue = e.target.value;
     setZipcode(zvalue);
