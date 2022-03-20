@@ -28,7 +28,7 @@ const Cards = () => {
   };
 
   return (
-    <div>
+    <div sx={{width: "100%"}}>
       {loading && <p>loading restaurants...</p>}
       {restaurants.map((restaurant) => (
         <Card
