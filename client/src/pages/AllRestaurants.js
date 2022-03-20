@@ -50,7 +50,7 @@ const Home = () => {
         </form>
       </Box>
       <RestaurantCards />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

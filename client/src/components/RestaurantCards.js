@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 import RestaurantImg from "./Restaurant.jpeg";
 import { useMutation, useQuery } from "@apollo/client";
 import { QUERY_BY_ZIPCODE } from "../util/queries";
@@ -27,38 +28,40 @@ const Cards = () => {
   };
 
   return (
-    <div>
+    <div sx={{ width: "100%" }}>
       {loading && <p>loading restaurants...</p>}
       {restaurants.map((restaurant) => (
         <Card
           key={restaurant._id}
-          sx={{ maxWidth: 345, my: "30px", mx: "auto" }}
+          sx={{ maxWidth: 700, my: "30px", mx: "auto" }}
         >
-          <Link to={`/restaurants/${restaurant._id}`}>
-            <CardMedia
-              component="img"
-              height="200"
-              image={RestaurantImg}
-              alt="restaurant"
-            />
-          </Link>
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {restaurant.restaurantName}
-            </Typography>
-            <Typography variant="body2" color="text.primary">
-              {restaurant.foodType}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {restaurant.address} {restaurant.zipCode}
-            </Typography>
-            <Typography variant="body2" color="text.primary">
-              {restaurant.happyHours}
-            </Typography>
-            <Button onClick={() => handleFavorite(restaurant._id)}>
-              Favorite
-            </Button>
-          </CardContent>
+          <Box sx={{ display: "flex", flexDirection: "row" }}>
+            <Link to={`/restaurants/${restaurant._id}`}>
+              <CardMedia
+                component="img"
+                height="200"
+                image={RestaurantImg}
+                alt="restaurant"
+              />
+            </Link>
+            <CardContent>
+              <Typography gutterBottom component="div">
+                {restaurant.restaurantName}
+              </Typography>
+              <Typography variant="body2" color="text.primary">
+                {restaurant.foodType}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {restaurant.address} {restaurant.zipCode}
+              </Typography>
+              <Typography variant="body2" color="text.primary">
+                {restaurant.happyHours}
+              </Typography>
+              <Button onClick={() => handleFavorite(restaurant._id)}>
+                Favorite
+              </Button>
+            </CardContent>
+          </Box>
         </Card>
       ))}
     </div>
