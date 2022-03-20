@@ -28,39 +28,39 @@ const Cards = () => {
   };
 
   return (
-    <div sx={{width: "100%"}}>
+    <div sx={{ width: "100%" }}>
       {loading && <p>loading restaurants...</p>}
       {restaurants.map((restaurant) => (
         <Card
           key={restaurant._id}
           sx={{ maxWidth: 700, my: "30px", mx: "auto" }}
         >
-          <Box sx={{ display: 'flex', flexDirection: 'row' }}>
-          <Link to={`/restaurants/${restaurant._id}`}>
-            <CardMedia
-              component="img"
-              height="200"
-              image={RestaurantImg}
-              alt="restaurant"
-            />
-          </Link>
-          <CardContent>
-            <Typography gutterBottom component="div">
-              {restaurant.restaurantName}
-            </Typography>
-            <Typography variant="body2" color="text.primary">
-              {restaurant.foodType}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {restaurant.address} {restaurant.zipCode}
-            </Typography>
-            <Typography variant="body2" color="text.primary">
-              {restaurant.happyHours}
-            </Typography>
-            <Button onClick={() => handleFavorite(restaurant._id)}>
-              Favorite
-            </Button>
-          </CardContent>
+          <Box sx={{ display: "flex", flexDirection: "row" }}>
+            <Link to={`/restaurants/${restaurant._id}`}>
+              <CardMedia
+                component="img"
+                height="200"
+                image={RestaurantImg}
+                alt="restaurant"
+              />
+            </Link>
+            <CardContent>
+              <Typography gutterBottom component="div">
+                {restaurant.restaurantName}
+              </Typography>
+              <Typography variant="body2" color="text.primary">
+                {restaurant.foodType}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {restaurant.address} {restaurant.zipCode}
+              </Typography>
+              <Typography variant="body2" color="text.primary">
+                {restaurant.happyHours}
+              </Typography>
+              <Button onClick={() => handleFavorite(restaurant._id)}>
+                Favorite
+              </Button>
+            </CardContent>
           </Box>
         </Card>
       ))}
