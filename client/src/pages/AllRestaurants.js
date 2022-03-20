@@ -1,5 +1,5 @@
 import React from "react";
-import Cards from "../components/Cards";
+import RestaurantCards from "../components/RestaurantCards";
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import Footer from "../components/Footer";
@@ -49,7 +49,7 @@ const Home = () => {
           </Button>
         </form>
       </Box>
-      <Cards />
+      <RestaurantCards />
       <Footer />
     </div>
   );
