@@ -33,7 +33,7 @@ const Cards = () => {
       {restaurants.map((restaurant) => (
         <Card
           key={restaurant._id}
-          sx={{ maxWidth: 345, my: "30px", mx: "auto" }}
+          sx={{ maxWidth: 700, my: "30px", mx: "auto" }}
         >
           <Box sx={{ display: 'flex', flexDirection: 'row' }}>
           <Link to={`/restaurants/${restaurant._id}`}>
@@ -45,7 +45,7 @@ const Cards = () => {
             />
           </Link>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography gutterBottom component="div">
               {restaurant.restaurantName}
             </Typography>
             <Typography variant="body2" color="text.primary">
