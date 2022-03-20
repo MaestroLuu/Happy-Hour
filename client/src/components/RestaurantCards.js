@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 import RestaurantImg from "./Restaurant.jpeg";
 import { useMutation, useQuery } from "@apollo/client";
 import { QUERY_BY_ZIPCODE } from "../util/queries";
@@ -34,6 +35,7 @@ const Cards = () => {
           key={restaurant._id}
           sx={{ maxWidth: 345, my: "30px", mx: "auto" }}
         >
+          <Box sx={{ display: 'flex', flexDirection: 'row' }}>
           <Link to={`/restaurants/${restaurant._id}`}>
             <CardMedia
               component="img"
@@ -59,6 +61,7 @@ const Cards = () => {
               Favorite
             </Button>
           </CardContent>
+          </Box>
         </Card>
       ))}
     </div>
