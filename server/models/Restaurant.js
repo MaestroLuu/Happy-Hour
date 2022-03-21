@@ -14,6 +14,7 @@ const restaurantSchema = new Schema(
       unique: true,
       minlength: 10,
       maxlength: 11,
+      match: [/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/, "Must a valid phonenumber!"],
     },
     webpage: {
       type: String,
