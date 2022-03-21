@@ -41,7 +41,6 @@ export default function Footer() {
       left: 0,
       right: 0,
       position: "fixed", 
-      color: "transparent"
       }}
       elevation={3}
       >
@@ -49,6 +48,7 @@ export default function Footer() {
         showLabels
         value={value}
         onChange={handleChange}
+        style={{backgroundColor: "transparent", display: "flex", justifyContent: "space-evenly"}}
       >
         <NavLink to="/restaurants">
           <BottomNavigationAction
