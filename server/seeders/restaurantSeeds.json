@@ -3,7 +3,6 @@
     "restaurantName": "David's Diner",
     "address": "2021 Luu Lane",
     "zipCode": 92117,
-    "foodType": "American",
     "happyHours": "9 AM to 3 PM",
     "items": [
       {
@@ -22,7 +21,6 @@
     "restaurantName": "Luka Lounge",
     "address": "2022 Licheli Rd",
     "zipCode": 92117,
-    "foodType": "European",
     "happyHours": "6 PM to 10 PM",
     "items": [
       {
@@ -41,7 +39,6 @@
     "restaurantName": "Marco's Mediterranean Market",
     "address": "2020 Flores Ave",
     "zipCode": 92117,
-    "foodType": "Mexican",
     "happyHours": "6 PM to 10 PM",
     "items": [
       {

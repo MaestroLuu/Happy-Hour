@@ -6,7 +6,7 @@ const locationSchema = new Schema({
     required: "Please name the location.",
   },
   city: {
-    type: Number,
+    type: String,
     required: "Please input a city for the location.",
   },
   zipCode: {
@@ -22,7 +22,6 @@ const locationSchema = new Schema({
   // Drop down menu with only "United States for now"
   country: {
     type: String,
-    required: "Please input a valid country",
   },
 });
 
