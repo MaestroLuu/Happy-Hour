@@ -1,5 +1,7 @@
 const { gql } = require("apollo-server-express");
 
+// Review if "restaurantsByZipcode(zipCode: Int!): [Restaurant]" correct with params
+
 const typeDefs = gql`
   "Unix time stamp in milliseconds."
   scalar Date
@@ -37,12 +39,21 @@ const typeDefs = gql`
   type Restaurant {
     _id: ID!
     restaurantName: String!
-    address: String!
-    zipCode: Int!
-    foodType: String!
+    phoneNumber: Int
+    webpage: String
+    location: [Location]!
     happyHours: String!
     items: [Item]!
     reviews: [Review]
+  }
+
+  type Location {
+    _id: ID!
+    address: String!
+    city: String!
+    zipCode: Number!
+    state: String
+    country: String
   }
 
   type Item {
