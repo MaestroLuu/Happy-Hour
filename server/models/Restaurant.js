@@ -8,20 +8,6 @@ const restaurantSchema = new Schema (
         required: "You need a restaurant name.",
         unique: true,
     },
-    address: {
-        type: String,
-        required: "You need an address.",
-    },
-    zipCode: {
-        type: Number,
-        required: "You need a valid zipcode.",
-        minlength: 5,
-        maxlength: 5,
-    },
-    foodType: {
-        type: String,
-        require: true,
-    },
     happyHours: {
         type: String,
         require: true,
