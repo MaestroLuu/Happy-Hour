@@ -11,6 +11,7 @@ import SingleRestaurant from "./pages/SingleRestaurant";
 import UserProfile from "./pages/UserProfile";
 import Landing from "./pages/Landing";
 import { NavLink } from "react-router-dom";
+import beer3 from "../src/components/beers3.png"
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
       <Router>
         <AuthProvider>
           <NavLink style={{textDecoration: "none", color: "black"}} to="/">
-         <h1 style={{textAlign: "center"}}>Happy Hour</h1>
+         <h1 style={{textAlign: "center"}}>
+           <img src={beer3} alt="home" />
+         </h1>
          </NavLink>
           <Routes>
             <Route path="/" element={<Landing />} />
