@@ -6,21 +6,37 @@ export const ME = gql`
       favoriteRestaurants {
         _id
         restaurantName
-        address
+        location {
+          _id
+          address
+          city
+          zipCode
+          state
+          country
+        }
         happyHours
       }
     }
   }
 `;
 
+// Took out stars in reviews, add back later if decide to use it
+
 export const QUERY_SINGLE_RESTAURANT = gql`
   query Restaurant($restaurantId: ID!) {
     restaurant(id: $restaurantId) {
       _id
       restaurantName
-      address
-      zipCode
-      foodType
+      phoneNumber
+      webpage
+      location {
+        _id
+        address
+        city
+        zipCode
+        state
+        country
+      }
       happyHours
       items {
         _id
@@ -33,7 +49,6 @@ export const QUERY_SINGLE_RESTAURANT = gql`
         reviewAuthor
         reviewText
         createdAt
-        stars
       }
     }
   }
@@ -44,23 +59,28 @@ export const QUERY_BY_ZIPCODE = gql`
     restaurantsByZipcode(zipCode: $zipCode) {
       _id
       restaurantName
-      address
-      zipCode
-      foodType
+      location {
+        _id
+        address
+        city
+        zipCode
+        state
+        country
+      }
       happyHours
     }
   }
 `;
 
-export const QUERY_ALL_RESTAURANTS = gql`
-  query Restaurants {
-    restaurants {
-      _id
-      restaurantName
-      address
-      zipCode
-      foodType
-      happyHours
-    }
-  }
-`;
+// export const QUERY_ALL_RESTAURANTS = gql`
+//   query Restaurants {
+//     restaurants {
+//       _id
+//       restaurantName
+//       address
+//       zipCode
+//       foodType
+//       happyHours
+//     }
+//   }
+// `;
