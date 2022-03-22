@@ -43,7 +43,7 @@ This is the group of people who worked on this project: <br>
 - Github: [David Luu](https://github.com/MaestroLuu/) 
 - Github: [Marco Flores](https://github.com/JaggedComet/)
 - Github: [Luka Licheli](https://github.com/lukalicheli/)
-
+- Github: [Chris Muto](https://github.com/chrismuto/)
 
 ## Questions
 
@@ -57,3 +57,6 @@ Email: MarcoFlores1029@gmail.com<br>
 ________________________________________
 Github: https://github.com/lukalicheli/<br>
 Email: lukalicheli@gmail.com<br>
+________________________________________
+Github: https://github.com/chrismuto/<br>
+Email: chrismuto@gmail.com<br>
