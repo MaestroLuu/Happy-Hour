@@ -41,6 +41,7 @@ const typeDefs = gql`
     restaurantName: String!
     phoneNumber: String
     webpage: String
+    restaurantImg: String
     location: [Location]!
     happyHours: String!
     items: [Item]!
@@ -59,7 +60,7 @@ const typeDefs = gql`
   type Item {
     _id: ID!
     itemName: String!
-    price: Float!
+    price: String!
     description: String
   }
 
