@@ -51,8 +51,10 @@ export const QUERY_SINGLE_RESTAURANT = gql`
 export const QUERY_BY_ZIPCODE = gql`
   query RestaurantsByZipcode($zipCode: Int!) {
     restaurantsByZipcode(zipCode: $zipCode) {
+      _id
       restaurantName
       location {
+        _id
         address
         city
         zipCode
