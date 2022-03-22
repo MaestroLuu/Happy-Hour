@@ -48,12 +48,13 @@ const Cards = () => {
               <Typography gutterBottom component="div">
                 {restaurant.restaurantName}
               </Typography>
-              <Typography variant="body2" color="text.primary">
-                {restaurant.foodType}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {restaurant.address} {restaurant.zipCode}
-              </Typography>
+
+              {/* Require a new component called Location just like Reviews/Items */}
+
+              {/* <Typography variant="body2" color="text.secondary">
+                {restaurant.location.zipCode}
+              </Typography> */}
+              
               <Typography variant="body2" color="text.primary">
                 {restaurant.happyHours}
               </Typography>
