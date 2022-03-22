@@ -19,6 +19,8 @@ export const ME = gql`
   }
 `;
 
+// Took out stars in reviews, add back later if decide to use it
+
 export const QUERY_SINGLE_RESTAURANT = gql`
   query Restaurant($restaurantId: ID!) {
     restaurant(id: $restaurantId) {
@@ -35,11 +37,13 @@ export const QUERY_SINGLE_RESTAURANT = gql`
       }
       happyHours
       items {
+        _id
         itemName
         price
         description
       }
       reviews {
+        _id
         reviewAuthor
         reviewText
         createdAt
