@@ -7,6 +7,7 @@ export const ME = gql`
         _id
         restaurantName
         location {
+          _id
           address
           city
           zipCode
@@ -29,6 +30,7 @@ export const QUERY_SINGLE_RESTAURANT = gql`
       phoneNumber
       webpage
       location {
+        _id
         address
         city
         zipCode
