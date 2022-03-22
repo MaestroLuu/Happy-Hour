@@ -30,18 +30,20 @@ const Home = () => {
       {/* <h1>Welcome {isLoggedIn ? user.username : "Guest"}!</h1> */}
 
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} >
           <TextField
-            sx={{ maxWidth: 300 }}
-            id="outlined-search"
+            sx={{ maxWidth: 300, my: "10px", backgroundColor: "white", opacity: 0.85, height: "45px", color: "black" }}
+            id="filled-hidden-label-small"
+            variant="filled"
+            size="small"
             label="Search By Zipcode"
             type="search"
             value={zipcode}
             onChange={handleChange}
           />
           <Button
-            sx={{ maxWidth: 100, marginLeft: "20px", my: "10px" }}
-            variant="outlined"
+            sx={{ maxWidth: 100, marginLeft: "20px", my: "10px", backgroundColor: "rgb(222,119,1)"}}
+            variant="contained"
             size="large"
             type="submit"
           >
