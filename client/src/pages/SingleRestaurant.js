@@ -5,6 +5,7 @@ import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import { QUERY_SINGLE_RESTAURANT } from "../util/queries";
 import Review from "../components/Review";
+import { Typography } from "@mui/material";
 
 const styles = {
   text: {
@@ -19,7 +20,7 @@ const Restaurant = () => {
   const { restaurantId } = useParams();
   console.log(restaurantId);
 
-  const { data } = useQuery(QUERY_SINGLE_RESTAURANT, {
+  const { data, loading } = useQuery(QUERY_SINGLE_RESTAURANT, {
     variables: { restaurantId: restaurantId },
   });
 
@@ -28,10 +29,21 @@ const Restaurant = () => {
   console.log(data);
   return (
     <div>
+      {loading && <p>loading restaurants...</p>}
       <h1 style={styles.text}>{restaurant.restaurantName}</h1>
       <h2 style={styles.text}>Happy Hour: {restaurant.happyHours}</h2>
       <p style={styles.text}>
-        {restaurant.address} {restaurant.zipCode}
+      {/* data does not load...John scolded us about this several times
+      Does anyone remember why? 
+      {restaurant.location.map((location) => (
+          <Typography key={location._id} variant="body">
+            {location.address} <br />
+            {location.city}, {location.state}
+            <br />
+            {location.zipCode}
+          </Typography>
+        ))} */}
+
       </p>
       <h1 style={{ textAlign: "center", marginTop: "50px" }}>
         {" "}

@@ -16,6 +16,9 @@ const restaurantSchema = new Schema(
     webpage: {
       type: String,
     },
+    restaurantImg: {
+      type: String
+    },
     location: [locationSchema],
     happyHours: {
       type: String,

@@ -6,7 +6,7 @@ const itemSchema = new Schema({
     required: "Please name the item.",
   },
   price: {
-    type: Number,
+    type: String,
     required: "Please input a price for the item.",
   },
   description: {
