@@ -6,6 +6,7 @@ export const ME = gql`
       favoriteRestaurants {
         _id
         restaurantName
+        restaurantImg
         location {
           _id
           address
@@ -29,6 +30,7 @@ export const QUERY_SINGLE_RESTAURANT = gql`
       restaurantName
       phoneNumber
       webpage
+      restaurantImg
       location {
         _id
         address
@@ -59,6 +61,7 @@ export const QUERY_BY_ZIPCODE = gql`
     restaurantsByZipcode(zipCode: $zipCode) {
       _id
       restaurantName
+      restaurantImg
       location {
         _id
         address
