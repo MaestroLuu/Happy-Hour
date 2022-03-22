@@ -50,11 +50,18 @@ const Cards = () => {
               </Typography>
 
               {/* Require a new component called Location just like Reviews/Items */}
+              {restaurant.location.map((location) => (
+                <Typography
+                  key={location._id}
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  {location.address} <br /> 
+                  {location.city}, {location.state}<br /> 
+                  {location.zipCode}
+                </Typography>
+              ))}
 
-              {/* <Typography variant="body2" color="text.secondary">
-                {restaurant.location.zipCode}
-              </Typography> */}
-              
               <Typography variant="body2" color="text.primary">
                 {restaurant.happyHours}
               </Typography>
