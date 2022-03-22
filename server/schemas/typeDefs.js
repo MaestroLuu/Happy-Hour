@@ -39,7 +39,7 @@ const typeDefs = gql`
   type Restaurant {
     _id: ID!
     restaurantName: String!
-    phoneNumber: Int
+    phoneNumber: String
     webpage: String
     location: [Location]!
     happyHours: String!
@@ -51,7 +51,7 @@ const typeDefs = gql`
     _id: ID!
     address: String!
     city: String!
-    zipCode: Number!
+    zipCode: Int!
     state: String
     country: String
   }
