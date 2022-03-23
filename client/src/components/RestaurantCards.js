@@ -4,14 +4,13 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import RestaurantImg from "./Restaurant.jpeg";
 import { useMutation, useQuery } from "@apollo/client";
 import { QUERY_BY_ZIPCODE } from "../util/queries";
 import { useSearchParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Button from "@mui/material/Button";
+import Grid from "@mui/material/Button";
 import { ADD_FAVORITE_RESTAURANT } from "../util/mutations";
-
+import { useMediaQuery } from "@mui/material";
 const Cards = () => {
   const [searchParams] = useSearchParams();
   const zipCode = parseInt(searchParams.get("zipcode"));
@@ -28,19 +27,21 @@ const Cards = () => {
   };
 
   return (
-    <div sx={{ width: "100%" }}>
+    <Box sx={{ flexGrow: 1  }} columns={{ xs: 4, sm: 8, md: 12 }}>
+      <Grid container spacing={{ xs: 2, md: 3 }}></Grid>
       {loading && <p>loading restaurants...</p>}
       {restaurants.map((restaurant) => (
         <Card
           key={restaurant._id}
-          sx={{ maxWidth: "50vw", my: "30px", mx: "auto" }}
+          sx={{ maxWidth: "75vw", my: "30px", mx: "auto" }}
         >
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
+        <Grid item xs={12} sm = {4} md={12} key={restaurant._id}>
+          <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row"} }}>
             <Link to={`/restaurants/${restaurant._id}`}>
               <CardMedia
                 component="img"
-                height="200"
-                image={RestaurantImg}
+                height="100%"
+                image={restaurant.restaurantImg}
                 alt="restaurant"
               />
             </Link>
@@ -64,14 +65,15 @@ const Cards = () => {
               <Typography variant="body2" color="text.primary">
                 {restaurant.happyHours}
               </Typography>
-              <Button onClick={() => handleFavorite(restaurant._id)}>
+              {/* <Button onClick={() => handleFavorite(restaurant._id)}>
                 Favorite
-              </Button>
+              </Button> */}
             </CardContent>
           </Box>
+        </Grid>
         </Card>
       ))}
-    </div>
+    </Box>
   );
 };
 

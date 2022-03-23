@@ -25,10 +25,10 @@ export default function Landing() {
   return (
     <div>
       <Card sx={{ maxWidth: 345, mx: "auto", marginBottom: "50px" }}>
-        <h1 style={{ textAlign: "center", fontSize: "45px" }}>Happy Hour</h1>
+        <h1 style={{ textAlign: "center", fontSize: "45px", marginTop: "30px", color: "rgb(88,31,34)" }}>Happy Hour</h1>
         <CardMedia component="img" height="250" image={Beers} alt="beers" />
         <h3
-          style={{ textAlign: "center", marginTop: "30px", fontSize: "25px" }}
+          style={{ textAlign: "center", marginTop: "30px", fontSize: "25px", color: "rgb(88,31,34)" }}
         >
           For local happy hour <br />
           information type in your <br />
@@ -45,7 +45,7 @@ export default function Landing() {
             onChange={handleChange}
           />
           <Button
-            sx={{ maxWidth: 100, marginLeft: "120px", my: "10px" }}
+            sx={{ maxWidth: 100, marginLeft: "120px", my: "10px", color: "black" }}
             variant="outlined"
             size="large"
             type="submit"
