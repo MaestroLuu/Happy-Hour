@@ -55,7 +55,6 @@ export default function Landing() {
         </form>
       </Card>
       <br />
-      <Footer sx={{ mx: "auto" }} />
     </div>
   );
 }

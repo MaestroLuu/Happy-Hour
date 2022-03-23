@@ -107,7 +107,6 @@ export default function Login() {
           </div>
         </form>
       </Box>
-      <Footer />
     </div>
   );
 }

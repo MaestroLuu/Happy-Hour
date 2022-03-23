@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { QUERY_SINGLE_RESTAURANT } from "../util/queries";
 import Review from "../components/Review";
 import { Typography } from "@mui/material";
+import ReviewForm from "../components/ReviewForm";
 
 const styles = {
   text: {
@@ -55,9 +56,10 @@ const Restaurant = () => {
       </div>
 
       <h1 style={styles.text}>Reviews</h1>
+      <br></br>
+      <ReviewForm />
+      <br></br>
       <Review reviews={restaurant.reviews || []} />
-
-      <Footer />
     </div>
   );
 };

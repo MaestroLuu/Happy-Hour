@@ -51,22 +51,21 @@ mutation removeFavoriteRestaurant($restaurantId: ID!) {
 }
 `;
 
-// // RESTAURANT PAGE
-// export const ADD_REVIEW = gql`
-// mutation addReview($restaurantId: ID!, $reviewText: String!) {
-//   addReview(restaurantId: $restaurantId, reviewText: $reviewText) {
-//     _id
-//     restaurantName
-//     reviews {
-//       _id
-//       reviewAuthor
-//       reviewText
-//       createdAt
-//       stars
-//     }
-//   }
-// }
-// `;
+// RESTAURANT PAGE
+export const ADD_REVIEW = gql`
+mutation addReview($restaurantId: ID!, $reviewText: String!) {
+  addReview(restaurantId: $restaurantId, reviewText: $reviewText) {
+    _id
+    restaurantName
+    reviews {
+      _id
+      reviewAuthor
+      reviewText
+      createdAt
+    }
+  }
+}
+`;
 
 // // RESTAURANT PAGE
 // export const DELETE_REVIEW = gql`

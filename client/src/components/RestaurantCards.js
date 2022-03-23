@@ -11,6 +11,8 @@ import { Link } from "react-router-dom";
 import Grid from "@mui/material/Button";
 import { ADD_FAVORITE_RESTAURANT } from "../util/mutations";
 import { useMediaQuery } from "@mui/material";
+import "../../src/index.css"
+
 const Cards = () => {
   const [searchParams] = useSearchParams();
   const zipCode = parseInt(searchParams.get("zipcode"));
@@ -33,14 +35,12 @@ const Cards = () => {
       {restaurants.map((restaurant) => (
         <Card
           key={restaurant._id}
-          sx={{ maxWidth: "75vw", my: "30px", mx: "auto" }}
+          sx={{ maxWidth: "60vw", my: "30px", mx: "auto" }}
         >
-        <Grid item xs={12} sm = {4} md={12} key={restaurant._id}>
-          <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row"} }}>
-            <Link to={`/restaurants/${restaurant._id}`}>
+        <Grid xs={12} sx={{ display: "flex", flexDirection: { xs: "column", md: "row"} }} key={restaurant._id}>
+            <Link to={`/restaurants/${restaurant._id}`} style = {{ width: "100%", maxWidth: "700px" }}>
               <CardMedia
                 component="img"
-                height="100%"
                 image={restaurant.restaurantImg}
                 alt="restaurant"
               />
@@ -69,7 +69,6 @@ const Cards = () => {
                 Favorite
               </Button> */}
             </CardContent>
-          </Box>
         </Grid>
         </Card>
       ))}

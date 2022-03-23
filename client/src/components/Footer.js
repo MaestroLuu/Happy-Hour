@@ -33,14 +33,16 @@ export default function Footer() {
   const { isLoggedIn, logout } = useAuth();
   return (
     <div>
+      <br></br><br></br>
       {/* new footer? */}
     <Box sx={{ 
-      width: "50%", 
+      width: "100%", 
       mx: "auto",
       bottom: 0,
       left: 0,
       right: 0,
-      position: "fixed", 
+      position: "fixed",
+      backgroundColor: "black"
       }}
       elevation={3}
       >
