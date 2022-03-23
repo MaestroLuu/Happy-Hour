@@ -35,7 +35,7 @@ const Cards = () => {
       {restaurants.map((restaurant) => (
         <Card
           key={restaurant._id}
-          sx={{ maxWidth: "75vw", my: "30px", mx: "auto" }}
+          sx={{ maxWidth: "60vw", my: "30px", mx: "auto" }}
         >
         <Grid xs={12} sx={{ display: "flex", flexDirection: { xs: "column", md: "row"} }} key={restaurant._id}>
             <Link to={`/restaurants/${restaurant._id}`} style = {{ width: "100%", maxWidth: "700px" }}>
