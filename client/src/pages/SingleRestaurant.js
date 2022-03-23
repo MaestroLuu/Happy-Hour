@@ -56,10 +56,10 @@ const Restaurant = () => {
       </div>
 
       <h1 style={styles.text}>Reviews</h1>
+      <br></br>
       <ReviewForm />
+      <br></br>
       <Review reviews={restaurant.reviews || []} />
-
-      <Footer />
     </div>
   );
 };

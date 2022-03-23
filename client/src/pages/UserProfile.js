@@ -7,7 +7,6 @@ export default function UserProfile() {
     <div>
       <h1 style={{ textAlign: "center" }}>Favorites</h1>
       <FavoriteCards />
-      <Footer />
     </div>
   );
 }

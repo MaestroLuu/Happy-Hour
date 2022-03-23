@@ -52,7 +52,6 @@ const Home = () => {
         </form>
       </Box>
       <RestaurantCards />
-      {/* <Footer /> */}
     </div>
   );
 };

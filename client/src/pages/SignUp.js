@@ -133,7 +133,6 @@ export default function SignUp() {
           </div>
         </form>
       </Box>
-      <Footer />
     </div>
   );
 }
