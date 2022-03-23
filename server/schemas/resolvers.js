@@ -57,6 +57,14 @@ const resolvers = {
       await user.save();
       return { token, user };
     },
+    createRestaurant: async (parent, args , context) => {
+        const restaurant = await Restaurant.create({ ...args });
+        // Create new Token for Restaurant owners other than "user"
+        // const token = await signToken(user);
+        
+        return restaurant;
+      // throw error;
+    },
     addFavoriteRestaurant: async (parent, {restaurantId}, context) => {  
       if (context.user) {
         return await User.findOneAndUpdate(
