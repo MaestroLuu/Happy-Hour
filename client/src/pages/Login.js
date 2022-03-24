@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useLocation, Navigate } from "react-router-dom";
 import { useAuth } from "../util/auth";
 import React from "react";
-
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import Input from "@mui/material/Input";
