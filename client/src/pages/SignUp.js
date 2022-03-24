@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../util/auth";
 import React from "react";
-import Footer from "../components/Footer";
+
 
 import FormControl from "@mui/material/FormControl";
 import Input from "@mui/material/Input";
@@ -12,6 +12,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import VpnKeyIcon from "@mui/icons-material/VpnKey";
+import { NavLink } from "react-router-dom";
 
 import Box from "@mui/material/Box";
 
@@ -133,6 +134,12 @@ export default function SignUp() {
           </div>
         </form>
       </Box>
+      <p style={{ textAlign: "center", marginTop: "30px" }}>Do you have already have an account?
+           <br></br>
+          If so, log in <NavLink to="/signup">
+            here.
+          </NavLink>
+        </p>
     </div>
   );
 }

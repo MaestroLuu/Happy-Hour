@@ -12,6 +12,10 @@ import MailIcon from "@mui/icons-material/Mail";
 import VpnKeyIcon from "@mui/icons-material/VpnKey";
 import Button from "@mui/material/Button";
 import { Box } from "@mui/material";
+import { NavLink } from "react-router-dom";
+
+
+
 
 const initialFormState = {
   email: "",
@@ -46,16 +50,18 @@ export default function Login() {
 
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>Login</h1>
+      <h1 style={{ textAlign: "center", marginBottom: "20px" }}>Login</h1>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <form onSubmit={handleSubmit}>
           <div>
             <FormControl
-              sx={{ marginBottom: "10px", width: "250px" }}
+              sx={{ marginBottom: "10px", width: "250px", display: "flex", flexDirection: "row", alignItems: "flex-end" }}
               variant="standard"
             >
-              <InputLabel htmlFor="email">Email</InputLabel>
+              <MailIcon sx={{display: 'flex', marginRight: "10px"}}/>
+              <InputLabel sx={{display: 'flex'}} htmlFor="email">Email</InputLabel>
               <Input
+              sx={{backgroundColor: "white", opacity: "80%", color: "grey"}}
                 disabled={loading}
                 id="email"
                 type="email"
@@ -74,11 +80,13 @@ export default function Login() {
 
           <div>
             <FormControl
-              sx={{ marginBottom: "10px", width: "250px" }}
+              sx={{ marginBottom: "40px", width: "250px", display: "flex", flexDirection: "row", alignItems: "flex-end" }}
               variant="standard"
             >
+              <VpnKeyIcon sx={{display: 'flex', marginRight: "10px"}} />
               <InputLabel htmlFor="new-password">Password</InputLabel>
               <Input
+              sx={{backgroundColor: "white", opacity: "80%", color: "grey"}}
                 disabled={loading}
                 id="new-password"
                 type="password"
@@ -97,16 +105,24 @@ export default function Login() {
 
           <div>
             <Button
-              sx={{ marginBottom: "10px", width: "250px" }}
+              sx={{ marginBottom: "10px", width: "250px", backgroundColor: "rgb(222,119,1)", color: "white"}}
               disabled={loading}
               type="submit"
               variant="outlined"
             >
               {loading ? "Loading..." : "LOGIN"}
             </Button>
+            <p></p>
           </div>
         </form>
+       
       </Box>
+      <p style={{ textAlign: "center", marginTop: "30px" }}>Do you have an account?
+           <br></br>
+          If not, sign up <NavLink to="/signup">
+            here.
+          </NavLink>
+        </p>
     </div>
   );
 }
