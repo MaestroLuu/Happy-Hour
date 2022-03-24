@@ -69,7 +69,7 @@ mutation addReview($restaurantId: ID!, $reviewText: String!) {
 
 // // RESTAURANT PAGE
 // export const DELETE_REVIEW = gql`
-// mutation DeleteReview($restaurantId: ID!, $reviewId: ID!) {
+// mutation deleteReview($restaurantId: ID!, $reviewId: ID!) {
 //   deleteReview(restaurantId: $restaurantId, reviewId: $reviewId) {
 //     _id
 //     restaurantName
