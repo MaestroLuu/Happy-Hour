@@ -51,7 +51,7 @@ const Restaurant = () => {
 
       <h1 style={styles.text}>Reviews</h1>
       <br></br>
-      <ReviewForm />
+      <ReviewForm restaurantId={restaurantId}/>
       <br></br>
       <Review reviews={restaurant.reviews || []} />
     </div>

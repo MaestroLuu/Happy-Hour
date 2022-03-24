@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
@@ -8,42 +8,15 @@ import Button from "@mui/material/Button";
 import { ADD_REVIEW } from "../util/mutations";
 import { useMutation } from "@apollo/client";
 
-export default function ReviewForm() {
-
-    // const initialFormState = {
-    //     review: "",
-    // }
+export default function ReviewForm({restaurantId}) {
 
     const { isLoggedIn } = useAuth();
-    // const [formState, setFormState] = useState({review: ""});
-    
-    // const [addReview, { error }] = useMutation(ADD_REVIEW);
-
-    // useEffect(() => {
-    //     if (error) {
-    //         alert(error);
-    //     }
-    // }, [error]);
-
-    // const handleInputChange = (evt) => {
-    //     const { name, value } = evt.target;
-    //     setFormState((prevState) => ({ ...prevState, [name]: value }));
-    //     console.log(formState);
-    // };
-    
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
-    //     try {
-    //         addReview({ variables: { ...formState } });
-
-    //       } catch (err) {
-    //         console.error(err);
-    //       }
-    //   };
 
     const [formState, setFormState] = useState({
         reviewText: '',
+        restaurantId: restaurantId,
       });
+
       const [characterCount, setCharacterCount] = useState(0);
     
       // Set up our mutation with an option to handle errors
@@ -71,7 +44,6 @@ export default function ReviewForm() {
         } else if (name !== 'reviewText') {
           setFormState({ ...formState, [name]: value });
         }
-        console.log(formState);
       };
 
   return (
