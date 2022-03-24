@@ -9,7 +9,7 @@
     "zipCode": 91914,
     "state": "CA",
     "country": "USA",
-    "happyHours": "Mon-Thur 4pm-7pm",
+    "happyHours": "Mon-Thur 4PM-7PM",
     "items": [
       {
         "itemName": "Well Drinks",
@@ -87,6 +87,24 @@
         "itemName": "Blueberry Vodka Lemonade",
         "price": "6.00",
         "description": "Blueberry Vodka, Lemonade, Mint"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Chula Vista Brewery - East Lake",
+    "phoneNumber": "(619) 349-0068",
+    "webpage": "https://www.chulavistabrewery.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/-wLFtYJnEEgip1SQaq4Hsw/o.jpg",
+    "address": "871 Showroom Pl Ste 102 Chula Vista",
+    "city": "Eastlake",
+    "zipCode": 91914,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Thur 11AM-6PM",
+    "items": [
+      {
+        "itemName": "16oz Artisian Hand Crafted Ales",
+        "price": "5.00"
       }
     ]
   }
