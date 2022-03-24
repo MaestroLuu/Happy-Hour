@@ -7,7 +7,7 @@ const restaurantSchema = new Schema(
     restaurantName: {
       type: String,
       required: "You need a restaurant name.",
-      unique: true,
+      // unique: true,
     },
     phoneNumber: {
       type: String,
