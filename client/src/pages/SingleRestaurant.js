@@ -1,6 +1,5 @@
 import React from "react";
 import Specials from "../components/Specials";
-import Footer from "../components/Footer";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import { QUERY_SINGLE_RESTAURANT } from "../util/queries";
@@ -34,17 +33,12 @@ const Restaurant = () => {
       <h1 style={styles.text}>{restaurant.restaurantName}</h1>
       <h2 style={styles.text}>Happy Hour: {restaurant.happyHours}</h2>
       <p style={styles.text}>
-      {/* data does not load...John scolded us about this several times
-      Does anyone remember why? 
-      {restaurant.location.map((location) => (
-          <Typography key={location._id} variant="body">
-            {location.address} <br />
-            {location.city}, {location.state}
-            <br />
-            {location.zipCode}
-          </Typography>
-        ))} */}
-
+        <Typography variant="body">
+          {restaurant.address} <br />
+          {restaurant.city}, {restaurant.state}
+          <br />
+          {restaurant.zipCode}
+        </Typography>
       </p>
       <h1 style={{ textAlign: "center", marginTop: "50px" }}>
         {" "}

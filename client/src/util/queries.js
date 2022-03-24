@@ -7,14 +7,11 @@ export const ME = gql`
         _id
         restaurantName
         restaurantImg
-        location {
-          _id
-          address
-          city
-          zipCode
-          state
-          country
-        }
+        address
+        city
+        zipCode
+        state
+        country
         happyHours
       }
     }
@@ -31,14 +28,11 @@ export const QUERY_SINGLE_RESTAURANT = gql`
       phoneNumber
       webpage
       restaurantImg
-      location {
-        _id
-        address
-        city
-        zipCode
-        state
-        country
-      }
+      address
+      city
+      zipCode
+      state
+      country
       happyHours
       items {
         _id
@@ -62,14 +56,11 @@ export const QUERY_BY_ZIPCODE = gql`
       _id
       restaurantName
       restaurantImg
-      location {
-        _id
-        address
-        city
-        zipCode
-        state
-        country
-      }
+      address
+      city
+      zipCode
+      state
+      country
       happyHours
     }
   }

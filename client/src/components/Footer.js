@@ -7,6 +7,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Box } from "@mui/material";
 import RestoreIcon from '@mui/icons-material/Restore';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LoginIcon from '@mui/icons-material/Login';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -66,6 +68,26 @@ export default function Footer() {
             icon={<FavoriteIcon />}
           />
         </NavLink>
+        {isLoggedIn ? 
+        (
+          <NavLink to="/landing">
+          <BottomNavigationAction
+            label="logout"
+            value="logout"
+            icon={<LogoutIcon />}
+            onClick={logout}
+          />
+        </NavLink>
+        ):
+        (
+          <NavLink to="/login">
+          <BottomNavigationAction
+            label="login"
+            value="login"
+            icon={<LoginIcon />}
+          />
+        </NavLink>
+        )}
 
         {/* <BottomNavigationAction
           label="Menu"
