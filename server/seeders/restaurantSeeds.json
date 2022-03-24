@@ -1,6 +1,6 @@
 [
   {
-    "restaurantName": "Common Theory",
+    "restaurantName": "Marco's Theory",
     "phoneNumber" : "(619) 780-6689",
     "webpage": "https://www.commontheorysd.com/",
     "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/mS4z6byk8K82Fckr0om2zg/o.jpg",
@@ -75,48 +75,6 @@
         "itemName": "Craft Beer",
         "price": "Vary by Selection",
         "description": "$1 off each beer"
-      }
-    ]
-  },
-  {
-    "restaurantName": "Peter D's Bar",
-    "phoneNumber" : "(858) 277-3217",
-    "webpage": "https://www.peterdsbar.com/index.php",
-    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/rbRR4wtAutbe41XizvnWeg/o.jpg",
-    "address": "5149 Clairemont Mesa Blvd",
-    "city": "San Diego",
-    "zipCode": 92117,
-    "state": "CA",
-    "country": "USA",
-    "happyHours": "Everyday 10am-2pm",
-    "items": [
-      {
-        "itemName": "Well Drinks (House)",
-        "price": "3.00"
-      },
-      {
-        "itemName": "Domestic Beers",
-        "price": "3.00"
-      },
-      {
-        "itemName": "Sheep Dog Peanut Butter Whiskey",
-        "price": "3.00"
-      },
-      {
-        "itemName": "Jim Beam",
-        "price": "5.00"
-      },
-      {
-        "itemName": "Fireball",
-        "price": "5.00"
-      },
-      {
-        "itemName": "Jack Daniels",
-        "price": "6.00"
-      },
-      {
-        "itemName": "Rumple Minze",
-        "price": "6.00"
       }
     ]
   },
