@@ -2,7 +2,6 @@ import React from "react";
 import RestaurantCards from "../components/RestaurantCards";
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
-import Footer from "../components/Footer";
 import { useNavigate } from "react-router";
 import { useState } from "react";
 import Button from "@mui/material/Button";
