@@ -1,0 +1,93 @@
+[
+  {
+    "restaurantName": "3N1 Sports Bar & Grill",
+    "phoneNumber": "(619) 207-0366",
+    "webpage": "https://3n1sportsbarandgrill.com/",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/Jh1myVVkW21fasaqW_qk-A/o.jpg",
+    "address": "2330 Proctor Valley Rd Ste 101 Chula Vista",
+    "city": "Eastlake",
+    "zipCode": 91914,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Thur 4pm-7pm",
+    "items": [
+      {
+        "itemName": "Well Drinks",
+        "price": "5.00"
+      },
+      {
+        "itemName": "House Margaritas",
+        "price": "6.00"
+      },
+      {
+        "itemName": "Mojitos",
+        "price": "5.00"
+      },
+      {
+        "itemName": "Mules",
+        "price": "7.00"
+      },
+      {
+        "itemName": "Old Fashions",
+        "price": "8.00"
+      },
+      {
+        "itemName": "Stellas",
+        "price": "6.00"
+      },
+      {
+        "itemName": "Pitcher Latitude 33 Blonde",
+        "price": "20.00"
+      },
+      {
+        "itemName": "Wine",
+        "price": "7.00",
+        "description": "House Red/House White"
+      },
+      {
+        "itemName": "Bud Light Pitcher",
+        "price": "15.00"
+      },
+      {
+        "itemName": "16oz Latitude 33 Blonde",
+        "price": "5.00"
+      },
+      {
+        "itemName": "Pitcher Stella",
+        "price": "20.00"
+      },
+      {
+        "itemName": "16oz Pacifico",
+        "price": "6.00"
+      },
+      {
+        "itemName": "Pitcher Pacifico",
+        "price": "20.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Casa Nori",
+    "phoneNumber": "(619) 947-6592",
+    "webpage": "https://www.casanorisushi.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/zoLS_u9xxK8OswaB-QegtQ/o.jpg",
+    "address": "1730 E Palomar St Chula Vista",
+    "city": "Eastlake",
+    "zipCode": 91914,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "All Day",
+    "items": [
+      {
+        "itemName": "Bay Breeze",
+        "price": "6.00",
+        "description": "Pineapple Vodka, Cranberry, Lime"
+      },
+      {
+        "itemName": "Blueberry Vodka Lemonade",
+        "price": "6.00",
+        "description": "Blueberry Vodka, Lemonade, Mint"
+      }
+    ]
+  }
+]
