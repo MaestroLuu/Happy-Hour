@@ -1,45 +1,14 @@
 [
   {
-    "restaurantName": "David's Diner",
-    "phoneNumber" : "6191234567",
-    "webpage": "google.com",
-    "location": [
-      {
-        "address": "2021 Luu Lane",
-        "city": "San Diego",
-        "zipCode": 92117,
-        "state": "CA",
-        "country": "USA"
-      }
-    ],
-    "happyHours": "9 AM to 3 PM",
-    "items": [
-      {
-        "itemName": "Draft Pints",
-        "price": "4.50",
-        "description": "Cheaper than McDonalds"
-      },
-      {
-        "itemName": "Stir Fry",
-        "price": "3.99",
-        "description": "The best you've ever had"
-      }
-    ]
-  },
-  {
     "restaurantName": "Common Theory",
     "phoneNumber" : "(619) 780-6689",
     "webpage": "https://www.commontheorysd.com/",
     "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/mS4z6byk8K82Fckr0om2zg/o.jpg",
-    "location": [
-      {
-        "address": "4805 Convoy St",
-        "city": "San Diego",
-        "zipCode": 92111,
-        "state": "CA",
-        "country": "USA"
-      }
-    ],
+    "address": "4805 Convoy St",
+    "city": "San Diego",
+    "zipCode": 92111,
+    "state": "CA",
+    "country": "USA",
     "happyHours": "Tuesday-Friday 3pm-6pm",
     "items": [
       {
@@ -59,15 +28,11 @@
     "phoneNumber" : "(858) 715-1745",
     "webpage": "https://obrienspub.net/",
     "restaurantImg": "https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_70,c_fit,h_864/http://static.spotapps.co/spots/e0/64f040198f11e9aba51dcbf14426ba/:original",
-    "location": [
-      {
-        "address": "4646 Convoy St",
-        "city": "San Diego",
-        "zipCode": 92111,
-        "state": "CA",
-        "country": "USA"
-      }
-    ],
+    "address": "4646 Convoy St",
+    "city": "San Diego",
+    "zipCode": 92111,
+    "state": "CA",
+    "country": "USA",
     "happyHours": "Monday-Thursday 3pm-5pm",
     "items": [
       {
@@ -82,15 +47,11 @@
     "phoneNumber" : "858-503-6786",
     "webpage": "https://www.bullpenbar.com/",
     "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/4mWMwmdyI4XcnEPIvxIhIA/o.jpg",
-    "location": [
-      {
-        "address": "8199 Clairemont Mesa Blvd",
-        "city": "San Diego",
-        "zipCode": 92111,
-        "state": "CA",
-        "country": "USA"
-      }
-    ],
+    "address": "8199 Clairemont Mesa Blvd",
+    "city": "San Diego",
+    "zipCode": 92111,
+    "state": "CA",
+    "country": "USA",
     "happyHours": "Monday-Friday 2pm-6pm",
     "items": [
       {
@@ -122,15 +83,11 @@
     "phoneNumber" : "(858) 277-3217",
     "webpage": "https://www.peterdsbar.com/index.php",
     "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/rbRR4wtAutbe41XizvnWeg/o.jpg",
-    "location": [
-      {
-        "address": "5149 Clairemont Mesa Blvd",
-        "city": "San Diego",
-        "zipCode": 92117,
-        "state": "CA",
-        "country": "USA"
-      }
-    ],
+    "address": "5149 Clairemont Mesa Blvd",
+    "city": "San Diego",
+    "zipCode": 92117,
+    "state": "CA",
+    "country": "USA",
     "happyHours": "Everyday 10am-2pm",
     "items": [
       {
@@ -168,15 +125,11 @@
     "phoneNumber" : "858) 576-0700",
     "webpage": "https://www.hivesandiego.com/",
     "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/BIEi8Np3eDlr1Qt6w2GEAA/o.jpg",
-    "location": [
-      {
-        "address": "4428 Convoy St Ste 100",
-        "city": "San Diego",
-        "zipCode": 92111,
-        "state": "CA",
-        "country": "USA"
-      }
-    ],
+    "address": "4428 Convoy St Ste 100",
+    "city": "San Diego",
+    "zipCode": 92111,
+    "state": "CA",
+    "country": "USA",
     "happyHours": "Sunday-Thursday 4pm-7pm",
     "items": [
       {
