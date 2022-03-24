@@ -1,9 +1,9 @@
 import { ApolloProvider } from "@apollo/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import RequireAuth from "./components/RequireAuth";
+// import RequireAuth from "./components/RequireAuth";
 import AllRestaurants from "./pages/AllRestaurants";
 import Login from "./pages/Login";
-import ProtectedPageExample from "./pages/ProtectedPageExample";
+// import ProtectedPageExample from "./pages/ProtectedPageExample";
 import SignUp from "./pages/SignUp";
 import { client } from "./util/apolloClient";
 import { AuthProvider } from "./util/auth";

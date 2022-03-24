@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../components/Footer";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Beers from "../components/beers4.png";
