@@ -17,7 +17,6 @@ db.once("open", async () => {
     const reviews = await Review.insertMany(reviewSeeds);
     const restaurants = await Restaurant.insertMany(restaurantSeeds);
 
-
         for (const rev of reviews) {
             // randomly add each Reviews to a Restaurant
             const tempRestaurant = restaurants[Math.floor(Math.random() * restaurants.length)];
