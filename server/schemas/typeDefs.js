@@ -6,21 +6,50 @@ const typeDefs = gql`
   "Unix time stamp in milliseconds."
   scalar Date
 
+  input RestaurantInput {
+    restaurantName: String!
+    phoneNumber: String
+    webpage: String
+    restaurantImg: String
+    location: LocationInput
+    items: ItemsInput
+    happyHours: String!
+  }
+
+  input ItemsInput {
+    itemName: String!
+    price: String!
+    description: String
+  }
+
+  input LocationInput {
+    address: String!
+    city: String!
+    zipCode: Int!
+    state: String
+    country: String
+  }
+
   type Query {
     me: User
     restaurant(id: ID!): Restaurant
     restaurants: [Restaurant]
-    restaurantsByZipcode(zipCode: Int!): [Restaurant] 
+    restaurantsByZipcode(zipCode: Int!): [Restaurant]
   }
 
   type Mutation {
     createUser(email: String!, password: String!, username: String!): Auth
     login(email: String!, password: String!): Auth
+    createRestaurant(input: RestaurantInput): Restaurant
     addFavoriteRestaurant(restaurantId: ID!): User
     removeFavoriteRestaurant(restaurantId: ID!): User
     addReview(restaurantId: ID!, reviewText: String!): Restaurant
     deleteReview(restaurantId: ID!, reviewId: ID!): Restaurant
-    updateReview(restaurantId: ID!, reviewId: ID!, reviewText: String!): Restaurant
+    updateReview(
+      restaurantId: ID!
+      reviewId: ID!
+      reviewText: String!
+    ): Restaurant
   }
 
   type Auth {
@@ -42,19 +71,14 @@ const typeDefs = gql`
     phoneNumber: String
     webpage: String
     restaurantImg: String
-    location: [Location]!
-    happyHours: String!
-    items: [Item]!
-    reviews: [Review]
-  }
-
-  type Location {
-    _id: ID!
     address: String!
     city: String!
     zipCode: Int!
     state: String
     country: String
+    happyHours: String!
+    items: [Item]!
+    reviews: [Review]
   }
 
   type Item {

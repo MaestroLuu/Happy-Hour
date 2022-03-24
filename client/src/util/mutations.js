@@ -69,12 +69,14 @@ mutation addReview($restaurantId: ID!, $reviewText: String!) {
 
 // // RESTAURANT PAGE
 // export const DELETE_REVIEW = gql`
-// mutation deleteReview($restaurantId: ID!, $reviewText: String!) {
-//   deleteReview(restaurantId: $restaurantId, reviewText: $reviewText) {
+// mutation deleteReview($restaurantId: ID!, $reviewId: ID!) {
+//   deleteReview(restaurantId: $restaurantId, reviewId: $reviewId) {
 //     _id
 //     restaurantName
 //     reviews {
 //       _id
+//       reviewAuthor
+//       reviewText
 //     }
 //   }
 // }
@@ -82,15 +84,14 @@ mutation addReview($restaurantId: ID!, $reviewText: String!) {
 
 // // RESTAURANT PAGE
 // export const UPDATE_REVIEW = gql`
-// mutation addReview($restaurantId: ID!, $reviewText: String!) {
-//   addReview(restaurantId: $restaurantId, reviewText: $reviewText) {
+// mutation updateReview($restaurantId: ID!, $reviewId: ID!, $reviewText: String!) {
+//   updateReview(restaurantId: $restaurantId, reviewId: $reviewId, reviewText: $reviewText) {
 //     _id
 //     restaurantName
 //     reviews {
 //       _id
+//       reviewAuthor
 //       reviewText
-//       createdAt
-//       stars
 //     }
 //   }
 // }

@@ -49,18 +49,15 @@ const Cards = () => {
               <Typography gutterBottom component="div">
                 {restaurant.restaurantName}
               </Typography>
-
-              {restaurant.location.map((location) => (
+              
                 <Typography
-                  key={location._id}
                   variant="body2"
                   color="text.secondary"
                 >
-                  {location.address} <br /> 
-                  {location.city}, {location.state}<br /> 
-                  {location.zipCode}
+                  {restaurant.address} <br /> 
+                  {restaurant.city}, {restaurant.state}<br /> 
+                  {restaurant.zipCode}
                 </Typography>
-              ))}
 
               <Typography variant="body2" color="text.primary">
                 {restaurant.happyHours}

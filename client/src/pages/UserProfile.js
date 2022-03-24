@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../components/Footer";
 import FavoriteCards from "../components/FavoriteCards";
 
 export default function UserProfile() {
