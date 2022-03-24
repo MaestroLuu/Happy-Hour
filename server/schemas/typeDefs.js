@@ -10,7 +10,7 @@ const typeDefs = gql`
     me: User
     restaurant(id: ID!): Restaurant
     restaurants: [Restaurant]
-    restaurantsByZipcode(zipCode: Int!): [Restaurant] 
+    restaurantsByZipcode(zipCode: Int!): [Restaurant]
   }
 
   type Mutation {
@@ -20,7 +20,11 @@ const typeDefs = gql`
     removeFavoriteRestaurant(restaurantId: ID!): User
     addReview(restaurantId: ID!, reviewText: String!): Restaurant
     deleteReview(restaurantId: ID!, reviewId: ID!): Restaurant
-    updateReview(restaurantId: ID!, reviewId: ID!, reviewText: String!): Restaurant
+    updateReview(
+      restaurantId: ID!
+      reviewId: ID!
+      reviewText: String!
+    ): Restaurant
   }
 
   type Auth {
@@ -42,19 +46,14 @@ const typeDefs = gql`
     phoneNumber: String
     webpage: String
     restaurantImg: String
-    location: [Location]!
-    happyHours: String!
-    items: [Item]!
-    reviews: [Review]
-  }
-
-  type Location {
-    _id: ID!
     address: String!
     city: String!
     zipCode: Int!
     state: String
     country: String
+    happyHours: String!
+    items: [Item]!
+    reviews: [Review]
   }
 
   type Item {

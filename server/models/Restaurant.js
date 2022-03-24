@@ -6,7 +6,6 @@ const restaurantSchema = new Schema(
     restaurantName: {
       type: String,
       required: "You need a restaurant name.",
-      // unique: true,
     },
     phoneNumber: {
       type: String,
@@ -16,7 +15,7 @@ const restaurantSchema = new Schema(
       type: String,
     },
     restaurantImg: {
-      type: String
+      type: String,
     },
     address: {
       type: String,
