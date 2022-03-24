@@ -1,79 +1,17 @@
-import { useEffect, useState } from "react";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { useAuth } from "../util/auth";
 import { NavLink } from "react-router-dom";
 import Button from "@mui/material/Button";
-import { ADD_REVIEW } from "../util/mutations";
-import { useMutation } from "@apollo/client";
+
+const handleSubmit = (event) => {
+    event.preventDefault();
+  };
 
 export default function ReviewForm() {
-
-    // const initialFormState = {
-    //     review: "",
-    // }
-
-    const { isLoggedIn } = useAuth();
-    // const [formState, setFormState] = useState({review: ""});
-    
-    // const [addReview, { error }] = useMutation(ADD_REVIEW);
-
-    // useEffect(() => {
-    //     if (error) {
-    //         alert(error);
-    //     }
-    // }, [error]);
-
-    // const handleInputChange = (evt) => {
-    //     const { name, value } = evt.target;
-    //     setFormState((prevState) => ({ ...prevState, [name]: value }));
-    //     console.log(formState);
-    // };
-    
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
-    //     try {
-    //         addReview({ variables: { ...formState } });
-
-    //       } catch (err) {
-    //         console.error(err);
-    //       }
-    //   };
-
-    const [formState, setFormState] = useState({
-        reviewText: '',
-      });
-      const [characterCount, setCharacterCount] = useState(0);
-    
-      // Set up our mutation with an option to handle errors
-      const [addReview, { error, loading }] = useMutation(ADD_REVIEW);
-    
-      const handleSubmit = async (event) => {
-        event.preventDefault();
-    
-        // On form submit, perform mutation and pass in form data object as arguments
-        // It is important that the object fields are match the defined parameters in `ADD_Review` mutation
-        try {
-          addReview({ variables: { ...formState } });
-          
-        } catch (err) {
-          console.error(err);
-        }
-      };
-    
-      const handleInputChange = (event) => {
-        const { name, value } = event.target;
-    
-        if (name === 'reviewText' && value.length <= 280) {
-          setFormState({ ...formState, [name]: value });
-          setCharacterCount(value.length);
-        } else if (name !== 'reviewText') {
-          setFormState({ ...formState, [name]: value });
-        }
-        console.log(formState);
-      };
-
+  const { isLoggedIn, logout } = useAuth();
+  // const [formState, setFormState] = useState(initialFormState);
   return (
     <Box
       component="form"
@@ -93,16 +31,13 @@ export default function ReviewForm() {
         >
           <TextField
             id="outlined-multiline-static"
-            label="Add a review"
-            name="reviewText"
+            label="Review"
             multiline
             rows={6}
             placeholder="Leave a review!"
             sx={{
               backgroundColor: "white",
             }}
-            value={formState.reviewText}
-            onChange={handleInputChange}
           ></TextField>
           <br></br>
           <Button
