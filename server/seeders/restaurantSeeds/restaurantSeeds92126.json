@@ -1,0 +1,23 @@
+[{
+        "restaurantName": "Gravity Heights",
+        "phoneNumber": "(858) 283-8206",
+        "webpage": "https://www.gravityheights.com/happy-hour",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/KYfDjd2xbrVFqbcUNWzVEA/o.jpg",
+        "address": "9920 Pacific Heights Blvd",
+        "city": "San Diego",
+        "zipCode": 92126,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Everyday 3pm-6pm",
+        "items": [{
+                "itemName": "House Wine",
+                "price": "$7"
+            },
+            {
+                "itemName": "House Pours",
+                "price": "Prices May Vary",
+                "description": "$1 off all house pours (subject to change)"
+            }
+        ]
+    }
+]
