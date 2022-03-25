@@ -1,0 +1,93 @@
+[
+  {
+    "restaurantName": "Dirty Birds",
+    "phoneNumber": "(619) 265-2086",
+    "webpage": "https://www.dirtybirdsbarandgrill.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/ymtr7n7ezF7BwVzBEW7qxg/o.jpg",
+    "address": "6499 El Cajon Blvd San Diego",
+    "city": "San Diego",
+    "zipCode": 92115,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Fri 3PM-6PM",
+    "items": [
+      {
+        "itemName": "Selected Pitchers",
+        "price": "Half off"
+      },
+      {
+        "itemName": "Coors Banquet Beer",
+        "price": "4.00 All day everyday"
+      },
+      {
+        "itemName": "Craft Beers",
+        "price": "6.00 8PM-Close on Thursday"
+      },
+      {
+        "itemName": "Select Beer/Shot Combo",
+        "price": "8.00 8PM-Close on Friday"
+      },
+      {
+        "itemName": "Sat/Sun Special",
+        "price": "3.00 Mimosas, 12.00 Champagne Bottles, 5.00 Stella Pints / 15.00 Stella Pitchers, 18.00 Buckets, 5.00 Svedka"
+      }
+    ]
+  },
+  {
+    "restaurantName": "The Rabbit Hole",
+    "phoneNumber": "(619) 255-4653",
+    "webpage": "http://www.rabbitholesd.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/_zj12Ojl5TlvpWwZmXtVRg/o.jpg",
+    "address": "3377 Adams Ave San Diego",
+    "city": "San Diego",
+    "zipCode": 92115,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "All Day",
+    "items": [
+      {
+        "itemName": "Draft Beers & House Wines",
+        "price": "6.00"
+      },
+      {
+        "itemName": "Premium Wells",
+        "price": "6.00"
+      },
+      {
+        "itemName": "Damn Good Jackfruit Sour",
+        "price": "7.00",
+        "description": "Uncle Ed’s Damn Good Jackfruit Vodka, Prickly Pear Vodka, Lo-fi Gentian Aperitif, Lemon Juice & Aquafaba"
+      },
+      {
+        "itemName": "Papulo",
+        "price": "7.00",
+        "description": "Buffalo Trace, Orange Liqueur, Pomegranate, Pineapple & Lime Garnished with Luxardo Cherries"
+      },
+      {
+        "itemName": "Dragon's Breath",
+        "price": "7.00",
+        "description": "Jalapeño Infused Herradura Blanco Tequila, Dragonfruit Simple Syrup, Lime Juice & Blood Orange Bitters. Garnished with Black Salt & Jalapeño"
+      },
+      {
+        "itemName": "Paradise Heights",
+        "price": "7.00",
+        "description": "Tito's Vodka, Blue Curacao, Lime & Cock n Bull Ginger Beer Garnished with a Lime Wheel & Umbrella"
+      },
+      {
+        "itemName": "Basil Bunny",
+        "price": "7.00",
+        "description": "Fugu Vodka, Strawberry, Basil, Lemon & Simple Syrup Garnished with Basil"
+      },
+      {
+        "itemName": "Normal Fashioned",
+        "price": "7.00",
+        "description": "Old Forester Bourbon, Sugar & Angostura Bitters. Garnished with Orange Peel & Luxardo Cherry"
+      },
+      {
+        "itemName": "The Dude",
+        "price": "7.00",
+        "description": "Vanilla Vodka, Licor 43 Vanilla Liqueur & Modern Times Black House Nitro Cold Brew Coffee Topped with House Made Whipped Cream"
+      }
+    ]
+  }
+]
