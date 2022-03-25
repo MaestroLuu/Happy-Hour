@@ -122,26 +122,26 @@
     "items": [
       {
         "itemName": "Selected Wines",
-        "price": "2.00 off Selected Wines"
+        "price": "$2.00 off Selected Wines"
       },
       {
         "itemName": "Draft Beer",
-        "price": "2.00 off Draft Beer",
+        "price": "$2.00 off Draft Beer",
         "description": "Ballast Point Sculpin, Bud Light, XX Amber, XX Lager Mango Cart Golden Road Modelo, Pacifico Oktoberfest Samuel Adams Ballast Point Hazy IPA"
       },
       {
         "itemName": "Beer Bottles",
-        "price": "2.00 off Beer Bottles",
+        "price": "$2.00 off Beer Bottles",
         "description": "Corona, Corona Light, Corona Premier, Corona Familiar, Negra Modelo, Modelo Tecate, Tecate Light, Pacifico Victoria, Bud Light, Michelob Ultra, Coors Light, Stella, XX Lager, XX Ambar, Sol, Heinekein, Boehmia, Indio"
       },
       {
         "itemName": "Margaritas",
-        "price": "7.00",
+        "price": "$7.00",
         "description": "Tamarindo, Chamngo, Jalapeno, Regular Rocks Virgin, Mango, Skinny Cucumber, Pomegranate, Regular Blend, Midori-Melon Strawberry, Cucumber-Mint Cadillac, Rasberry"
       },
       {
         "itemName": "Martinis",
-        "price": "7.00",
+        "price": "$7.00",
         "description": "Tamarindo, Cosmo, Horchata Mango, Rasberry, Vodka Apple, Cucumber, Hypnotic Mango-Mint, Strawberry Dirty, Washington Apple, Gin Cucumber-Mint, Lemon-Drop Pomegranate, White Chocolate"
       }
     ]

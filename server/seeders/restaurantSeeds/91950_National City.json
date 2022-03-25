@@ -6,87 +6,109 @@
     "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/hRge8DNfhre3dGluA_H4eQ/o.jpg",
     "address": "3201 Marina Way National City",
     "city": "National City",
-    "zipCode": 92115,
+    "zipCode": 91950,
     "state": "CA",
     "country": "USA",
-    "happyHours": "Mon-Fri 3PM-6PM",
+    "happyHours": "Everyday 3PM-Closing Time",
     "items": [
       {
-        "itemName": "Selected Pitchers",
-        "price": "Half off"
+        "itemName": "Dorothy's Dream",
+        "price": "$8.00",
+        "description": "Vodka, Passion Fruit Liqueur, Bitters, Orgeat, Lemon Juice, Grapefruit Juice"
       },
       {
-        "itemName": "Coors Banquet Beer",
-        "price": "4.00 All day everyday"
+        "itemName": "The Skinny",
+        "price": "$8.00",
+        "description": "Tequila, Muddled Cucumber, Mint, Orange"
       },
       {
-        "itemName": "Craft Beers",
-        "price": "6.00 8PM-Close on Thursday"
+        "itemName": "Couple's Therapy",
+        "price": "$8.00",
+        "description": "Vodka, Muddled Cucumber, Mint, Housemade sweet and sour mix"
       },
       {
-        "itemName": "Select Beer/Shot Combo",
-        "price": "8.00 8PM-Close on Friday"
+        "itemName": "El Borracho",
+        "price": "$8.00",
+        "description": "Tequila, Habanero infused Triple Sec, Serrano peppers"
       },
       {
-        "itemName": "Sat/Sun Special",
-        "price": "3.00 Mimosas, 12.00 Champagne Bottles, 5.00 Stella Pints / 15.00 Stella Pitchers, 18.00 Buckets, 5.00 Svedka"
+        "itemName": "Seabiscuit",
+        "price": "$8.00",
+        "description": "Tequila, Passion Fruit Liqueur, Cointreau, Bitters, Housemade sweet and sour mix"
+      },
+      {
+        "itemName": "$5 Wines by the Glass",
+        "price": "$5.00",
+        "description": "Syrah, Cabernet Sauvignon, House Red, House White"
+      },
+      {
+        "itemName": "$6 Wines by the Glass",
+        "price": "$6.00",
+        "description": "Rose"
+      },
+      {
+        "itemName": "$7 Wines by the Glass",
+        "price": "$7.00",
+        "description": "Red Blend, Pinot Noir, Pinot Grigio, Sauvignon Blanc, Chardonnay"
+      },
+      {
+        "itemName": "$5 Brews",
+        "price": "$5.00",
+        "description": "Modelo Especiale, Corona Extra, Pacifico Lager, Coors Light, White Claw hard Seltzer"
+      },
+      {
+        "itemName": "$6 Brews",
+        "price": "$6.00",
+        "description": "Gilly's Lager, Jimmy's Blonde"
+      },
+      {
+        "itemName": "Make it a Bucket!",
+        "price": "$20.00",
+        "description": "Mix and Match Modelo, Corona, Pacifico, Coors Light for $20"
       }
     ]
   },
   {
-    "restaurantName": "The Rabbit Hole",
-    "phoneNumber": "(619) 255-4653",
-    "webpage": "http://www.rabbitholesd.com",
-    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/_zj12Ojl5TlvpWwZmXtVRg/o.jpg",
-    "address": "3377 Adams Ave San Diego",
-    "city": "San Diego",
-    "zipCode": 92115,
+    "restaurantName": "Kimball Coastal Eatery",
+    "phoneNumber": "(858) 585-4453",
+    "webpage": "https://www.kimballsd.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/XMMtQkVobFCNCF_OiZ7WpQ/o.jpg",
+    "address": "740 Bay Marina Dr National City",
+    "city": "National City",
+    "zipCode": 91950,
     "state": "CA",
     "country": "USA",
-    "happyHours": "All Day",
+    "happyHours": "Monday-Friday 3PM-5PM",
     "items": [
       {
-        "itemName": "Draft Beers & House Wines",
-        "price": "6.00"
+        "itemName": "Draft Beer",
+        "price": "Varied Prices",
+        "description": "$4.50/pint Domestic Draft Beer, $5.50/pint Local Draft Beer, $6.50/pint Imported Beer"
       },
       {
-        "itemName": "Premium Wells",
-        "price": "6.00"
+        "itemName": "Bottled Beer",
+        "price": "Varied Prices",
+        "description": "$3.00/Bottle Domestic, $14.00 Bucket of 5, $4.00/Bottle Imported, $19.00 Bucket of 5"
       },
       {
-        "itemName": "Damn Good Jackfruit Sour",
-        "price": "7.00",
-        "description": "Uncle Ed’s Damn Good Jackfruit Vodka, Prickly Pear Vodka, Lo-fi Gentian Aperitif, Lemon Juice & Aquafaba"
+        "itemName": "Hard Seltzer",
+        "price": "Varied Prices",
+        "description": "$3.00 Can, $14.00 Bucket of 5"
       },
       {
-        "itemName": "Papulo",
-        "price": "7.00",
-        "description": "Buffalo Trace, Orange Liqueur, Pomegranate, Pineapple & Lime Garnished with Luxardo Cherries"
+        "itemName": "Cocktails",
+        "price": "Varied Prices",
+        "description": "$5.00 Well Cocktails, $6.00 Margarita on the Rocks, $7.00 Frozen Mango Margarita"
       },
       {
-        "itemName": "Dragon's Breath",
-        "price": "7.00",
-        "description": "Jalapeño Infused Herradura Blanco Tequila, Dragonfruit Simple Syrup, Lime Juice & Blood Orange Bitters. Garnished with Black Salt & Jalapeño"
+        "itemName": "Wine",
+        "price": "Varied Prices",
+        "description": "$5.00/Glass or $18.00/Bottle House Wine"
       },
       {
-        "itemName": "Paradise Heights",
-        "price": "7.00",
-        "description": "Tito's Vodka, Blue Curacao, Lime & Cock n Bull Ginger Beer Garnished with a Lime Wheel & Umbrella"
-      },
-      {
-        "itemName": "Basil Bunny",
-        "price": "7.00",
-        "description": "Fugu Vodka, Strawberry, Basil, Lemon & Simple Syrup Garnished with Basil"
-      },
-      {
-        "itemName": "Normal Fashioned",
-        "price": "7.00",
-        "description": "Old Forester Bourbon, Sugar & Angostura Bitters. Garnished with Orange Peel & Luxardo Cherry"
-      },
-      {
-        "itemName": "The Dude",
-        "price": "7.00",
-        "description": "Vanilla Vodka, Licor 43 Vanilla Liqueur & Modern Times Black House Nitro Cold Brew Coffee Topped with House Made Whipped Cream"
+        "itemName": "Mimosa",
+        "price": "Varied Prices",
+        "description": "$6.00 Regular, $7.00 Berry Mimosa"
       }
     ]
   }
