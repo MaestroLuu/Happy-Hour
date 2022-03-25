@@ -1,100 +1,102 @@
-[{
-        "restaurantName": "CutWater Spirits",
-        "phoneNumber": "(858) 672-3848",
-        "webpage": "https://www.cutwaterspirits.com/",
-        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/7Ob9LQvGrmQExZ4f8OY8AA/o.jpg",
-        "address": "9750 Distribution Ave",
-        "city": "San Diego",
-        "zipCode": 92121,
-        "state": "CA",
-        "country": "USA",
-        "happyHours": "Monday - Thursday 3pm-6pm",
-        "items": [{
-                "itemName": "Canned Cocktails",
-                "price": "Prices May Vary",
-                "description": "$2 off All Cans"
-            },
-            {
-                "itemName": "Dealers Choice Cocktail",
-                "price": "$7"
-            },
-            {
-                "itemName": "CutWater Heaters",
-                "price": "$6",
-                "description": "Vodka Apple Pie, Hot Buttered Rum, or Whiskey Hot Toddy"
-            },
-            {
-                "itemName": "CutWater Frozen Cocktails",
-                "price": "$7"
-            },
-            {
-                "itemName": "Mini Loaded Fry Bowl",
-                "price": "$7"
-            },
-            {
-                "itemName": "Mini Cacio E Pepe Fry Bowl",
-                "price": "$7"
-            },
-            {
-                "itemName": "A La Carte Slider",
-                "price": "$7"
-            },
-            {
-                "itemName": "Steam Whistle Shot",
-                "price": "$5",
-                "description": "CutWater Horchata Vodka & CutWater Opah Herbal Liqueur (Available for 30 minutes after the steam whistle blows)"
-            },
-            {
-                "itemName": "Cocktail Pop",
-                "price": "$3",
-                "description": "Lime Margarita, Mango Margarita, Strawberry Margarita, Pineapple Margarita, Vodka Mule, Rum & Cola, Gin & Melon"
-            }
-        ]
-    },
-    {
-        "restaurantName": "The WineSellar & Brasserie",
-        "phoneNumber": "(858) 450-9557",
-        "webpage": "https://www.winesellar.com/casual-side-bar",
-        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/wySpXH3Yxbt-TjkGLYw89Q/o.jpg",
-        "address": "9550 Waples Street Suite 115",
-        "city": "San Diego",
-        "zipCode": 92121,
-        "state": "CA",
-        "country": "USA",
-        "happyHours": "Tuesday-Friday 4-7pm",
-        "items": [{
-                "itemName": "Cocktails, Draft Beers, & Wine",
-                "price": "Prices May Vary",
-                "description": "$1 OFF All Cocktails, Draft Beers and Wines by the glass"
-            }
-        ]
-    },
-    {
-        "restaurantName": "Crab Hut",
-        "phoneNumber": "(858) 860-5225",
-        "webpage": "https://www.crabhutrestaurant.com/",
-        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/1f7BSH87JPdUIFS1PseTZw/o.jpg",
-        "address": "9550 Waples Street Suite 115",
-        "city": "San Diego",
-        "zipCode": 92121,
-        "state": "CA",
-        "country": "USA",
-        "happyHours": "Monday-Friday 3-6pm",
-        "items": [{
-                "itemName": "Draft Beer",
-                "price": "$5"
-            },
-            {"itemName": "House Cocktails",
-                "price": "$8"
-            },
-            {
-                "itemName": "House Wine",
-                "price": "$10"
-            },
-            {
-                "itemName": "Sangria",
-                "price": "$8"
-            }
-        ]
-    }
+[
+  {
+    "restaurantName": "CutWater Spirits",
+    "phoneNumber": "(858) 672-3848",
+    "webpage": "https://www.cutwaterspirits.com/",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/7Ob9LQvGrmQExZ4f8OY8AA/o.jpg",
+    "address": "9750 Distribution Ave",
+    "city": "San Diego",
+    "zipCode": 92121,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Monday - Thursday 3pm-6pm",
+    "items": [
+      {
+        "itemName": "Canned Cocktails",
+        "price": "Prices May Vary",
+        "description": "$2 off All Cans"
+      },
+      {
+        "itemName": "Dealers Choice Cocktail",
+        "price": "$7"
+      },
+      {
+        "itemName": "CutWater Heaters",
+        "price": "$6",
+        "description": "Vodka Apple Pie, Hot Buttered Rum, or Whiskey Hot Toddy"
+      },
+      {
+        "itemName": "CutWater Frozen Cocktails",
+        "price": "$7"
+      },
+      {
+        "itemName": "Mini Loaded Fry Bowl",
+        "price": "$7"
+      },
+      {
+        "itemName": "Mini Cacio E Pepe Fry Bowl",
+        "price": "$7"
+      },
+      {
+        "itemName": "A La Carte Slider",
+        "price": "$7"
+      },
+      {
+        "itemName": "Steam Whistle Shot",
+        "price": "$5",
+        "description": "CutWater Horchata Vodka & CutWater Opah Herbal Liqueur (Available for 30 minutes after the steam whistle blows)"
+      },
+      {
+        "itemName": "Cocktail Pop",
+        "price": "$3",
+        "description": "Lime Margarita, Mango Margarita, Strawberry Margarita, Pineapple Margarita, Vodka Mule, Rum & Cola, Gin & Melon"
+      }
+    ]
+  },
+  {
+    "restaurantName": "The WineSellar & Brasserie",
+    "phoneNumber": "(858) 450-9557",
+    "webpage": "https://www.winesellar.com/casual-side-bar",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/wySpXH3Yxbt-TjkGLYw89Q/o.jpg",
+    "address": "9550 Waples Street Suite 115",
+    "city": "San Diego",
+    "zipCode": 92121,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Tuesday-Friday 4-7pm",
+    "items": [
+      {
+        "itemName": "Cocktails, Draft Beers, & Wine",
+        "price": "Prices May Vary",
+        "description": "$1 OFF All Cocktails, Draft Beers and Wines by the glass"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Crab Hut",
+    "phoneNumber": "(858) 860-5225",
+    "webpage": "https://www.crabhutrestaurant.com/",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/1f7BSH87JPdUIFS1PseTZw/o.jpg",
+    "address": "9550 Waples Street Suite 115",
+    "city": "San Diego",
+    "zipCode": 92121,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Monday-Friday 3-6pm",
+    "items": [
+      {
+        "itemName": "Draft Beer",
+        "price": "$5"
+      },
+      { "itemName": "House Cocktails", "price": "$8" },
+      {
+        "itemName": "House Wine",
+        "price": "$10"
+      },
+      {
+        "itemName": "Sangria",
+        "price": "$8"
+      }
+    ]
+  }
 ]

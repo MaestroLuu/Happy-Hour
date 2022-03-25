@@ -3,7 +3,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import RestaurantImg from "./Restaurant.jpeg";
 import { useMutation, useQuery } from "@apollo/client";
 import { ME } from "../util/queries";
 import { Link } from "react-router-dom";
@@ -35,7 +34,7 @@ const FavoriteCards = () => {
             <CardMedia
               component="img"
               height="200"
-              image={RestaurantImg}
+              image={restaurant.restaurantImg}
               alt="restaurant"
             />
           </Link>
