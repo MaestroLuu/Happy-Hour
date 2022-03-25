@@ -1,0 +1,123 @@
+[
+  {
+    "restaurantName": "We olive",
+    "phoneNumber": "(858)-551-8250",
+    "webpage": "https://weolive.com/la-jolla/",
+    "restaurantImg": "https://weolive.com/la-jolla/wp-content/uploads/sites/11/2013/03/about.jpg",
+    "address": "1158 Prospect Street, La Jolla",
+    "city": "La Jolla",
+    "zipCode": 92037,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Fri 3:30PM-6:30PM",
+    "items": [
+      {
+        "itemName": "Glass of Wine",
+        "price": "$3 off"
+      },
+      {
+        "itemName": "Draft Beers",
+        "price": "$2.00 off"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Herringbone La Jolla",
+    "phoneNumber": "(858)-459-0221",
+    "webpage": "https://taogroup.com/venues/herringbone-la-jolla/",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/zoLS_u9xxK8OswaB-QegtQ/o.jpg",
+    "address": "7837 Herschel Avenue San Diego",
+    "city": "La Jolla",
+    "zipCode": 92037,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Daily 4PM-6PM, All evening on Mondays",
+    "items": [
+      {
+        "itemName": "Cocktails",
+        "price": "8.00"
+      },
+      {
+        "itemName": "Glass of Wine",
+        "price": "6.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "The Shores Restaurant",
+    "phoneNumber": "(858) -456-0600",
+    "webpage": "https://www.theshoresrestaurant.com",
+    "restaurantImg": "https://www.theshoresrestaurant.com/resourcefiles/homeimages/1-sr-patioviewflowers-3780-clean-tiles-print.jpg?version=3252022192711",
+    "address": "8110 Camino Del Oro, La Jolla",
+    "city": "La Jolla",
+    "zipCode": 92037,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Thur 2PM-5PM",
+    "items": [
+      {
+        "itemName": "Happy Hour Libations",
+        "price": "7.00",
+        "description": "House Wine by the Glass, Select Draft Beers, Well Drinks"
+      },
+      {
+        "itemName": "Craft Drafts",
+        "price": "9.00",
+        "description": "MANDATORY FUN IIPA, RED TROLLEY, Irish Red Ale, Karl Strauss, Belgium Style, DRINK THIS OR THE BEES DIE, Golden Honey Ale, STELLA ARTOIS, European Pale Lager, MODELO, Grupo Modelo."
+      },
+      {
+        "itemName": "Bottled Beer",
+        "price": "7.00",
+        "description": "Miller Light, Heineken, Bud Light, Budweiser, Corona, Amstel Light, Guinness"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Duke's La Jolla",
+    "phoneNumber": "(858) 454-5888",
+    "webpage": "https://www.acousticspottalent.com/venues/dukes-la-jolla",
+    "restaurantImg": "https://www.acousticspottalent.com/sites/default/files/styles/full_preview_image_845x480_/public/venues/2017-11/Acoustic%20Spot_Dukes-La-Jolla.jpg?itok=M5Xcz9iO",
+    "address": "1216 Prospect Street, La Jolla",
+    "city": "La Jolla",
+    "zipCode": 92037,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "ALOLHA Fridays 3PM-6PM",
+    "items": [
+      {
+        "itemName": "Glasses of Wine",
+        "price": "$7.00"
+      },
+      {
+        "itemName": "Draft Beers",
+        "price": "$5.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Puesto La Jolla",
+    "phoneNumber": "(858) 454-1260",
+    "webpage": "https://www.eatpuesto.com",
+    "restaurantImg": "https://images.getbento.com/accounts/b3eb43356d326c9cbb1f0ef418f77ccb/media/images/320Puesto_HQ_bar_and_Jalisco_Hall.jpg?w=1800&fit=max&auto=compress,format",
+    "address": "1026 Wall Street La Jolla",
+    "city": "La Jolla",
+    "zipCode": 92037,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Fri 3PM-5PM",
+    "items": [
+      {
+        "itemName": "Puesto Perfect Margaritas",
+        "price": "$9.00"
+      },
+      {
+        "itemName": "Puesto Drafts",
+        "price": "$5.00"
+      },
+      {
+        "itemName": "Wines by the Glass",
+        "price": "$7.00"
+      }
+    ]
+  }
+]
