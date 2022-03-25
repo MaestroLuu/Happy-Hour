@@ -1,0 +1,149 @@
+[
+  {
+    "restaurantName": "3N1 Sports Bar & Grill",
+    "phoneNumber": "(619) 207-0366",
+    "webpage": "https://3n1sportsbarandgrill.com/",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/Jh1myVVkW21fasaqW_qk-A/o.jpg",
+    "address": "2330 Proctor Valley Rd Ste 101 Chula Vista",
+    "city": "Chula Vista",
+    "zipCode": 91914,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Thur 4PM-7PM",
+    "items": [
+      {
+        "itemName": "Well Drinks",
+        "price": "5.00"
+      },
+      {
+        "itemName": "House Margaritas",
+        "price": "6.00"
+      },
+      {
+        "itemName": "Mojitos",
+        "price": "5.00"
+      },
+      {
+        "itemName": "Mules",
+        "price": "7.00"
+      },
+      {
+        "itemName": "Old Fashions",
+        "price": "8.00"
+      },
+      {
+        "itemName": "Stellas",
+        "price": "6.00"
+      },
+      {
+        "itemName": "Pitcher Latitude 33 Blonde",
+        "price": "20.00"
+      },
+      {
+        "itemName": "Wine",
+        "price": "7.00",
+        "description": "House Red/House White"
+      },
+      {
+        "itemName": "Bud Light Pitcher",
+        "price": "15.00"
+      },
+      {
+        "itemName": "16oz Latitude 33 Blonde",
+        "price": "5.00"
+      },
+      {
+        "itemName": "Pitcher Stella",
+        "price": "20.00"
+      },
+      {
+        "itemName": "16oz Pacifico",
+        "price": "6.00"
+      },
+      {
+        "itemName": "Pitcher Pacifico",
+        "price": "20.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Casa Nori",
+    "phoneNumber": "(619) 947-6592",
+    "webpage": "https://www.casanorisushi.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/zoLS_u9xxK8OswaB-QegtQ/o.jpg",
+    "address": "1730 E Palomar St Chula Vista",
+    "city": "Chula Vista",
+    "zipCode": 91914,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "All Day",
+    "items": [
+      {
+        "itemName": "Bay Breeze",
+        "price": "6.00",
+        "description": "Pineapple Vodka, Cranberry, Lime"
+      },
+      {
+        "itemName": "Blueberry Vodka Lemonade",
+        "price": "6.00",
+        "description": "Blueberry Vodka, Lemonade, Mint"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Chula Vista Brewery - East Lake",
+    "phoneNumber": "(619) 349-0068",
+    "webpage": "https://www.chulavistabrewery.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/-wLFtYJnEEgip1SQaq4Hsw/o.jpg",
+    "address": "871 Showroom Pl Ste 102 Chula Vista",
+    "city": "Chula Vista",
+    "zipCode": 91914,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Thur 11AM-6PM",
+    "items": [
+      {
+        "itemName": "16oz Artisian Hand Crafted Ales",
+        "price": "5.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "La Sabrosita Botanero",
+    "phoneNumber": "(619) 349-3019",
+    "webpage": "https://lasabrositacantina.com/",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/NN1BuiuARWZqPx-9T6wBug/o.jpg",
+    "address": "2010 Birch Rd Chula Vista",
+    "city": "Chula Vista",
+    "zipCode": 91914,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Fri 2PM-6PM",
+    "items": [
+      {
+        "itemName": "Selected Wines",
+        "price": "$2.00 off Selected Wines"
+      },
+      {
+        "itemName": "Draft Beer",
+        "price": "$2.00 off Draft Beer",
+        "description": "Ballast Point Sculpin, Bud Light, XX Amber, XX Lager Mango Cart Golden Road Modelo, Pacifico Oktoberfest Samuel Adams Ballast Point Hazy IPA"
+      },
+      {
+        "itemName": "Beer Bottles",
+        "price": "$2.00 off Beer Bottles",
+        "description": "Corona, Corona Light, Corona Premier, Corona Familiar, Negra Modelo, Modelo Tecate, Tecate Light, Pacifico Victoria, Bud Light, Michelob Ultra, Coors Light, Stella, XX Lager, XX Ambar, Sol, Heinekein, Boehmia, Indio"
+      },
+      {
+        "itemName": "Margaritas",
+        "price": "$7.00",
+        "description": "Tamarindo, Chamngo, Jalapeno, Regular Rocks Virgin, Mango, Skinny Cucumber, Pomegranate, Regular Blend, Midori-Melon Strawberry, Cucumber-Mint Cadillac, Rasberry"
+      },
+      {
+        "itemName": "Martinis",
+        "price": "$7.00",
+        "description": "Tamarindo, Cosmo, Horchata Mango, Rasberry, Vodka Apple, Cucumber, Hypnotic Mango-Mint, Strawberry Dirty, Washington Apple, Gin Cucumber-Mint, Lemon-Drop Pomegranate, White Chocolate"
+      }
+    ]
+  }
+]

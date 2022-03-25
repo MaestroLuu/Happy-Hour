@@ -1,0 +1,115 @@
+[
+  {
+    "restaurantName": "The Waterfront Grill",
+    "phoneNumber": "(619) 718-6240",
+    "webpage": "https://www.mywaterfrontgrill.com/",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/hRge8DNfhre3dGluA_H4eQ/o.jpg",
+    "address": "3201 Marina Way National City",
+    "city": "National City",
+    "zipCode": 91950,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Everyday 3PM-Closing Time",
+    "items": [
+      {
+        "itemName": "Dorothy's Dream",
+        "price": "$8.00",
+        "description": "Vodka, Passion Fruit Liqueur, Bitters, Orgeat, Lemon Juice, Grapefruit Juice"
+      },
+      {
+        "itemName": "The Skinny",
+        "price": "$8.00",
+        "description": "Tequila, Muddled Cucumber, Mint, Orange"
+      },
+      {
+        "itemName": "Couple's Therapy",
+        "price": "$8.00",
+        "description": "Vodka, Muddled Cucumber, Mint, Housemade sweet and sour mix"
+      },
+      {
+        "itemName": "El Borracho",
+        "price": "$8.00",
+        "description": "Tequila, Habanero infused Triple Sec, Serrano peppers"
+      },
+      {
+        "itemName": "Seabiscuit",
+        "price": "$8.00",
+        "description": "Tequila, Passion Fruit Liqueur, Cointreau, Bitters, Housemade sweet and sour mix"
+      },
+      {
+        "itemName": "$5 Wines by the Glass",
+        "price": "$5.00",
+        "description": "Syrah, Cabernet Sauvignon, House Red, House White"
+      },
+      {
+        "itemName": "$6 Wines by the Glass",
+        "price": "$6.00",
+        "description": "Rose"
+      },
+      {
+        "itemName": "$7 Wines by the Glass",
+        "price": "$7.00",
+        "description": "Red Blend, Pinot Noir, Pinot Grigio, Sauvignon Blanc, Chardonnay"
+      },
+      {
+        "itemName": "$5 Brews",
+        "price": "$5.00",
+        "description": "Modelo Especiale, Corona Extra, Pacifico Lager, Coors Light, White Claw hard Seltzer"
+      },
+      {
+        "itemName": "$6 Brews",
+        "price": "$6.00",
+        "description": "Gilly's Lager, Jimmy's Blonde"
+      },
+      {
+        "itemName": "Make it a Bucket!",
+        "price": "$20.00",
+        "description": "Mix and Match Modelo, Corona, Pacifico, Coors Light for $20"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Kimball Coastal Eatery",
+    "phoneNumber": "(858) 585-4453",
+    "webpage": "https://www.kimballsd.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/XMMtQkVobFCNCF_OiZ7WpQ/o.jpg",
+    "address": "740 Bay Marina Dr National City",
+    "city": "National City",
+    "zipCode": 91950,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Monday-Friday 3PM-5PM",
+    "items": [
+      {
+        "itemName": "Draft Beer",
+        "price": "Varied Prices",
+        "description": "$4.50/pint Domestic Draft Beer, $5.50/pint Local Draft Beer, $6.50/pint Imported Beer"
+      },
+      {
+        "itemName": "Bottled Beer",
+        "price": "Varied Prices",
+        "description": "$3.00/Bottle Domestic, $14.00 Bucket of 5, $4.00/Bottle Imported, $19.00 Bucket of 5"
+      },
+      {
+        "itemName": "Hard Seltzer",
+        "price": "Varied Prices",
+        "description": "$3.00 Can, $14.00 Bucket of 5"
+      },
+      {
+        "itemName": "Cocktails",
+        "price": "Varied Prices",
+        "description": "$5.00 Well Cocktails, $6.00 Margarita on the Rocks, $7.00 Frozen Mango Margarita"
+      },
+      {
+        "itemName": "Wine",
+        "price": "Varied Prices",
+        "description": "$5.00/Glass or $18.00/Bottle House Wine"
+      },
+      {
+        "itemName": "Mimosa",
+        "price": "Varied Prices",
+        "description": "$6.00 Regular, $7.00 Berry Mimosa"
+      }
+    ]
+  }
+]

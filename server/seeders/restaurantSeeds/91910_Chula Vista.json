@@ -1,0 +1,106 @@
+[
+  {
+    "restaurantName": "Shake & Muddle",
+    "phoneNumber": "(619) 816-5429",
+    "webpage": "https://shakeandmuddle.com/drink",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/iliVm1rP8GtyG0GDRTgNjw/o.jpg",
+    "address": "303 H St Ste 109 Chula Vista",
+    "city": "Chula Vista",
+    "zipCode": 91910,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Thur 4PM-6PM",
+    "items": [
+      {
+        "itemName": "Signature Cocktails",
+        "price": "$2.00 off signature cocktails"
+      },
+      {
+        "itemName": "Well Drinks",
+        "price": "$7.00"
+      },
+      {
+        "itemName": "Pacifico Beer",
+        "price": "$5.00"
+      },
+      {
+        "itemName": "Mondavi Red/White",
+        "price": "$7.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "The Balboa South",
+    "phoneNumber": "(619) 349-2109",
+    "webpage": "https://www.casanorisushi.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/oCsJeIsnKRpGBGvWbqSJAA/o.jpg",
+    "address": "290 3rd Ave Chula Vista",
+    "city": "Chula Vista",
+    "zipCode": 91910,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "All Day",
+    "items": [
+      {
+        "itemName": "Fall Brewing",
+        "price": "$5.00",
+        "description": "Lets Go - IPA - 7%"
+      },
+      {
+        "itemName": "Societe Brewing",
+        "price": "$5.00",
+        "description": "The Harlot, Belgian Blonde 5.6%"
+      },
+      {
+        "itemName": "Mikkelle Brewing",
+        "price": "$5.00",
+        "description": "RasberryBlush BerlinerWeiss 4%"
+      },
+      {
+        "itemName": "Alesmith Brewing",
+        "price": "$5.00",
+        "description": "Nut Brown English Brown 5%"
+      },
+      {
+        "itemName": "Three Weavers Brewing",
+        "price": "$5.00",
+        "description": "Expatriate IPA 6.9%"
+      },
+      {
+        "itemName": "Abnormal Beer",
+        "price": "$5.00",
+        "description": "Abnormalweiss Hefeweizen 5.3%"
+      },
+      {
+        "itemName": "Eppig Brewing",
+        "price": "$5.00",
+        "description": "Special Lager - 5.8%"
+      },
+      {
+        "itemName": "2 Towns",
+        "price": "$5.00",
+        "description": "Pacifi Pineapple Cider 5%"
+      },
+      {
+        "itemName": "Modern Times Brewing",
+        "price": "$5.00",
+        "description": "Black House Coffee Stout 5.8%"
+      },
+      {
+        "itemName": "Fall Brewing",
+        "price": "$5.00",
+        "description": "Plenty for all Pilsner 4.8%"
+      },
+      {
+        "itemName": "Port Brewing",
+        "price": "$5.00",
+        "description": "Shark Bite - Red Ale - 6%"
+      },
+      {
+        "itemName": "Harland",
+        "price": "$5.00",
+        "description": "Hazy IPA - 6.5%"
+      }
+    ]
+  }
+]
