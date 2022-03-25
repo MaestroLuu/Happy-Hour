@@ -19,3 +19,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.deleteIcon {
+  color: rgb(0, 0, 0);
+}
