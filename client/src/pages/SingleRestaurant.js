@@ -53,7 +53,7 @@ const Restaurant = () => {
       <br></br>
       <ReviewForm restaurantId={restaurantId}/>
       <br></br>
-      <Review reviews={restaurant.reviews || []} />
+      <Review restaurant={restaurant._id} reviews={restaurant.reviews || []} />
     </div>
   );
 };
