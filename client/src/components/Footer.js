@@ -3,16 +3,9 @@ import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import MenuIcon from "@mui/icons-material/Menu";
 import { Box } from "@mui/material";
-import RestoreIcon from '@mui/icons-material/Restore';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LoginIcon from '@mui/icons-material/Login';
 import LogoutIcon from '@mui/icons-material/Logout';
-
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import Fade from "@mui/material/Fade";
 import { useAuth } from "../util/auth";
 
 import { NavLink } from "react-router-dom";
@@ -36,7 +29,6 @@ export default function Footer() {
   return (
     <div>
       <br></br><br></br>
-      {/* new footer? */}
     <Box sx={{ 
       width: "100%", 
       mx: "auto",
@@ -88,54 +80,6 @@ export default function Footer() {
           />
         </NavLink>
         )}
-
-        {/* <BottomNavigationAction
-          label="Menu"
-          value="menu"
-          id="fade-button"
-          aria-controls={open ? "fade-menu" : undefined}
-          aria-haspopup="true"
-          aria-expanded={open ? "true" : undefined}
-          onClick={handleClick}
-          icon={<MenuIcon />}
-        />
-        <Menu
-          id="fade-menu"
-          MenuListProps={{
-            "aria-labelledby": "fade-button",
-          }}
-          anchorEl={anchorEl}
-          open={open}
-          onClose={handleClose}
-          TransitionComponent={Fade}
-        >
-          {isLoggedIn ? (
-            <div>
-              <NavLink to="/user">
-                <MenuItem onClick={handleClose}>Favorites</MenuItem>
-              </NavLink>
-              <NavLink to="/restaurants">
-                <MenuItem onClick={handleClose}>Home</MenuItem>
-              </NavLink>
-              <NavLink to="/login">
-                <MenuItem onClick={logout}>Logout</MenuItem>
-              </NavLink>
-            </div>
-          ) : (
-            <div>
-              <NavLink to="/restaurants">
-                <MenuItem onClick={handleClose}>Home</MenuItem>
-              </NavLink>
-              <NavLink to="/login">
-                <MenuItem onClick={handleClose}>Login</MenuItem>
-              </NavLink>
-
-              <NavLink to="/signup">
-                <MenuItem onClick={handleClose}>Sign Up</MenuItem>
-              </NavLink>
-            </div>
-          )}
-        </Menu> */}
       </BottomNavigation>
       </Box>
     </div>

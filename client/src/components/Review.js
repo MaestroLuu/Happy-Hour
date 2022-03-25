@@ -17,7 +17,8 @@ const styles = {
 export default function Reviews(props) {
   console.log(props)
 
-  const { isLoggedIn } = useAuth();
+  const user = useAuth();
+  console.log(user)
   
     // Set up our mutation with an option to handle errors
     const [deleteReview, { error, loading }] = useMutation(DELETE_REVIEW);
@@ -32,15 +33,19 @@ export default function Reviews(props) {
           <CardContent style={{ textAlign: "center" }}>
             <Typography key={review._id}>"{review.reviewText}"</Typography>
             <hr />
+            {() => {if (user.isLoggedIn) {
+              return (<p>hello</p>)
+            }}}
             <Typography>Reviewed by: {review.reviewAuthor}</Typography>
             <Typography>{review.createdAt}</Typography>
+            {user.user.username === review.reviewAuthor ? (
             <IconButton
             className="deleteIcon"
-            style = {{ color: "black" }}
             onClick={() => handleSubmit(review._id)}
             >
             <DeleteIcon />
-            </IconButton>
+            </IconButton>) :
+              ([])}
           </CardContent>
         </Card>
       ))}

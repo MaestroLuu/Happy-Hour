@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  color: #fff;
   text-shadow: 1px 1px 3px #444;
   margin: 0;
   padding: 0;
@@ -12,14 +11,11 @@
 }
 
 body {
+  color: #fff;
   background-image: linear-gradient(rgba(156, 2, 2, 0.397), rgba(0, 0, 0, 0.5)),
     url("./components/backgroundSplash.jpg");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.deleteIcon {
-  color: rgb(0, 0, 0);
 }
