@@ -1,0 +1,203 @@
+[
+  {
+    "restaurantName": "Monkey Bar",
+    "phoneNumber": "(619) 908-5058",
+    "webpage": "https://www.towncountry.com/",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/T9PBmEUklNzs0556Bve07A/o.jpg",
+    "address": "500 Hotel Cir N San Diego",
+    "city": "San Diego",
+    "zipCode": 92108,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Fri 4PM-6PM",
+    "items": [
+      {
+        "itemName": "Selected Beer",
+        "price": "$5.00"
+      },
+      {
+        "itemName": "Selected Wine",
+        "price": "$5.00"
+      },
+      {
+        "itemName": "Drunken Monkey Cocktail",
+        "price": "$7.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Tommy Bahama | Marlin Bar - San Diego",
+    "phoneNumber": "(619) 541-6296",
+    "webpage": "http://www.tommybahama.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/8gvufpDzBIpakJ8y_pQ6Hg/o.jpg",
+    "address": "7007 Friars Rd Ste 305 San Diego",
+    "city": "San Diego",
+    "zipCode": 92108,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Daily 3PM-6PM",
+    "items": [
+      {
+        "itemName": "Wines",
+        "price": "7.00",
+        "description": "Faustino Art Collection Rose, Cavaliere D'Oro Pinot Grigio, Giesen Sauvignon Blanc, StoneCap Chardonnay, Cline Seven Ranchlands Merlot, Piattelli Malbec, Tall Sage Cabernet Sauvignon"
+      },
+      {
+        "itemName": "Cocktails",
+        "price": "$9.00",
+        "description": "Classic Margarita, Mai Tai, Seasonal Frozen Cocktails, Bahia Sangria, Classic Mojito"
+      },
+      {
+        "itemName": "Martinis",
+        "price": "$10.00",
+        "description": "Pineapple Paradisio, Classic Grapefruit Basil, Classic Vodka, Coconut Cloud"
+      },
+      {
+        "itemName": "Select Draft Beer",
+        "price": "$5.00"
+      },
+      {
+        "itemName": "Well Drinks",
+        "price": "$7.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Blanco",
+    "phoneNumber": "(619) 810-2931",
+    "webpage": "https://www.blancotacostequila.com/locations/san-diego-ca/",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/Bgohwpuv1tVbqymp2qKbHQ/o.jpg",
+    "address": "7007 Friars Road #901, San Diego",
+    "city": "San Diego",
+    "zipCode": 92108,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Fri 3PM-6PM",
+    "items": [
+      {
+        "itemName": "Frozen Margarita",
+        "price": "$8.00",
+        "description": "jose cuervo especial, combier d' orange"
+      },
+      {
+        "itemName": "Classic Margarita",
+        "price": "$8.00/Glass, $37/Pitcher",
+        "description": "jose cuervo especial, combier d' orange"
+      },
+      {
+        "itemName": "Frozen Paloma",
+        "price": "$8.00",
+        "description": "grapefruit, combier pamplemousse, blanco tequila"
+      },
+      {
+        "itemName": "Blackberry Sangria",
+        "price": "$8.00/Glass, $21/Carafe",
+        "description": "blackberry, brandy, elderflower, lime, red wine"
+      },
+      {
+        "itemName": "Wine",
+        "price": "$7.00",
+        "description": "Pinot Noir Pavette, Rose Baron De Lay Rosado, Chardonnay Newton Skyside, Perfect Red IPSO Facto Vino, Sauvignon Blanc Villa Maria"
+      },
+      {
+        "itemName": "Las Cervezas",
+        "price": "$5.00",
+        "description": "Corona, Modelo Especial, Tecate Light, Corona Light, Tecate, Pacifico(on tap), Dos XX Lager, Dos XX Amber, Coors Light, Bud Light, Michelob Ultra, Mamitas Seltzer, Modern Times Orderville Hazy IPA (on tap), Latitude 33 Blood Orange IPA (on tap), Firestone Walker 805, Societe Brewing The Harlot (on tap), Mother Earth Boo Koo IPA"
+      },
+      {
+        "itemName": "House Tequila",
+        "price": "$7.00"
+      },
+      {
+        "itemName": "Mezcal",
+        "price": "$7.00"
+      },
+      {
+        "itemName": "Rotating Premium",
+        "price": "$8.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Yard House",
+    "phoneNumber": "(619) 574-0468",
+    "webpage": "https://YardHouse.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/ZUy4A50XUn1SJ554WIRxMw/o.jpg",
+    "address": "1640 Camino Del Rio N Ste 157 San Diego",
+    "city": "San Diego",
+    "zipCode": 92108,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Fri 3PM-6PM, Late Night Happy Hour: Sun-Thurs 10PM-Close",
+    "items": [
+      {
+        "itemName": "Draft Beer, Wine, Spirits, Cocktails",
+        "price": "$2.00 off"
+      },
+      {
+        "itemName": "9oz Wine",
+        "price": "$3.00 off"
+      },
+      {
+        "itemName": "Half Yards",
+        "price": "$4.00 off"
+      }
+    ]
+  },
+  {
+    "restaurantName": "TBS Tavern",
+    "phoneNumber": "(619) 359-4198",
+    "webpage": "https://tbstavern.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/YsQVjuZdTfVEo452w8vlWQ/o.jpg",
+    "address": "8555 Station Village Way San Diego",
+    "city": "San Diego",
+    "zipCode": 92108,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "All Week 4PM-6PM",
+    "items": [
+      {
+        "itemName": "Non-Alcoholic",
+        "price": "$2.00",
+        "description": "Coke, Diet Coke, Sprite, Root Beer"
+      },
+      {
+        "itemName": "Bottles and Cans",
+        "price": "$4.00",
+        "description": "Coors Light, Pacifico, Modelo, Heineken, White Claw Black Cherry of Mango"
+      }
+    ]
+  },
+  {
+    "restaurantName": "North Italia",
+    "phoneNumber": "(619) 343-2301",
+    "webpage": "https://www.northitalia.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/vNcXxxmBHwLPdFNVAu7PTg/o.jpg",
+    "address": "7055 Friars Rd San Diego",
+    "city": "San Diego",
+    "zipCode": 92108,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Fri 3PM-6PM",
+    "items": [
+      {
+        "itemName": "The Red & White Wine",
+        "price": "$5.00/Glass, $16.00/Bottle"
+      },
+      {
+        "itemName": "Sicilian Margarita",
+        "price": "$10.00",
+        "description": "milagro reposado tequila, grand marnier, montenegro, fresh citrus"
+      },
+      {
+        "itemName": "Red Sangria",
+        "price": "$5.00/Glass, $20.00/Pitcher"
+      },
+      {
+        "itemName": "All Beers",
+        "price": "$5.00",
+        "description": "Firestone Walker 805 Blonde Ale (Draught), Coronado Weekend Vibes IPA (Draught), Harland Brewing Hazy IPA (Draught), Lost Coast Great White Hefeweizen, Modern Times Orderville IPA (16 oz), Coronado Weekend Vibes IPA (Draught), Bivouac Ciderworks Blackberry Cider, Karl Strauss Red Trolley Ale"
+      }
+    ]
+  }
+]
