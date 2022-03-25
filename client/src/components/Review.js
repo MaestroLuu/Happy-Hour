@@ -20,6 +20,11 @@ export default function Reviews(props) {
   const user = useAuth();
   console.log(user)
   
+  const loginCheck = () => {
+    if (!user.user.username) {
+    return false;
+  }
+}
     // Set up our mutation with an option to handle errors
     const [deleteReview, { error, loading }] = useMutation(DELETE_REVIEW);
 

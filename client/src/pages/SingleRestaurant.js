@@ -76,6 +76,7 @@ const Restaurant = () => {
           backgroundColor: "white",
           padding: "10px",
           width: "39ch",
+          textAlign: "center",
         }}
       >
         You need to be{" "}
