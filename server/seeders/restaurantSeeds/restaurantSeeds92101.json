@@ -1,0 +1,481 @@
+[{
+        "restaurantName": "Garage Kitchen & Bar",
+        "phoneNumber": "(619) 231-6700",
+        "webpage": "https://garagekitchenbar.com/",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/REkQfvkngNKpstslj-qngg/o.jpg",
+        "address": "655 4th Avenue",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Tuesday - Sunday 4pm-6pm",
+        "items": [{
+                "itemName": "All Drinks Special",
+                "price": "Prices May Vary",
+                "description": "51% OFF All Drinks *Excluding Top Shelf & Specialty Cocktails"
+            },
+            {
+                "itemName": "Small Plates",
+                "price": "Prices May Vary",
+                "description": "$3 off Small Plates"
+            }
+        ]
+    },
+    {
+        "restaurantName": "Punch Bowl Social San Diego",
+        "phoneNumber": "(619) 452-3352",
+        "webpage": "https://punchbowlsocial.com/menu/san-diego",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/KTR4XlVMDHDWQzdpMkEA5Q/o.jpg",
+        "address": "1485 E St",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Monday - Thursday 4pm-6pm",
+        "items": [{
+                "itemName": "Featured Punch",
+                "price": "$5"
+            },
+            {
+                "itemName": "Draft Beer",
+                "price": "$5"
+            },
+            {
+                "itemName": "House Spirits",
+                "price": "$5"
+            },
+            {
+                "itemName": "Select Wine",
+                "price": "$5"
+            },
+            {
+                "itemName": "Whiskey Sour",
+                "price": "$5",
+                "description": "Bourbon, Fresh Lemon Juice, Simple Syrup"
+            },
+            {
+                "itemName": "Classic Daiquiri",
+                "price": "$5",
+                "description": "White Rum, Fresh Lime Juice, Simple Syrup"
+            },
+            {
+                "itemName": "Tom Collins",
+                "price": "$5",
+                "description": "London Dry Gin, Fresh Lemon Juice, Simple Syrup, Sparkling Water"
+            },
+            {
+                "itemName": "Margarita",
+                "price": "$5",
+                "description": "Silver Tequila, Fresh Lime Juice Simple Syrup, Orange Liqueur"
+            }
+        ]
+    },
+    {
+        "restaurantName": "Knotty Barrel Gastropub",
+        "phoneNumber": "(619) 269-7156",
+        "webpage": "https://ev.knottybarrel.com/#",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/vq0BDWTei-ncNx41co6OPg/o.jpg",
+        "address": "844 Market St",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Monday - Friday 4pm-7pm",
+        "items": [{
+                "itemName": "Food and Drink Specials",
+                "price": "Prices May Vary",
+                "description": "$2 Off wells, draft pints, house red & white and food Specials"
+            }
+        ]
+    },
+    {
+        "restaurantName": "Taste & Thirst",
+        "phoneNumber": "(619) 955-5995",
+        "webpage": "https://www.tasteandthirst.com/",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/rslIEhUKiLMa9g7MxQ754A/o.jpg",
+        "address": "715 4th Ave",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Everyday 3pm-8pm/8pm-12am",
+        "items": [{
+                "itemName": "Drink Special",
+                "price": "Prices May Vary",
+                "description": "Half off all drinks and beers (3pm-8pm)"
+            },
+            {
+                "itemName": "Seltzer of the Month",
+                "price": "$5"
+            },
+            {
+                "itemName": "Beer of the Month",
+                "price": "$6"
+            },
+            {
+                "itemName": "Jameson Shot",
+                "price": "$6"
+            },
+            {
+                "itemName": "Fireball Shot",
+                "price": "Prices May Vary"
+            },
+            {
+                "itemName": "Goose Island IPA",
+                "price": "$7"
+            },
+            {
+                "itemName": "Skyy Vodka Shot",
+                "price": "$7"
+            },
+            {
+                "itemName": "Don Julio Blanco Shot",
+                "price": "$8"
+            },
+            {
+                "itemName": "Green Tea Shot",
+                "price": "$8"
+            },
+            {
+                "itemName": "Long Island Iced Tea",
+                "price": "$9"
+            },
+            {
+                "itemName": "AMF",
+                "price": "$9"
+            },
+            {
+                "itemName": "Select Pitchers",
+                "price": "$30"     
+            }
+        ]
+    },
+    {
+        "restaurantName": "Henry's Pub",
+        "phoneNumber": "(619) 238-2389",
+        "webpage": "https://henryspub.com/",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/s-Iz9ddE4XGI82EbYFkOyg/o.jpg",
+        "address": "618 5th Ave",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Everyday 5-7pm",
+        "items": [{
+                "itemName": "Draft Specials",
+                "price": "$4"
+            },
+            {
+                "itemName": "House Wines",
+                "price": "$4"
+            },
+            {
+                "itemName": "Wells Special",
+                "price": "$4"
+            }
+        ]
+    },
+    {
+        "restaurantName": "Whiskey House",
+        "phoneNumber": "(619) 546-6289",
+        "webpage": "https://www.thewhiskeyhousesd.com/",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/48LLKJLZjl53ZdTbtY0VIw/o.jpg",
+        "address": "420 3rd Ave",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Everyday 4-7pm",
+        "items": [{
+                "itemName": "All House Wines",
+                "price": "$6"
+            },
+            {
+                "itemName": "Labatt Blue",
+                "price": "$5",
+                "description": "Canadian Lager"
+            },
+            {
+                "itemName": "Carlsberg",
+                "price": "$10",
+                "description": "Danish pilsner, 1 liter can"
+            },
+            {
+                "itemName": "Moscow or Kentucky Mule",
+                "price": "$6",
+                "description": "Vodka/Bourbon, lime juice, bitters"
+            },
+            {
+                "itemName": "Whiskey Sour",
+                "price": "$6",
+                "description": "Bourbon, lemon, simple syrup"
+            },
+            {
+                "itemName": "Negroni",
+                "price": "$6",
+                "description": "Gin, Vermouth, Campari"
+            },
+            {
+                "itemName": "Aperol Spritz",
+                "price": "$6",
+                "description": "Aperol, sparkling wine, orange peel" 
+            },
+            {
+                "itemName": "The Al Capone",
+                "price": "$6",
+                "description": "Bourboon, sweet vermouth, Campari"
+            }
+        ]
+    },
+    {
+        "restaurantName": "The Corner Drafthouse",
+        "phoneNumber": "(619) 255-2631",
+        "webpage": "https://thecornerdrafthouse.com/",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/XBik1hkFJdrZaeCPFXy5MQ/o.jpg",
+        "address": "495 Laurel St",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Everyday 4-6pm",
+        "items": [{
+                "itemName": "Draft Beer",
+                "price": "Prices May Vary",
+                "description": "$2 off draft beers"
+            },
+            {
+                "itemName": "Libations",
+                "price": "Prices May Vary",
+                "description": "$2 off all libations"
+            },
+            {
+                "itemName": "Wells Drinks",
+                "price": "Prices May Vary",
+                "description": "$2 off all wells drinks"
+            },
+            {
+                "itemName": "Revolt Cabernet",
+                "price": "Prices May Vary",
+                "description": "$2 off revolt cabernet"
+            },
+            {
+                "itemName": "Revolt Chardonnay",
+                "price": "Prices May Vary",
+                "description": "$2 off revolt chardonnay"
+            }
+        ]
+    },
+    {
+        "restaurantName": "Queenstown Public House",
+        "phoneNumber": "(619) 546-0444",
+        "webpage": "https://158.c25.myftpupload.com/",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/yvdLWRWp1-uJBlwKfRLXaw/o.jpg",
+        "address": "1557 Columbia St",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Monday - Friday 3-6pm",
+        "items": [{
+                "itemName": "Beer Flights",
+                "price": "$8"
+            },
+            {
+                "itemName": "Pinot Grigio",
+                "price": "$8"
+            },
+            {
+                "itemName": "Pinot Noir",
+                "price": "$8"
+            },
+            {
+                "itemName": "Margarita",
+                "price": "$8"
+            },
+            {
+                "itemName": "Moscow Mule",
+                "price": "$8"
+            },
+            {
+                "itemName": "Whiskey Sour",
+                "price": "$8"
+            },
+            {
+                "itemName": "Any Sangria",
+                "price": "$8",
+                "description": "Peach Basil, Mint Prosecco, or House Red"
+            }
+        ]
+    },
+    {
+        "restaurantName": "Altitude Sky Lounge",
+        "phoneNumber": "(619) 696-0234",
+        "webpage": "https://altitudeskylounge.com/sandiego/",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/QEWxhZxMjNIr1GnYauXA-Q/o.jpg",
+        "address": "660 K St",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Tuesday - Friday 5-7pm",
+        "items": [{
+                "itemName": "Premium Well Cocktails",
+                "price": "$7"
+            },
+            {
+                "itemName": "Domestic Draft Beers",
+                "price": "$5"
+            }
+        ]
+    },
+    {
+        "restaurantName": "Metl Bar & Restaurant",
+        "phoneNumber": "(619) 546-6424",
+        "webpage": "https://metlsd.com/metl-bar-gaslamp",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/RGBo8tm_8YXDqVp1gc2PWQ/o.jpg",
+        "address": "748 5th Ave",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "TBD",
+        "items": [{
+                "itemName": "Mimosas",
+                "price": "$3",
+                "description": "Orange, Watermelon, Pineapple, Grapefruit"
+            },
+            {
+                "itemName": "Pint of the Day",
+                "price": "$4"
+            },
+            {
+                "itemName": "Draft Specials",
+                "price": "Price May Vary",
+                "description": "$2 off draft beers"
+            },
+            {
+                "itemName": "Wine and Well Drinks",
+                "price": "$4"
+            },
+            {
+                "itemName": "Cocktail Slushees",
+                "price": "$5"
+            },
+            {
+                "itemName": "Select Shots",
+                "price": "$5"
+            },
+            {
+                "itemName": "Paloma or Margarita",
+                "price": "$7"
+            }
+        ]
+    },
+    {
+        "restaurantName": "Tin Roof",
+        "phoneNumber": "(619) 557-8437",
+        "webpage": "https://www.tinroofsandiego.com/",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/PnQswcfzaWIjtvwq74DiOg/o.jpg",
+        "address": "401 G St",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Tuesday - Friday 4-6pm",
+        "items": [{
+                "itemName": "Draft beer and Wine",
+                "price": "Prices May Vary",
+                "description": "$2 off draft beers and wines"
+            },
+            {
+                "itemName": "Liquor Specials",
+                "price": "Prices May Vary",
+                "description": "$3 off all liquor"
+            },
+            {
+                "itemName": "Crushes",
+                "price": "$7",
+                "description": "Smirnoff Flavored Vodka, Triple Sec, Fresh Juice, and Sprite"
+            }
+        ]
+    },
+    {
+        "restaurantName": "Upper East Bar",
+        "phoneNumber": "(619) 819-9770",
+        "webpage": "https://www.hotelsolamar.com/dining/upper-east?utm_source=googlemybusiness&utm_medium=organic&utm_campaign=gbreferral",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/sTwlt5RPneWBwgHf6Bc_pA/o.jpg",
+        "address": "616 J St #101",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Tuesday - Friday 5-7pm",
+        "items": [{
+                "itemName": "Canned Beer",
+                "price": "$5"
+            },
+            {
+                "itemName": "Draft Beer and House Wine",
+                "price": "$6"
+            },
+            {
+                "itemName": "Well Cocktails",
+                "price": "$8"
+            }
+        ]
+    },
+    {
+        "restaurantName": "The Blind Burro",
+        "phoneNumber": "(619) 795-7880",
+        "webpage": "https://www.theblindburro.com/",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/sohdlrebuGFL7S21QhgMKw/o.jpg",
+        "address": "639 J St",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Monday - Friday 3-6pm",
+        "items": [{
+                "itemName": "Buena Cerveza",
+                "price": "$4.50"
+            },
+            {
+                "itemName": "Wells Drinks",
+                "price": "$5"
+            },
+            {
+                "itemName": "House Wine",
+                "price": "$6"
+            },
+            {
+                "itemName": "House Margaritas",
+                "price": "$7"
+            }
+        ]
+    },
+    {
+        "restaurantName": "The Local Eatery & Drinking Hole",
+        "phoneNumber": "(619) 231-4447",
+        "webpage": "thelocalsandiego.com",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/jXJD012teE-lHPRritf72Q/o.jpg",
+        "address": "1065 Fourth Ave",
+        "city": "San Diego",
+        "zipCode": 92101,
+        "state": "CA",
+        "country": "USA",
+        "happyHours": "Tuesday - Friday 3-6pm",
+        "items": [{
+                "itemName": "Resident Beer",
+                "price": "$5"
+            },
+            {
+                "itemName": "Specialty Cocktails",
+                "price": "$10"
+            },
+            {
+                "itemName": "Wine",
+                "price": "$5"
+            }
+        ]
+    }
+]
