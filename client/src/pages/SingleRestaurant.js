@@ -6,6 +6,8 @@ import { QUERY_SINGLE_RESTAURANT } from "../util/queries";
 import Review from "../components/Review";
 import { Typography } from "@mui/material";
 import ReviewForm from "../components/ReviewForm";
+import { useAuth } from "../util/auth";
+import { NavLink } from "react-router-dom";
 
 const styles = {
   text: {
@@ -19,6 +21,8 @@ const styles = {
 const Restaurant = () => {
   const { restaurantId } = useParams();
   console.log(restaurantId);
+
+  const { isLoggedIn } = useAuth();
 
   const { data, loading } = useQuery(QUERY_SINGLE_RESTAURANT, {
     variables: { restaurantId: restaurantId },
@@ -48,12 +52,51 @@ const Restaurant = () => {
       <div>
         <Specials items={restaurant.items || []} />
       </div>
-
-      <h1 style={styles.text}>Reviews</h1>
-      <br></br>
-      <ReviewForm restaurantId={restaurantId}/>
-      <br></br>
-      <Review restaurant={restaurant._id} reviews={restaurant.reviews || []} />
+      {isLoggedIn ? (
+        <div>
+          <h1 style={styles.text}>Reviews</h1>
+          <br></br>
+          <ReviewForm restaurantId={restaurantId} />
+          <br></br>
+          <Review
+            restaurant={restaurant._id}
+            reviews={restaurant.reviews || []}
+          />
+        </div>
+      ) : (
+        <div
+        style = {{
+          display: "flex",
+          justifyContent: "center",
+        }}
+        >
+        <p
+        style={{
+          color: "black",
+          backgroundColor: "white",
+          padding: "10px",
+          width: "39ch",
+          textAlign: "center",
+        }}
+      >
+        You need to be{" "}
+        <NavLink
+          to="/login"
+          style={{ color: "blue", textDecoration: "none" }}
+        >
+          logged in
+        </NavLink>{" "}
+        or{" "}
+        <NavLink
+          to="/signup"
+          style={{ color: "blue", textDecoration: "none" }}
+        >
+          sign up
+        </NavLink>{" "}
+        to post and view reviews!
+      </p>
+      </div>
+      )}
     </div>
   );
 };

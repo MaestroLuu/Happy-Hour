@@ -88,7 +88,7 @@ export default function ReviewForm({restaurantId}) {
           </Button>
         </div>
       ) : (
-        <preformat
+        <p
           style={{
             color: "black",
             backgroundColor: "white",
@@ -111,7 +111,7 @@ export default function ReviewForm({restaurantId}) {
             sign up
           </NavLink>{" "}
           to post a review!
-        </preformat>
+        </p>
       )}
     </Box>
   );
