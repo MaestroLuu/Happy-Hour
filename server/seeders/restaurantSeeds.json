@@ -1,7 +1,7 @@
 [
   {
     "restaurantName": "Common Theory",
-    "phoneNumber" : "(619) 780-6689",
+    "phoneNumber": "(619) 780-6689",
     "webpage": "https://www.commontheorysd.com/",
     "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/mS4z6byk8K82Fckr0om2zg/o.jpg",
     "address": "4805 Convoy St",
@@ -25,7 +25,7 @@
   },
   {
     "restaurantName": "O'Briens",
-    "phoneNumber" : "(858) 715-1745",
+    "phoneNumber": "(858) 715-1745",
     "webpage": "https://obrienspub.net/",
     "restaurantImg": "https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_70,c_fit,h_864/http://static.spotapps.co/spots/e0/64f040198f11e9aba51dcbf14426ba/:original",
     "address": "4646 Convoy St",
@@ -44,7 +44,7 @@
   },
   {
     "restaurantName": "Bullpen Bar",
-    "phoneNumber" : "858-503-6786",
+    "phoneNumber": "858-503-6786",
     "webpage": "https://www.bullpenbar.com/",
     "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/4mWMwmdyI4XcnEPIvxIhIA/o.jpg",
     "address": "8199 Clairemont Mesa Blvd",
@@ -80,7 +80,7 @@
   },
   {
     "restaurantName": "Hive",
-    "phoneNumber" : "858) 576-0700",
+    "phoneNumber": "858) 576-0700",
     "webpage": "https://www.hivesandiego.com/",
     "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/BIEi8Np3eDlr1Qt6w2GEAA/o.jpg",
     "address": "4428 Convoy St Ste 100",
@@ -1532,6 +1532,237 @@
         "description": "$1 off all house pours (subject to change)"
       }
     ]
+  },
+  {
+    "restaurantName": "Farmer's Table La Mesa",
+    "phoneNumber": "(619) 724-6465",
+    "webpage": "https://myfarmerstable.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/Z1NCO_IK4TOP62rmhqINJQ/o.jpg",
+    "address": "8141 La Mesa Blvd La Mesa",
+    "city": "La Mesa",
+    "zipCode": 91942,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Thur 3PM-6PM, SUN 4PM-6PM",
+    "items": [
+      {
+        "itemName": "Draft Beers",
+        "price": "$5.00",
+        "description": "Blonde Ale, 394, Modelo, Coors Light"
+      },
+      {
+        "itemName": "House Red and White",
+        "price": "$6.00"
+      },
+      {
+        "itemName": "House Cocktails",
+        "price": "$7.00"
+      },
+      {
+        "itemName": "Well Cocktails",
+        "price": "$6.00"
+      },
+      {
+        "itemName": "Sangria Glass",
+        "price": "$5.00",
+        "description": "Red or White"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Guava Beach",
+    "phoneNumber": "(858) 488-6688",
+    "webpage": "https://guava-beach.com/",
+    "restaurantImg": "https://static.spotapps.co/web/guava-beach--com/custom/about_us_left.jpg",
+    "address": "3714 Mission Blvd San Diego",
+    "city": "San Diego",
+    "zipCode": 92109,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "All Week 3PM-5PM",
+    "items": [
+      {
+        "itemName": "Wells Drinks",
+        "price": "$5.00"
+      },
+      {
+        "itemName": "House Wines",
+        "price": "$5.00"
+      },
+      {
+        "itemName": "Award-Winning House Margaritas",
+        "price": "$6.00"
+      },
+      {
+        "itemName": "Moscow Mules",
+        "price": "$6.00"
+      },
+      {
+        "itemName": "Drafts",
+        "price": "$2.00 off All Drafts"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Draft",
+    "phoneNumber": "(858) 228-9305",
+    "webpage": "https://www.draftsandiego.com",
+    "restaurantImg": "https://www.belmontpark.com/wp/wp-content/uploads/2018/07/1Q9B0407.jpg",
+    "address": "3105 Mission Blvd San Diego",
+    "city": "San Diego",
+    "zipCode": 92109,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Thur 3PM-6PM",
+    "items": [
+      {
+        "itemName": "Well Drinks",
+        "price": "$8.00"
+      },
+      {
+        "itemName": "14oz Draft Beer",
+        "price": "$7.00"
+      },
+      {
+        "itemName": "Cannonball",
+        "price": "7.00",
+        "description": "chardonnay"
+      },
+      {
+        "itemName": "Cannonball",
+        "price": "7.00",
+        "description": "cabernet sauvignon"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Sandbars Sports Bar & Grill",
+    "phoneNumber": "(858) 488-1274",
+    "webpage": "http://www.sandbarsportsgrill.com/",
+    "restaurantImg": "http://www.sandbarsportsgrill.com/wp-content/uploads/2016/04/Sandbar_Venue-6.jpg",
+    "address": "718 Ventura Pl San Diego",
+    "city": "San Diego",
+    "zipCode": 92109,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Fri 3PM-6PM",
+    "items": [
+      {
+        "itemName": "14oz Beers",
+        "price": "$5.00"
+      },
+      {
+        "itemName": "22oz Beers",
+        "price": "$8.00"
+      },
+      {
+        "itemName": "Well Cocktails",
+        "price": "$5.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Saska's",
+    "phoneNumber": "(858) 488-7311",
+    "webpage": "https://www.moesmissionbeach.com/",
+    "restaurantImg": "https://static.wixstatic.com/media/bbebf0_6047fbba037041b8ac85cdc81eda5c01~mv2.jpg/v1/fill/w_1903,h_663,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bbebf0_6047fbba037041b8ac85cdc81eda5c01~mv2.jpg",
+    "address": "3768 Mission Blvd San Diego",
+    "city": "San Diego",
+    "zipCode": 92109,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Sunday 1PM",
+    "items": [
+      {
+        "itemName": "Cocktails",
+        "price": "$6.00"
+      },
+      {
+        "itemName": "Martinis",
+        "price": "$6.00"
+      },
+      {
+        "itemName": "Margaritas",
+        "price": "$5.00 - $9.00"
+      },
+      {
+        "itemName": "Wines by the Glass",
+        "price": "$5.00 - $7.00"
+      },
+      {
+        "itemName": "Beers",
+        "price": "$3.50 - $6.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Tangier Bar",
+    "phoneNumber": "(858) 539-7635",
+    "webpage": "https://www.bahiahotel.com/dockside-1953",
+    "restaurantImg": "https://www.bahiahotel.com/sites/default/files/2022-03/hero_dockside.jpg",
+    "address": "Bahia Resort Hotel 998 W Mission Bay Dr San Diego",
+    "city": "San Diego",
+    "zipCode": 92109,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Everyday 3PM-6PM",
+    "items": [
+      {
+        "itemName": "Mojitos",
+        "price": "$5.00"
+      },
+      {
+        "itemName": "Beer",
+        "price": "$2.50"
+      }
+    ]
+  },
+  {
+    "restaurantName": "WaveHouse",
+    "phoneNumber": "(858) 2280-9283",
+    "webpage": "https://www.beachhousesd.com/",
+    "restaurantImg": "https://images.squarespace-cdn.com/content/v1/5a568126edaed80f4d022e9c/1572111945336-HDKFPYO3AM3DKISIDCUA/75614090_10157703577524837_3294473287374995456_o.jpg?format=2500w",
+    "address": "3125 Ocean Front Walk at Belmont Park San Diego",
+    "city": "San Diego",
+    "zipCode": 92109,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Thurs 3PM-8PM",
+    "items": [
+      {
+        "itemName": "Wells Drinks",
+        "price": "$4.00"
+      },
+      {
+        "itemName": "Beer",
+        "price": "$4.00"
+      },
+      {
+        "itemName": "Wine",
+        "price": "$4.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "The Pennant Bar",
+    "phoneNumber": "(858) 488-1671",
+    "webpage": "https://www.beachhousesd.com/",
+    "restaurantImg": "https://images.squarespace-cdn.com/content/v1/6075eb3208b4ef5f7c3d6a05/1618340676926-PL8AT4WUXAY76OK9OJ35/_M3A3941.jpg",
+    "address": "2893 Mission BLVD San Diego",
+    "city": "San Diego",
+    "zipCode": 92109,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon 11AM-2PM, Tues-Sun 8AM-2AM",
+    "items": [
+      {
+        "itemName": "Wells Drinks",
+        "price": "$3.50"
+      },
+      {
+        "itemName": "Domestic Draft Beers",
+        "price": "$2.50"
+      }
+    ]
   }
 ]
-
