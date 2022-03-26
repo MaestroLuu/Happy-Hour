@@ -1,0 +1,38 @@
+[
+  {
+    "restaurantName": "Farmer's Table La Mesa",
+    "phoneNumber": "(619) 724-6465",
+    "webpage": "https://myfarmerstable.com",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/Z1NCO_IK4TOP62rmhqINJQ/o.jpg",
+    "address": "8141 La Mesa Blvd La Mesa",
+    "city": "La Mesa",
+    "zipCode": 91942,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Thur 3PM-6PM, SUN 4PM-6PM",
+    "items": [
+      {
+        "itemName": "Draft Beers",
+        "price": "$5.00",
+        "description": "Blonde Ale, 394, Modelo, Coors Light"
+      },
+      {
+        "itemName": "House Red and White",
+        "price": "$6.00"
+      },
+      {
+        "itemName": "House Cocktails",
+        "price": "$7.00"
+      },
+      {
+        "itemName": "Well Cocktails",
+        "price": "$6.00"
+      },
+      {
+        "itemName": "Sangria Glass",
+        "price": "$5.00",
+        "description": "Red or White"
+      }
+    ]
+  }
+]
