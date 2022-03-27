@@ -1,0 +1,112 @@
+[
+  {
+    "restaurantName": "Cocina De Barrio",
+    "phoneNumber": "(619) 222-6600",
+    "webpage": "https://www.eatcocinadebarrio.com/menu#menu=happy-hour",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/CAup_Pwl7MWFH5zVbiKM5A/o.jpg",
+    "address": "3924 W Point Loma Blvd San Diego",
+    "city": "San Diego",
+    "zipCode": 92110,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Fri 3PM-5PM",
+    "items": [
+      {
+        "itemName": "La Glotona",
+        "price": "$10.00",
+        "description": "mezcal, cucumber, fresh ginger, lime, mint, mineral water, angostura bitters"
+      },
+      {
+        "itemName": "El Fresco de Granada",
+        "price": "$10.00",
+        "description": "mezcal, pomegranate juice, fresh lime juice, mint"
+      },
+      {
+        "itemName": "El Zapoteco",
+        "price": "$10.00",
+        "description": "mezcal, tequila, grapefruit juice, fresh lime juice, cinnamon syrup"
+      },
+      {
+        "itemName": "Soleado Picante",
+        "price": "$10.00",
+        "description": "mezcal, pineapple juice, OJ, jalapeno, lime juicei"
+      },
+      {
+        "itemName": "La Paloma",
+        "price": "$8.00",
+        "description": "tequila blanco, grapefruit juice, fresh lime juice, club soda, agave, salt rim"
+      },
+      {
+        "itemName": "Jalisco Express",
+        "price": "$8.00",
+        "description": "jalapeño infused tequila, fresh lime juice, cucumber juice, orange liqueur, agave, tajin rim"
+      },
+      {
+        "itemName": "Agua Santa",
+        "price": "$8.00",
+        "description": "pineapple coconut infused tequila, fresh lime juice, agave, triple sec, pineapple juice, coconut rim"
+      },
+      {
+        "itemName": "La Rosa Hibisco",
+        "price": "$8.00",
+        "description": "jamaica infused tequila, fresh lemon juice, housemade mint syrup, flora"
+      },
+      {
+        "itemName": "Blanco",
+        "price": "$7.00"
+      },
+      {
+        "itemName": "Resposado",
+        "price": "$8.00"
+      },
+      {
+        "itemName": "Mezcal",
+        "price": "$9.00"
+      },
+      {
+        "itemName": "Chardonnay Paoloni",
+        "price": "$7.00"
+      },
+      {
+        "itemName": "Sauv. Blanc Monte Xanic",
+        "price": "$9.00"
+      },
+      {
+        "itemName": "Marella Blanc De Blancs Blen",
+        "price": "$10.00/Glass, $30.00/Bottle"
+      },
+      {
+        "itemName": "Pinot Gris Ponzi",
+        "price": "$9.00/Glass, $27.00/Bottle"
+      },
+      {
+        "itemName": "Mission 16 Blend Santo Tomas",
+        "price": "$7.00"
+      },
+      {
+        "itemName": "Calixa Monte Xanic Sirah",
+        "price": "$11.00"
+      },
+      {
+        "itemName": "Valle Seco Blend",
+        "price": "$12.00/Glass, $36.00/Bottle"
+      },
+      {
+        "itemName": "Pinot Noiri",
+        "price": "$15.00/Glass, $45.00/Bottle"
+      },
+      {
+        "itemName": "Craft Beer on Tap",
+        "price": "$7.00"
+      },
+      {
+        "itemName": "Craft Bottle",
+        "price": "$6.00"
+      },
+      {
+        "itemName": "Bottle",
+        "price": "$5.00"
+      }
+    ]
+  }
+]

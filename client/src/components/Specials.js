@@ -14,7 +14,7 @@ export default function Specials({ items }) {
               <Typography key={item._id} variant="h5">
                 {item.itemName}
               </Typography>
-              <Typography variant="h6">${item.price}</Typography>
+              <Typography variant="h6">{item.price}</Typography>
               <Typography>{item.description}</Typography>
             </Box>
           </CardContent>
