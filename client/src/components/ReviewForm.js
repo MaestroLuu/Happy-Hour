@@ -29,10 +29,10 @@ export default function ReviewForm({restaurantId}) {
         // It is important that the object fields are match the defined parameters in `ADD_Review` mutation
         try {
           addReview({ variables: { ...formState } });
-          
         } catch (err) {
           console.error(err);
         }
+        setFormState({reviewText: ''});
       };
     
       const handleInputChange = (event) => {
