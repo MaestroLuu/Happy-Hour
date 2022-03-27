@@ -67,7 +67,7 @@ export default function Footer() {
             />
           </NavLink>
           {isLoggedIn ? (
-            <NavLink to="/landing">
+            <NavLink to="/">
               <BottomNavigationAction
                 label="logout"
                 value="logout"

@@ -32,7 +32,7 @@ export default function Reviews(props) {
   };
 
   return (
-    <div>
+    <div style={{marginBottom: "30px"}}>
       {props.reviews.map((review) => (
         <Card sx={{ maxWidth: 345, my: "10px", mx: "auto" }}>
           <CardContent style={{ textAlign: "center" }}>

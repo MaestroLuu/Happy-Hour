@@ -20,6 +20,7 @@ const Home = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     navigate(`/restaurants?zipcode=${zipcode.trim()}`);
+    setZipcode("");
   };
 
   // const { isLoggedIn, user } = useAuth();

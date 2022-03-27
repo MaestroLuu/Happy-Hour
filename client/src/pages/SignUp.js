@@ -54,12 +54,12 @@ export default function SignUp() {
               sx={{ marginBottom: "10px", width: "250px", display: "flex", flexDirection: "row", alignItems: "flex-end" }}
               variant="standard"
             >
-              <AccountCircle sx={{display: 'flex', marginRight: "10px"}} />
+              {/* <AccountCircle sx={{display: 'flex', marginRight: "10px"}} /> */}
               <InputLabel htmlFor="input-with-icon-adornment">
-                Username
+               
               </InputLabel>
               <Input
-                sx={{backgroundColor: "white", opacity: "80%", color: "grey"}}
+                sx={{backgroundColor: "white", opacity: "80%", color: "grey", mx: "auto"}}
                 autoFocus
                 disabled={loading}
                 id="username"
@@ -88,10 +88,10 @@ export default function SignUp() {
               }}
               variant="standard"
             >
-              <MailIcon sx={{ display: "flex", marginRight: "10px" }} />
-              <InputLabel htmlFor="input-with-icon-adornment">Email</InputLabel>
+              {/* <MailIcon sx={{ display: "flex", marginRight: "10px" }} /> */}
+              <InputLabel htmlFor="input-with-icon-adornment"></InputLabel>
               <Input
-                sx={{ backgroundColor: "white", opacity: "80%", color: "grey" }}
+                sx={{ backgroundColor: "white", opacity: "80%", color: "grey", mx: "auto" }}
                 disabled={loading}
                 id="email"
                 type="email"
@@ -113,10 +113,10 @@ export default function SignUp() {
               sx={{ marginBottom: "40px", width: "250px", display: "flex", flexDirection: "row", alignItems: "flex-end" }}
               variant="standard"
             >
-              <VpnKeyIcon sx={{display: 'flex', marginRight: "10px"}} />
-              <InputLabel htmlFor="new-password">Password</InputLabel>
+              {/* <VpnKeyIcon sx={{display: 'flex', marginRight: "10px"}} /> */}
+              <InputLabel htmlFor="new-password"></InputLabel>
               <Input
-               sx={{backgroundColor: "white", opacity: "80%", color: "grey"}}
+               sx={{backgroundColor: "white", opacity: "80%", color: "grey", mx: "auto"}}
                 disabled={loading}
                 id="new-password"
                 type="password"
@@ -153,7 +153,7 @@ export default function SignUp() {
       <p style={{ textAlign: "center", marginTop: "30px" }}>
         Do you have already have an account?
         <br></br>
-        If so, log in <NavLink to="/signup">here.</NavLink>
+        If so, log in <NavLink to="/login" style={{color: "white"}}>here.</NavLink>
       </p>
     </div>
   );
