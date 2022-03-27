@@ -56,7 +56,7 @@ const Restaurant = () => {
         </Typography>
       </p>
       <IconButton
-        className="deleteIcon"
+        className="favoriteIcon"
         onClick={() => handleFavorite(restaurant._id)}
       >
         <FavoriteIcon sx={{ color: "white", fontSize: "50px", dropShadow: "3px 5px 2px red" }} />

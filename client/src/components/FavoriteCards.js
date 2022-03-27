@@ -8,6 +8,7 @@ import { ME } from "../util/queries";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import { REMOVE_FAVORITE_RESTAURANT } from "../util/mutations";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 const FavoriteCards = () => {
   const { loading, data } = useQuery(ME);
@@ -51,7 +52,7 @@ const FavoriteCards = () => {
             <Typography variant="body2" color="text.primary">
               {restaurant.happyHours}
             </Typography>
-            <Button onClick={() => handleRemove(restaurant._id)}>Unlike</Button>
+            <DeleteIcon onClick={() => handleRemove(restaurant._id)}>Unlike</DeleteIcon>
           </CardContent>
         </Card>
       ))}
