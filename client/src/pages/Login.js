@@ -56,10 +56,10 @@ export default function Login() {
               sx={{ marginBottom: "10px", width: "250px", display: "flex", flexDirection: "row", alignItems: "flex-end" }}
               variant="standard"
             >
-              <MailIcon sx={{display: 'flex', marginRight: "10px"}}/>
-              <InputLabel sx={{display: 'flex'}} htmlFor="email">Email</InputLabel>
+              {/* <MailIcon sx={{display: 'flex', marginRight: "10px"}}/> */}
+              <InputLabel sx={{display: 'flex'}} htmlFor="email"></InputLabel>
               <Input
-              sx={{backgroundColor: "white", opacity: "80%", color: "grey"}}
+              sx={{backgroundColor: "white", opacity: "80%", color: "grey", mx: "auto"}}
                 disabled={loading}
                 id="email"
                 type="email"
@@ -81,10 +81,10 @@ export default function Login() {
               sx={{ marginBottom: "40px", width: "250px", display: "flex", flexDirection: "row", alignItems: "flex-end" }}
               variant="standard"
             >
-              <VpnKeyIcon sx={{display: 'flex', marginRight: "10px"}} />
-              <InputLabel htmlFor="new-password">Password</InputLabel>
+              {/* <VpnKeyIcon sx={{display: 'flex', marginRight: "10px"}} /> */}
+              <InputLabel htmlFor="new-password"></InputLabel>
               <Input
-              sx={{backgroundColor: "white", opacity: "80%", color: "grey"}}
+              sx={{backgroundColor: "white", opacity: "80%", color: "grey", mx: "auto"}}
                 disabled={loading}
                 id="new-password"
                 type="password"
