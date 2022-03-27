@@ -32,7 +32,7 @@ export default function ReviewForm({restaurantId}) {
         } catch (err) {
           console.error(err);
         }
-        setFormState({reviewText: ''});
+        setFormState({reviewText: '', restaurantId: restaurantId});
       };
     
       const handleInputChange = (event) => {
