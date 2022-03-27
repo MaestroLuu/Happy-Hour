@@ -1,7 +1,7 @@
 [
   {
     "restaurantName": "Common Theory",
-    "phoneNumber" : "(619) 780-6689",
+    "phoneNumber": "(619) 780-6689",
     "webpage": "https://www.commontheorysd.com/",
     "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/mS4z6byk8K82Fckr0om2zg/o.jpg",
     "address": "4805 Convoy St",
@@ -25,7 +25,7 @@
   },
   {
     "restaurantName": "O'Briens",
-    "phoneNumber" : "(858) 715-1745",
+    "phoneNumber": "(858) 715-1745",
     "webpage": "https://obrienspub.net/",
     "restaurantImg": "https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_70,c_fit,h_864/http://static.spotapps.co/spots/e0/64f040198f11e9aba51dcbf14426ba/:original",
     "address": "4646 Convoy St",
@@ -44,7 +44,7 @@
   },
   {
     "restaurantName": "Bullpen Bar",
-    "phoneNumber" : "858-503-6786",
+    "phoneNumber": "858-503-6786",
     "webpage": "https://www.bullpenbar.com/",
     "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/4mWMwmdyI4XcnEPIvxIhIA/o.jpg",
     "address": "8199 Clairemont Mesa Blvd",
@@ -80,7 +80,7 @@
   },
   {
     "restaurantName": "Hive",
-    "phoneNumber" : "858) 576-0700",
+    "phoneNumber": "858) 576-0700",
     "webpage": "https://www.hivesandiego.com/",
     "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/BIEi8Np3eDlr1Qt6w2GEAA/o.jpg",
     "address": "4428 Convoy St Ste 100",
@@ -1802,4 +1802,3 @@
     ]
   }
 ]
-
