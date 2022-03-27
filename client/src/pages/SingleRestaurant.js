@@ -97,6 +97,7 @@ const Restaurant = () => {
               padding: "10px",
               width: "39ch",
               textAlign: "center",
+              marginBottom: "30px"
             }}
           >
             You need to be{" "}
