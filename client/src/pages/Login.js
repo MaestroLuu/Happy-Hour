@@ -117,7 +117,7 @@ export default function Login() {
       </Box>
       <p style={{ textAlign: "center", marginTop: "30px" }}>Do you have an account?
            <br></br>
-          If not, sign up <NavLink to="/signup">
+          If not, sign up <NavLink style={{color: "white"}} to="/signup">
             here.
           </NavLink>
         </p>

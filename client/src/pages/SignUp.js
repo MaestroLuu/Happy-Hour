@@ -153,7 +153,7 @@ export default function SignUp() {
       <p style={{ textAlign: "center", marginTop: "30px" }}>
         Do you have already have an account?
         <br></br>
-        If so, log in <NavLink to="/login">here.</NavLink>
+        If so, log in <NavLink to="/login" style={{color: "white"}}>here.</NavLink>
       </p>
     </div>
   );
