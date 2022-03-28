@@ -1,0 +1,136 @@
+[
+  {
+    "restaurantName": "La Doña",
+    "phoneNumber": "(619) 269-6144",
+    "webpage": "https://ladonaob.com/",
+    "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/6dBNu9202XBkxoF6MGyecA/o.jpg",
+    "address": "1852 Bacon St San Diego",
+    "city": "San Diego",
+    "zipCode": 92107,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Fri 2:30PM-5PM",
+    "items": [
+      {
+        "itemName": "Calidad Cerva",
+        "price": "$4.00"
+      },
+      {
+        "itemName": "House Margarita",
+        "price": "$6.00"
+      },
+      {
+        "itemName": "Select Tequila",
+        "price": "$6.00"
+      },
+      {
+        "itemName": "Select Mezcal",
+        "price": "$6.00"
+      },
+      {
+        "itemName": "El Tesoro Blanco",
+        "price": "$8.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "OB Brewery",
+    "phoneNumber": "(619) 955-8053 ",
+    "webpage": "https://www.obbrewingco.com/",
+    "restaurantImg": "https://i.imgur.com/6wQVRwq.jpg",
+    "address": "5041 Newport Ave. San Diego",
+    "city": "San Diego",
+    "zipCode": 92107,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Mon-Fri 3PM-6PM",
+    "items": [
+      {
+        "itemName": "All Draft Beers",
+        "price": "$3.00 OFF"
+      }
+    ]
+  },
+  {
+    "restaurantName": "The Holding Company",
+    "phoneNumber": "(619) 341-5898",
+    "webpage": "https://theholdingcompanyob.com/",
+    "restaurantImg": "https://www.theholdingcompanyob.com/wp-content/uploads/2021/03/f6ff1f8bcebccc254365c4726b18e65ceaf416ed-2-1.jpg",
+    "address": "5046 Newport Ave. San Diego",
+    "city": "San Diego",
+    "zipCode": 92107,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "Tue-Fri 4PM-6PM",
+    "items": [
+      {
+        "itemName": "Draft Beer",
+        "price": "Half Off"
+      },
+      {
+        "itemName": "Pint Beer of the Day",
+        "price": "$2.00"
+      },
+      {
+        "itemName": "Pitchers of Beer",
+        "price": "$10.00"
+      },
+      {
+        "itemName": "Well Drinks",
+        "price": "$4.00"
+      },
+      {
+        "itemName": "Towers",
+        "price": "$15.00 off all towers"
+      },
+      {
+        "itemName": "Whiskey/Tequila",
+        "price": "Half off most Tequila and Whiskey"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Voltaire Beach House",
+    "phoneNumber": "(619) 955-8840",
+    "webpage": "https://voltairebeachhouse.com/san-diego-ocean-beach-voltaire-beach-house-happy-hours-specials",
+    "restaurantImg": "https://static.spotapps.co/web/voltairebeachhouse--com/custom/about_us_right.jpg",
+    "address": "4934 Voltaire St San Diego",
+    "city": "San Diego",
+    "zipCode": 92107,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "All Week 11AM-10PM",
+    "items": [
+      {
+        "itemName": "Beer of the Month",
+        "price": "$3.00"
+      }
+    ]
+  },
+  {
+    "restaurantName": "Wonderland OB",
+    "phoneNumber": "(619) 255-3358",
+    "webpage": "https://wonderlandob.com/",
+    "restaurantImg": "https://res.cloudinary.com/spothopper/image/fetch/f_auto,q_70,c_fit,h_864/http://static.spotapps.co/spots/51/34e2e0636411e8bfac8fdccdacce32/:original",
+    "address": "5083 Santa Monica Ave. #2C San Diego",
+    "city": "San Diego",
+    "zipCode": 92107,
+    "state": "CA",
+    "country": "USA",
+    "happyHours": "MON-Fri 2PM-4PM",
+    "items": [
+      {
+        "itemName": "Pub Menu",
+        "price": "Half off"
+      },
+      {
+        "itemName": "Specialty Cocktails",
+        "price": "Half off"
+      },
+      {
+        "itemName": "Drafts",
+        "price": "Half off"
+      }
+    ]
+  }
+]
