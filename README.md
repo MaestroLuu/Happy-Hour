@@ -2,7 +2,7 @@
 
 ## Description
 
-This application allows users to search for "Happy Hour" locations in their area, where they can get drinks or food for a cheap price and also review/rate those "Happy Hour" locations. This app searches by the zipcode you provide and gives you a list of the restaurants with "Happy Hours" that match your criteria.
+This application allows users to search for restaurants in their provided zip code, where they can get drinks for a cheap price and also review/rate those "Happy Hour" locations. This app searches by the zipcode you provide and gives you a list of the restaurants with "Happy Hours" that match your criteria.
 
 ## [Try it yourself!](https://desolate-earth-02940.herokuapp.com/)
 
