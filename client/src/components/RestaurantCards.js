@@ -22,6 +22,8 @@ const Cards = () => {
   });
   const restaurants = data?.restaurantsByZipcode || [];
 
+  const featuredRestaurant = restaurants[Math.floor(Math.random()*restaurants.length)]
+
   const [addFavorite, addFavoriteState] = useMutation(ADD_FAVORITE_RESTAURANT);
 
   const handleFavorite = (restaurantId) => {
@@ -71,6 +73,54 @@ const Cards = () => {
   }
 
   return (
+    <Box>
+    <Box sx={{ flexGrow: 1, borderBottom: 2 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+      <Grid container spacing={{ xs: 2, md: 3 }}></Grid>
+      {loading && <p>loading restaurants...</p>}
+        <Card
+          key={featuredRestaurant._id}
+          sx={{ maxWidth: "50vw", my: "30px", mx: "auto" }}
+        >
+          <Grid
+            xs={12}
+            sx={{ display: "flex", flexDirection: { xs: "column" } }}
+            key={featuredRestaurant._id}
+          >
+            <Link
+              to={`/restaurants/${featuredRestaurant._id}`}
+              style={{ width: "100%" }}
+            >
+              <CardMedia
+                component="img"
+                image={featuredRestaurant.restaurantImg}
+                alt="featuredRestaurant"
+              />
+            </Link>
+            <CardContent>
+            <Typography gutterBottom component="div" fontSize="20px" color="red">
+                Featured Restaurant
+              </Typography>
+              <Typography gutterBottom component="div">
+                {featuredRestaurant.restaurantName}
+              </Typography>
+
+              <Typography variant="body2" color="text.secondary">
+                {featuredRestaurant.address} <br />
+                {featuredRestaurant.city}, {featuredRestaurant.state}
+                <br />
+                {featuredRestaurant.zipCode}
+              </Typography>
+
+              <Typography variant="body2" color="text.primary">
+                {featuredRestaurant.happyHours}
+              </Typography>
+              {/* <Button onClick={() => handleFavorite(restaurant._id)}>
+                Favorite
+              </Button> */}
+            </CardContent>
+          </Grid>
+        </Card>
+    </Box>
     <Box sx={{ flexGrow: 1 }} columns={{ xs: 4, sm: 8, md: 12 }}>
       <Grid container spacing={{ xs: 2, md: 3 }}></Grid>
       {loading && <p>loading restaurants...</p>}
@@ -116,6 +166,7 @@ const Cards = () => {
           </Grid>
         </Card>
       ))}
+    </Box>
     </Box>
   );
 };
