@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import Grid from "@mui/material/Button";
 import { ADD_FAVORITE_RESTAURANT } from "../util/mutations";
 import { useMediaQuery } from "@mui/material";
-import "../../src/index.css"
+import "../../src/index.css";
 
 const Cards = () => {
   const [searchParams] = useSearchParams();
@@ -28,8 +28,50 @@ const Cards = () => {
     addFavorite({ variables: { restaurantId } });
   };
 
+  // display missing data if zipcode is not found
+  if (restaurants.length === 0) {
+    return (
+      <div
+        sx={{
+          maxWidth: 345,
+          mx: "auto",
+          marginBottom: "50px",
+          backgroundColor: "transparent",
+        }}
+      >
+        <h1
+          style={{
+            textAlign: "center",
+            fontSize: "45px",
+            marginTop: "30px",
+            color: "white",
+            textShadow: "0px 0px 10px darkred",
+          }}
+        >
+          Oops! <br/>
+          😢
+        </h1>
+        <h3
+          style={{
+            textAlign: "center",
+            marginTop: "20px",
+            fontSize: "25px",
+            color: "white",
+            textShadow: "0px 0px 10px darkred",
+          }}
+        >
+          There aren't any <br />
+          happy hour specials <br />
+          in your selected zipcode. <br/> <br/>
+
+          Please try another zipcode!
+        </h3>
+      </div>
+    );
+  }
+
   return (
-    <Box sx={{ flexGrow: 1  }} columns={{ xs: 4, sm: 8, md: 12 }}>
+    <Box sx={{ flexGrow: 1 }} columns={{ xs: 4, sm: 8, md: 12 }}>
       <Grid container spacing={{ xs: 2, md: 3 }}></Grid>
       {loading && <p>loading restaurants...</p>}
       {restaurants.map((restaurant) => (
@@ -37,8 +79,15 @@ const Cards = () => {
           key={restaurant._id}
           sx={{ maxWidth: "50vw", my: "30px", mx: "auto" }}
         >
-        <Grid xs={12} sx={{ display: "flex", flexDirection: { xs: "column" } }} key={restaurant._id}>
-            <Link to={`/restaurants/${restaurant._id}`} style = {{ width: "100%" }}>
+          <Grid
+            xs={12}
+            sx={{ display: "flex", flexDirection: { xs: "column" } }}
+            key={restaurant._id}
+          >
+            <Link
+              to={`/restaurants/${restaurant._id}`}
+              style={{ width: "100%" }}
+            >
               <CardMedia
                 component="img"
                 image={restaurant.restaurantImg}
@@ -49,15 +98,13 @@ const Cards = () => {
               <Typography gutterBottom component="div">
                 {restaurant.restaurantName}
               </Typography>
-              
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  {restaurant.address} <br /> 
-                  {restaurant.city}, {restaurant.state}<br /> 
-                  {restaurant.zipCode}
-                </Typography>
+
+              <Typography variant="body2" color="text.secondary">
+                {restaurant.address} <br />
+                {restaurant.city}, {restaurant.state}
+                <br />
+                {restaurant.zipCode}
+              </Typography>
 
               <Typography variant="body2" color="text.primary">
                 {restaurant.happyHours}
@@ -66,7 +113,7 @@ const Cards = () => {
                 Favorite
               </Button> */}
             </CardContent>
-        </Grid>
+          </Grid>
         </Card>
       ))}
     </Box>
