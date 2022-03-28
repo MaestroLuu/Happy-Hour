@@ -66,7 +66,6 @@ const Cards = () => {
 
           Please try another zipcode!
         </h3>
-        ;
       </div>
     );
   }
