@@ -88,14 +88,13 @@ const Cards = () => {
           >
             <Link
               to={`/restaurants/${featuredRestaurant._id}`}
-              style={{ width: "100%" }}
+              style={{ width: "100%", textDecoration: "none" }}
             >
               <CardMedia
                 component="img"
                 image={featuredRestaurant.restaurantImg}
                 alt="featuredRestaurant"
               />
-            </Link>
             <CardContent>
             <Typography gutterBottom component="div" fontSize="20px" color="red">
                 Featured Restaurant
@@ -118,6 +117,7 @@ const Cards = () => {
                 Favorite
               </Button> */}
             </CardContent>
+              </Link>
           </Grid>
         </Card>
     </Box>
