@@ -99,7 +99,7 @@ const Cards = () => {
             <Typography gutterBottom component="div" fontSize="20px" color="red">
                 Featured Restaurant
               </Typography>
-              <Typography gutterBottom component="div">
+              <Typography gutterBottom component="div" color="blue" fontWeight="bold" fontSize="20px">
                 {featuredRestaurant.restaurantName}
               </Typography>
 
@@ -136,7 +136,7 @@ const Cards = () => {
           >
             <Link
               to={`/restaurants/${restaurant._id}`}
-              style={{ width: "100%" }}
+              style={{ width: "100%", textDecoration: "none" }}
             >
               <CardMedia
                 component="img"
@@ -144,7 +144,7 @@ const Cards = () => {
                 alt="restaurant"
               />
             <CardContent>
-              <Typography gutterBottom component="div">
+              <Typography gutterBottom component="div" color="blue" fontWeight="bold" fontSize="20px">
                 {restaurant.restaurantName}
               </Typography>
 
