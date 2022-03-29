@@ -22,7 +22,7 @@ const Cards = () => {
   });
   const restaurants = data?.restaurantsByZipcode || [];
 
-  const featuredRestaurant = restaurants[Math.floor(Math.random()*restaurants.length)]
+  const featuredRestaurant = restaurants[restaurants.length - 1];
 
   const [addFavorite, addFavoriteState] = useMutation(ADD_FAVORITE_RESTAURANT);
 
@@ -143,7 +143,6 @@ const Cards = () => {
                 image={restaurant.restaurantImg}
                 alt="restaurant"
               />
-            </Link>
             <CardContent>
               <Typography gutterBottom component="div">
                 {restaurant.restaurantName}
@@ -163,6 +162,7 @@ const Cards = () => {
                 Favorite
               </Button> */}
             </CardContent>
+              </Link>
           </Grid>
         </Card>
       ))}

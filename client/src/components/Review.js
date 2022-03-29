@@ -7,7 +7,7 @@ import { IconButton } from "@mui/material";
 import { DELETE_REVIEW } from "../util/mutations";
 import { useMutation } from "@apollo/client";
 import { useAuth } from "../util/auth";
-import EditIcon from "@mui/icons-material/Edit";
+// import EditIcon from "@mui/icons-material/Edit";
 
 export default function Reviews(props) {
   console.log(props);
@@ -15,11 +15,11 @@ export default function Reviews(props) {
   const user = useAuth();
   console.log(user);
 
-  const loginCheck = () => {
-    if (!user.user.username) {
-      return false;
-    }
-  };
+  // const loginCheck = () => {
+  //   if (!user.user.username) {
+  //     return false;
+  //   }
+  // };
   // Set up our mutation with an option to handle errors
   const [deleteReview, { error, loading }] = useMutation(DELETE_REVIEW);
 
@@ -27,9 +27,10 @@ export default function Reviews(props) {
     deleteReview({ variables: { reviewId, restaurantId: props.restaurant } });
   };
 
-  const handleEdit = (reviewId) => {
-    deleteReview({ variables: { reviewId, restaurantId: props.restaurant } });
-  };
+  // Update at later time for updating feature
+  // const handleEdit = (reviewId) => {
+  //   deleteReview({ variables: { reviewId, restaurantId: props.restaurant } });
+  // };
 
   return (
     <div style={{marginBottom: "30px"}}>
@@ -47,12 +48,12 @@ export default function Reviews(props) {
             <Typography>{review.createdAt}</Typography>
             {user.user.username === review.reviewAuthor ? (
               <div>
-                <IconButton
+                {/* <IconButton
                   className="editIcon"
                   onClick={() => handleEdit(review._id)}
                 >
                   <EditIcon />
-                </IconButton>
+                </IconButton> */}
                 <IconButton
                   className="deleteIcon"
                   onClick={() => handleDelete(review._id)}
