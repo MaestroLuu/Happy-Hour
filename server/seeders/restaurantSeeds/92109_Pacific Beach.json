@@ -13,7 +13,7 @@
     "items": [
       {
         "itemName": "Craft Beers",
-        "price": "6.00"          
+        "price": "6.00"
       },
       {
         "itemName": "Craft Cocktails",
@@ -35,7 +35,7 @@
     "items": [
       {
         "itemName": "2-for-1",
-        "price": "All regular priced drinks"          
+        "price": "All regular priced drinks"
       }
     ]
   },
@@ -53,7 +53,7 @@
     "items": [
       {
         "itemName": "Select Drafts",
-        "price": "$6.00"          
+        "price": "$6.00"
       }
     ]
   },
@@ -71,23 +71,23 @@
     "items": [
       {
         "itemName": "Maverick's Margarital",
-        "price": "$6.00"          
+        "price": "$6.00"
       },
       {
         "itemName": "Maverick's Mai Tai",
-        "price": "$6.00"          
+        "price": "$6.00"
       },
       {
         "itemName": "Beer",
-        "price": "$4.00"          
+        "price": "$4.00"
       },
       {
         "itemName": "Wine",
-        "price": "$4.00"          
+        "price": "$4.00"
       },
       {
         "itemName": "Well Cocktails",
-        "price": "$4.00"          
+        "price": "$4.00"
       }
     ]
   },
@@ -105,15 +105,15 @@
     "items": [
       {
         "itemName": "AleHouse Draft Beer",
-        "price": "$5.00"          
+        "price": "$5.00"
       },
       {
         "itemName": "Weekly Featured Craft Cocktail",
-        "price": "$10.00"          
+        "price": "$10.00"
       },
       {
         "itemName": "Bottles of Wine",
-        "price": "Half off"          
+        "price": "Half off"
       }
     ]
   },
@@ -131,7 +131,7 @@
     "items": [
       {
         "itemName": "All Taps, Cocktails & Wine",
-        "price": "$2.00 Off"          
+        "price": "$2.00 Off"
       }
     ]
   }
