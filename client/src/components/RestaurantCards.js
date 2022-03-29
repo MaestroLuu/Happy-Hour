@@ -22,7 +22,7 @@ const Cards = () => {
   });
   const restaurants = data?.restaurantsByZipcode || [];
 
-  const featuredRestaurant = restaurants[Math.floor(Math.random()*restaurants.length)]
+  const featuredRestaurant = restaurants[restaurants.length - 1];
 
   const [addFavorite, addFavoriteState] = useMutation(ADD_FAVORITE_RESTAURANT);
 
