@@ -55,6 +55,7 @@ const Restaurant = () => {
           {restaurant.zipCode}
         </Typography>
       </p>
+      
       <IconButton
         className="favoriteIcon"
         onClick={() => handleFavorite(restaurant._id)}
