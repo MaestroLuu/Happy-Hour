@@ -32,7 +32,7 @@ const Home = () => {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <form onSubmit={handleSubmit} >
           <TextField
-            sx={{ maxWidth: 300, my: "10px", backgroundColor: "white", opacity: 0.85, height: "45px", color: "black" }}
+            sx={{ maxWidth: 175, my: "10px", backgroundColor: "white", opacity: 0.85, height: "45px", color: "black", mx: "auto" }}
             id="filled-hidden-label-small"
             variant="filled"
             size="small"
