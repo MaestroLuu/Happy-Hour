@@ -39,14 +39,14 @@ const Restaurant = () => {
     addFavorite({ variables: { restaurantId } });
   };
 
-  console.log(data);
   return (
-    <div style={{display: "flex", flexDirection: "column"}}>
+    <div style={{ display: "flex", flexDirection: "column" }}>
       {loading && <p>loading restaurants...</p>}
       <h1 style={{ textAlign: "center", marginBottom: "30px" }}>
         {restaurant.restaurantName}
       </h1>
-      <h2 style={styles.text}>Happy Hour: {restaurant.happyHours}</h2>
+      <h2 style={styles.text}>Happy Hour:</h2>
+      <h2 style={{textAlign: "center", textShadow: "1px 1px 10px black"}}> {restaurant.happyHours}</h2>
       <p style={styles.text}>
         <Typography variant="body">
           {restaurant.address} <br />
@@ -55,16 +55,38 @@ const Restaurant = () => {
           {restaurant.zipCode}
         </Typography>
       </p>
-      
+      <br />
+      <a
+        href={restaurant.webpage}
+        target= "_blank"
+        rel= "noreferrer"
+        style={{
+          textAlign: "center",
+          color: "white",
+          textShadow: "1px 1px 1px red",
+          textDecoration: "none",
+        }}
+        
+      >
+        {" "}
+        Click here for Restaurant Website {" "}
+      </a>
+      <br />
       <IconButton
         className="favoriteIcon"
         onClick={() => handleFavorite(restaurant._id)}
       >
-        <FavoriteIcon sx={{ color: "white", fontSize: "50px", dropShadow: "3px 5px 2px red" }} />
-   </IconButton>
+        <FavoriteIcon
+          sx={{
+            color: "white",
+            fontSize: "50px",
+            dropShadow: "3px 5px 2px red",
+          }}
+        />
+      </IconButton>
 
       <h1
-        style={{ textAlign: "center", marginTop: "50px", marginBottom: "20px" }}
+        style={{ textAlign: "center", marginTop: "10px", marginBottom: "10px" }}
       >
         {" "}
         Happy Hour Specials
@@ -98,7 +120,7 @@ const Restaurant = () => {
               padding: "10px",
               width: "39ch",
               textAlign: "center",
-              marginBottom: "30px"
+              marginBottom: "30px",
             }}
           >
             You need to be{" "}
