@@ -50,13 +50,17 @@ This is the group of people who worked on this project: <br>
 If you have any additional questions regarding this application, please contact us via the channels provided below:<br />
 ________________________________________
 Github: https://github.com/MaestroLuu<br>
+Portfolio: https://maestroluu.github.io/dluu-react-portfolio/<br>
 Email: DLuu.developer@gmail.com<br>
 ________________________________________
 Github:https://github.com/JaggedComet/<br>
+Portfolio: https://jaggedcomet.github.io/portfolio-react/<br>
 Email: MarcoFlores1029@gmail.com<br>
 ________________________________________
 Github: https://github.com/lukalicheli/<br>
+Portfolio: https://lukalicheli.github.io/portfolio-resume/<br>
 Email: lukalicheli@gmail.com<br>
 ________________________________________
 Github: https://github.com/chrismuto/<br>
+Portfolio: https://chrismuto.github.io/react-portfolio/ <br>
 Email: chrismuto@gmail.com<br>
