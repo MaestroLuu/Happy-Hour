@@ -23,6 +23,46 @@ const FavoriteCards = () => {
     removeFavorite({ variables: { restaurantId } });
   };
 
+  if (restaurants.length === 0) {
+    return (
+      <div
+        sx={{
+          maxWidth: 345,
+          mx: "auto",
+          marginBottom: "50px",
+          backgroundColor: "transparent",
+        }}
+      >
+        <h1
+          style={{
+            textAlign: "center",
+            fontSize: "45px",
+            marginTop: "30px",
+            color: "white",
+            textShadow: "0px 0px 10px darkred",
+          }}
+        >
+          Oh no! <br/>
+          😢
+        </h1>
+        <h3
+          style={{
+            textAlign: "center",
+            marginTop: "20px",
+            fontSize: "25px",
+            color: "white",
+            textShadow: "0px 0px 10px darkred",
+          }}
+        >
+          You don't have <br />
+          any favorite restaurants! <br />< br/>
+
+          Please go add some to your list!
+        </h3>
+      </div>
+    );
+  }
+
   return (
     <div>
       {loading && <p>loading restaurants...</p>}
